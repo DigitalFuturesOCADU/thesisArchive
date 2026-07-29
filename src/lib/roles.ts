@@ -4,9 +4,14 @@ export function isPrimaryRole(role: AdvisorRole): boolean {
   return role === 'pa'
 }
 
-/** All non-primary advisory roles display as secondary. */
+export function isExternalExaminerRole(role: AdvisorRole): boolean {
+  return role === 'ea'
+}
+
 export function roleLabel(role: AdvisorRole): string {
-  return isPrimaryRole(role) ? 'Primary advisor' : 'Secondary advisor'
+  if (isPrimaryRole(role)) return 'Primary advisor'
+  if (isExternalExaminerRole(role)) return 'External examiner'
+  return 'Secondary advisor'
 }
 
 export function formatPersonName(given?: string | null, family?: string | null): string {

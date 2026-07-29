@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router-dom'
 import { LoadingState, EmptyState } from '../components/LoadingState'
 import { ReferencesSection } from '../components/ReferencesSection'
 import { thesisById, useArchive } from '../data/useArchive'
-import { degreeLabel, slugify } from '../lib/roles'
+import { degreeLabel, isExternalExaminerRole, slugify } from '../lib/roles'
 
 export function ProjectDetail() {
   const { id } = useParams()
@@ -62,7 +62,11 @@ export function ProjectDetail() {
           <ul className="plain-list">
             {thesis.advisors.map((a, i) => (
               <li key={`${a.advisorId}-${i}`}>
-                <Link to={`/advisors/${a.advisorId}`}>{a.name}</Link>
+                {isExternalExaminerRole(a.role) ? (
+                  <span>{a.name}</span>
+                ) : (
+                  <Link to={`/advisors/${a.advisorId}`}>{a.name}</Link>
+                )}
                 <span className="muted"> — {a.roleLabel}</span>
               </li>
             ))}

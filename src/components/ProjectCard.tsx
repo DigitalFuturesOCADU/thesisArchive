@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import type { Thesis } from '../types'
-import { degreeLabel, slugify } from '../lib/roles'
+import { degreeLabel, isExternalExaminerRole, slugify } from '../lib/roles'
 
 export function ProjectCard({
   thesis,
@@ -9,7 +9,10 @@ export function ProjectCard({
   thesis: Thesis
   badge?: string
 }) {
-  const advisors = thesis.advisors.map((a) => a.name).join(', ')
+  const advisors = thesis.advisors
+    .filter((a) => !isExternalExaminerRole(a.role))
+    .map((a) => a.name)
+    .join(', ')
 
   return (
     <article className="project-card">

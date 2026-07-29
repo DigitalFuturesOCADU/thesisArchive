@@ -20,9 +20,40 @@ function isPrimary(role) {
   return role === 'pa'
 }
 
-/** All non-primary advisory roles display as secondary. */
+function isExternalExaminerRole(role) {
+  return role === 'ea'
+}
+
 function roleLabel(role) {
-  return isPrimary(role) ? 'Primary advisor' : 'Secondary advisor'
+  if (isPrimary(role)) return 'Primary advisor'
+  if (isExternalExaminerRole(role)) return 'External examiner'
+  return 'Secondary advisor'
+}
+
+function buildExternalExaminerIndex(entries = []) {
+  const ids = new Set()
+  const emails = new Set()
+  const names = new Set()
+  for (const person of entries) {
+    if (person.id) ids.add(person.id)
+    for (const email of person.emails ?? []) {
+      const e = normalizeEmail(email)
+      if (e) emails.add(e)
+    }
+    for (const alias of [person.name, ...(person.nameAliases ?? [])]) {
+      if (alias) names.add(String(alias).toLowerCase().trim())
+    }
+  }
+  return { ids, emails, names }
+}
+
+function isForcedExternalExaminer(person, rawName, email, externalIndex) {
+  if (!externalIndex) return false
+  if (person?.id && externalIndex.ids.has(person.id)) return true
+  if (email && externalIndex.emails.has(email)) return true
+  if (rawName && externalIndex.names.has(rawName.toLowerCase())) return true
+  if (person?.name && externalIndex.names.has(person.name.toLowerCase())) return true
+  return false
 }
 
 function slugify(value) {
@@ -102,7 +133,7 @@ function buildAliasIndex(canonical) {
   return { byEmail, byName, byLocal }
 }
 
-function resolveAdvisor(raw, aliasIndex, dynamicPeople, ignoreIds) {
+function resolveAdvisor(raw, aliasIndex, dynamicPeople, ignoreIds, externalIndex) {
   const email = normalizeEmail(raw.id)
   const rawName = formatName(raw.name)
   const nameKey = rawName.toLowerCase()
@@ -145,9 +176,12 @@ function resolveAdvisor(raw, aliasIndex, dynamicPeople, ignoreIds) {
 
   if (ignoreIds.has(person.id)) return null
 
+  const forcedExternal = isForcedExternalExaminer(person, rawName, email, externalIndex)
+  const role = forcedExternal ? 'ea' : (raw.type ?? null)
+
   return {
-    role: raw.type ?? null,
-    roleLabel: roleLabel(raw.type ?? null),
+    role,
+    roleLabel: roleLabel(role),
     advisorId: person.id,
     name: person.name,
     rawName: rawName || undefined,
@@ -193,7 +227,15 @@ function relatedUrls(record) {
   return urls
 }
 
-function normalizeRecord(record, sourceMeta, aliasIndex, dynamicPeople, advisorsAcc, ignoreIds) {
+function normalizeRecord(
+  record,
+  sourceMeta,
+  aliasIndex,
+  dynamicPeople,
+  advisorsAcc,
+  ignoreIds,
+  externalIndex,
+) {
   const creators = (record.creators ?? []).map((c) => ({
     given: cleanNamePart(c.name?.given),
     family: cleanNamePart(c.name?.family),
@@ -201,7 +243,7 @@ function normalizeRecord(record, sourceMeta, aliasIndex, dynamicPeople, advisors
   const creatorNames = creators.map((c) => [c.given, c.family].filter(Boolean).join(' '))
 
   const advisors = (record.thesis_advisors ?? [])
-    .map((a) => resolveAdvisor(a, aliasIndex, dynamicPeople, ignoreIds))
+    .map((a) => resolveAdvisor(a, aliasIndex, dynamicPeople, ignoreIds, externalIndex))
     .filter(Boolean)
 
   const year =
@@ -232,6 +274,9 @@ function normalizeRecord(record, sourceMeta, aliasIndex, dynamicPeople, advisors
   }
 
   for (const adv of advisors) {
+    // External examiners appear on project pages, but not in the Advisors index.
+    if (isExternalExaminerRole(adv.role)) continue
+
     let entry = advisorsAcc.get(adv.advisorId)
     if (!entry) {
       entry = {
@@ -393,6 +438,7 @@ async function main() {
   const aliasesFile = JSON.parse(await readFile(aliasesPath, 'utf8'))
   const { canonical } = aliasesFile
   const ignoreIds = new Set(aliasesFile.ignoreIds ?? [])
+  const externalIndex = buildExternalExaminerIndex(aliasesFile.externalExaminers ?? [])
   const aliasIndex = buildAliasIndex(canonical)
   const dynamicPeople = new Map()
   const advisorsAcc = new Map()
@@ -421,6 +467,7 @@ async function main() {
         dynamicPeople,
         advisorsAcc,
         ignoreIds,
+        externalIndex,
       )
       byId.set(thesis.id, thesis)
     }

@@ -2,7 +2,7 @@ import { Link, useParams } from 'react-router-dom'
 import { EmptyState, LoadingState } from '../components/LoadingState'
 import { ProjectCard } from '../components/ProjectCard'
 import { advisorById, useArchive } from '../data/useArchive'
-import { isPrimaryRole } from '../lib/roles'
+import { isExternalExaminerRole, isPrimaryRole, roleLabel } from '../lib/roles'
 import { sortTheses } from '../lib/filter'
 
 export function AdvisorDetail() {
@@ -42,7 +42,9 @@ export function AdvisorDetail() {
           const roles = t.advisors.filter((a) => a.advisorId === advisor.id)
           const label = roles.some((a) => isPrimaryRole(a.role))
             ? 'Primary advisor'
-            : 'Secondary advisor'
+            : roles.some((a) => isExternalExaminerRole(a.role))
+              ? 'External examiner'
+              : roleLabel(roles[0]?.role ?? null)
           return <ProjectCard key={t.id} thesis={t} badge={label} />
         })}
       </div>

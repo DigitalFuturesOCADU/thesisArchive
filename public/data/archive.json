@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T22:15:50.097Z",
+  "generatedAt": "2026-07-29T22:28:27.493Z",
   "sourceLabel": "Digital Futures",
   "theses": [
     {
@@ -430,8 +430,8 @@
           "email": "imen@ocadu.ca"
         },
         {
-          "role": "cm",
-          "roleLabel": "Secondary advisor",
+          "role": "ea",
+          "roleLabel": "External examiner",
           "advisorId": "maria-yablonina",
           "name": "Maria Yablonina",
           "rawName": "Maria Yablonina",
@@ -688,7 +688,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "judith-doyle",
           "name": "Judith Doyle",
           "rawName": "Judith Doyle",
@@ -1158,7 +1158,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "m",
           "name": "Akiyama Mitchel",
           "rawName": "Akiyama Mitchel",
@@ -1566,7 +1566,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "steve-engels",
           "name": "Steve Engels",
           "rawName": "Steve Engels",
@@ -1979,7 +1979,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "pgivord",
           "name": "Priam Givord",
           "rawName": "Priam Givord",
@@ -2110,7 +2110,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "akhor001",
           "name": "Andrea Khôra",
           "rawName": "Andrea Khôra",
@@ -2174,7 +2174,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "jtingley",
           "name": "Tinley Jane",
           "rawName": "Tinley Jane",
@@ -2582,7 +2582,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "shital-desai",
           "name": "Shital Desai",
           "rawName": "Shital Desai",
@@ -2768,7 +2768,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "yshaik72",
           "name": "Yifat Shaik",
           "rawName": "Yifat Shaik",
@@ -3045,7 +3045,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "shanbell",
           "name": "Shannon Bell",
           "rawName": "Shannon Bell",
@@ -3158,7 +3158,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "alicia",
           "name": "Alicia Seidle",
           "rawName": "Alicia Seidle",
@@ -3325,7 +3325,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "ali-qadeer",
           "name": "Ali Qadeer",
           "rawName": "Ali Shamas Qadeer",
@@ -3394,7 +3394,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "haru-ji",
           "name": "Haru Ji",
           "rawName": "Haru Ji",
@@ -4784,7 +4784,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "cgiraudy",
           "name": "Cheryl Giraudy",
           "rawName": "Cheryl Giraudy",
@@ -5297,7 +5297,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "jstoll",
           "name": "Jeremy Stoll",
           "rawName": "Jeremy Stoll",
@@ -5638,7 +5638,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "paul-darvasi",
           "name": "Paul Darvasi",
           "rawName": "Paul Darvasi",
@@ -6341,7 +6341,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "johann-diedrick",
           "name": "Johann Diedrick",
           "rawName": "Johann Diedrick",
@@ -10047,7 +10047,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "graham-wakefield",
           "name": "Graham Wakefield",
           "rawName": "Graham Wakefield",
@@ -10126,7 +10126,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "graham-wakefield",
           "name": "Graham Wakefield",
           "rawName": "Graham Wakefield",
@@ -11141,7 +11141,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "gabriel-barcia-colombo",
           "name": "Gabriel Barcia-Colombo",
           "rawName": "Gabriel Barcia-Colombo",
@@ -11800,7 +11800,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "kbenzon",
           "name": "Kiki Benzon",
           "rawName": "Kiki Benzon",
@@ -13482,7 +13482,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "jeff-watson",
           "name": "Jeff Watson",
           "rawName": "Jeff Watson",
@@ -13951,7 +13951,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "philippe-blanchard",
           "name": "Philippe Blanchard",
           "rawName": "Phillipe Blanchard",
@@ -14112,7 +14112,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "jeff-watson",
           "name": "Jeff Watson",
           "rawName": "Jeff Watson",
@@ -14300,7 +14300,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "jeff-watson",
           "name": "Jeff Watson",
           "rawName": "Jeff Watson",
@@ -14649,7 +14649,7 @@
         },
         {
           "role": "ea",
-          "roleLabel": "Secondary advisor",
+          "roleLabel": "External examiner",
           "advisorId": "kiki-benson",
           "name": "Kiki Benson",
           "rawName": "Kiki Benson",
@@ -17756,19 +17756,6 @@
       "secondaryCount": 0
     },
     {
-      "id": "m",
-      "name": "Akiyama Mitchel",
-      "aliases": [],
-      "emails": [
-        "m@mitchellakiyama.com"
-      ],
-      "projectIds": [
-        5146
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
       "id": "ala-roushan",
       "name": "Ala Roushan",
       "aliases": [],
@@ -17867,22 +17854,18 @@
     {
       "id": "ali-qadeer",
       "name": "Ali Qadeer",
-      "aliases": [
-        "Ali Shamas Qadeer"
-      ],
+      "aliases": [],
       "emails": [
         "ali.qadeer@ocadu.ca",
-        "aqadeer@faculty.ocadu.ca",
-        "aqadeer@ocadu.ca"
+        "aqadeer@faculty.ocadu.ca"
       ],
       "projectIds": [
-        4615,
         3669,
         2575,
         2567
       ],
       "primaryCount": 1,
-      "secondaryCount": 3
+      "secondaryCount": 2
     },
     {
       "id": "alia-weston",
@@ -17896,19 +17879,6 @@
         2505
       ],
       "primaryCount": 1,
-      "secondaryCount": 1
-    },
-    {
-      "id": "alicia",
-      "name": "Alicia Seidle",
-      "aliases": [],
-      "emails": [
-        "alicia@oshwa.org"
-      ],
-      "projectIds": [
-        4728
-      ],
-      "primaryCount": 0,
       "secondaryCount": 1
     },
     {
@@ -17933,19 +17903,6 @@
       ],
       "projectIds": [
         3357
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
-      "id": "akhor001",
-      "name": "Andrea Khôra",
-      "aliases": [],
-      "emails": [
-        "akhor001@gold.ac.uk"
-      ],
-      "projectIds": [
-        4661
       ],
       "primaryCount": 0,
       "secondaryCount": 1
@@ -18104,19 +18061,6 @@
       ],
       "projectIds": [
         5034
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
-      "id": "cgiraudy",
-      "name": "Cheryl Giraudy",
-      "aliases": [],
-      "emails": [
-        "cgiraudy@ocadu.ca"
-      ],
-      "projectIds": [
-        4366
       ],
       "primaryCount": 0,
       "secondaryCount": 1
@@ -18331,17 +18275,6 @@
       "secondaryCount": 1
     },
     {
-      "id": "gabriel-barcia-colombo",
-      "name": "Gabriel Barcia-Colombo",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        2616
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
       "id": "gmoser",
       "name": "Gabrielle Moser",
       "aliases": [],
@@ -18395,18 +18328,6 @@
       "secondaryCount": 1
     },
     {
-      "id": "graham-wakefield",
-      "name": "Graham Wakefield",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        2647,
-        2575
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 2
-    },
-    {
       "id": "gsims",
       "name": "Greg Sims",
       "aliases": [],
@@ -18452,14 +18373,13 @@
       "projectIds": [
         4993,
         4666,
-        4459,
         3330,
         2990,
         2575,
         2471
       ],
       "primaryCount": 4,
-      "secondaryCount": 3
+      "secondaryCount": 2
     },
     {
       "id": "ian-clarke",
@@ -18557,19 +18477,13 @@
       "id": "jeff-watson",
       "name": "Jeff Watson",
       "aliases": [],
-      "emails": [
-        "jeff.watson@cinema.usc.edu",
-        "remotedevice@gmail.com"
-      ],
+      "emails": [],
       "projectIds": [
-        865,
-        746,
-        585,
         360,
         226
       ],
       "primaryCount": 0,
-      "secondaryCount": 5
+      "secondaryCount": 2
     },
     {
       "id": "jbowes",
@@ -18580,19 +18494,6 @@
       ],
       "projectIds": [
         4366
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
-      "id": "jstoll",
-      "name": "Jeremy Stoll",
-      "aliases": [],
-      "emails": [
-        "jstoll@ccad.edu"
-      ],
-      "projectIds": [
-        4109
       ],
       "primaryCount": 0,
       "secondaryCount": 1
@@ -18615,17 +18516,6 @@
       "secondaryCount": 1
     },
     {
-      "id": "johann-diedrick",
-      "name": "Johann Diedrick",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        3795
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
       "id": "judith-doyle",
       "name": "Judith Doyle",
       "aliases": [
@@ -18636,7 +18526,6 @@
         "jdoyle@ocadu.ca"
       ],
       "projectIds": [
-        5080,
         4993,
         4751,
         3795,
@@ -18651,7 +18540,7 @@
         36
       ],
       "primaryCount": 7,
-      "secondaryCount": 6
+      "secondaryCount": 5
     },
     {
       "id": "julian-haladyn",
@@ -18759,30 +18648,6 @@
       "secondaryCount": 1
     },
     {
-      "id": "kiki-benson",
-      "name": "Kiki Benson",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        2151
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
-      "id": "kbenzon",
-      "name": "Kiki Benzon",
-      "aliases": [],
-      "emails": [
-        "kbenzon@cinema.usc.edu"
-      ],
-      "projectIds": [
-        2265
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
       "id": "lpainter",
       "name": "Luke Painter",
       "aliases": [],
@@ -18804,19 +18669,6 @@
       ],
       "projectIds": [
         2963
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
-      "id": "maria-yablonina",
-      "name": "Maria Yablonina",
-      "aliases": [],
-      "emails": [
-        "maria.yablonina@daniels.utoronto.ca"
-      ],
-      "projectIds": [
-        5121
       ],
       "primaryCount": 0,
       "secondaryCount": 1
@@ -19098,17 +18950,6 @@
       "secondaryCount": 6
     },
     {
-      "id": "paul-darvasi",
-      "name": "Paul Darvasi",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        4037
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
       "id": "paula-gardner",
       "name": "Paula Gardner",
       "aliases": [
@@ -19159,8 +19000,7 @@
       "id": "philippe-blanchard",
       "name": "Philippe Blanchard",
       "aliases": [
-        "Blanchard Philippe",
-        "Phillipe Blanchard"
+        "Blanchard Philippe"
       ],
       "emails": [
         "pblanchard@faculty.ocadu.ca"
@@ -19169,13 +19009,12 @@
         3414,
         1667,
         865,
-        503,
         214,
         208,
         36
       ],
       "primaryCount": 1,
-      "secondaryCount": 6
+      "secondaryCount": 5
     },
     {
       "id": "phillip-joe",
@@ -19184,19 +19023,6 @@
       "emails": [],
       "projectIds": [
         222
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
-      "id": "pgivord",
-      "name": "Priam Givord",
-      "aliases": [],
-      "emails": [
-        "pgivord@gmail.com"
-      ],
-      "projectIds": [
-        4667
       ],
       "primaryCount": 0,
       "secondaryCount": 1
@@ -19249,36 +19075,12 @@
       "secondaryCount": 2
     },
     {
-      "id": "shanbell",
-      "name": "Shannon Bell",
-      "aliases": [],
-      "emails": [
-        "shanbell@yorku.ca"
-      ],
-      "projectIds": [
-        4751
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
       "id": "shea-geoffrey",
       "name": "Shea Geoffrey",
       "aliases": [],
       "emails": [],
       "projectIds": [
         694
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
-      "id": "shital-desai",
-      "name": "Shital Desai",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        4747
       ],
       "primaryCount": 0,
       "secondaryCount": 1
@@ -19328,17 +19130,6 @@
       "secondaryCount": 1
     },
     {
-      "id": "steve-engels",
-      "name": "Steve Engels",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        4773
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
       "id": "scandy",
       "name": "Stuart Candy",
       "aliases": [],
@@ -19382,19 +19173,6 @@
       ],
       "primaryCount": 8,
       "secondaryCount": 9
-    },
-    {
-      "id": "jtingley",
-      "name": "Tinley Jane",
-      "aliases": [],
-      "emails": [
-        "jtingley@yorku.ca"
-      ],
-      "projectIds": [
-        4666
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
     },
     {
       "id": "tom-barker",
@@ -19444,19 +19222,6 @@
       ],
       "primaryCount": 0,
       "secondaryCount": 2
-    },
-    {
-      "id": "yshaik72",
-      "name": "Yifat Shaik",
-      "aliases": [],
-      "emails": [
-        "yshaik72@yorku.ca"
-      ],
-      "projectIds": [
-        4660
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
     }
   ],
   "topics": [

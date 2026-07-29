@@ -3,6 +3,14 @@
     "advisor-0lf3uw",
     "advisor-r1tjn5"
   ],
+  "externalExaminers": [
+    {
+      "id": "maria-yablonina",
+      "name": "Maria Yablonina",
+      "emails": ["maria.yablonina@daniels.utoronto.ca"],
+      "nameAliases": ["Maria Yablonina"]
+    }
+  ],
   "canonical": [
     {
       "id": "adam-tindale",
