@@ -6,9 +6,9 @@ Live site (GitHub Pages): `https://digitalfuturesocadu.github.io/thesisArchive/`
 
 ## Features
 
-- Browse by project, year, topic, student, faculty advisor, and bibliography
+- Browse by project, year, topic, student, faculty advisor, and bibliographies
 - Advisor pages include every project where they appear as primary or secondary
-- Bibliography search with most-cited sources and links back to projects
+- Bibliographies search with most-cited sources and links back to projects
 - Live links to Open Research records and PDF downloads
 
 ## Development

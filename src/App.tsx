@@ -25,6 +25,7 @@ export default function App() {
           <Route path="years/:year" element={<YearDetail />} />
           <Route path="topics" element={<Topics />} />
           <Route path="topics/:slug" element={<TopicDetail />} />
+          <Route path="bibliographies" element={<Bibliography />} />
           <Route path="bibliography" element={<Bibliography />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>

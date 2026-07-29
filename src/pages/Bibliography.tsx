@@ -61,9 +61,9 @@ export function Bibliography() {
     return list.length
   }, [bib, q, minCited])
 
-  if (archiveLoading || bibLoading) return <LoadingState label="Loading bibliography…" />
+  if (archiveLoading || bibLoading) return <LoadingState label="Loading bibliographies…" />
   if (error || !bib || !archive) {
-    return <EmptyState label={error ?? 'Bibliography unavailable.'} />
+    return <EmptyState label={error ?? 'Bibliographies unavailable.'} />
   }
 
   function setQ(value: string) {
@@ -77,7 +77,7 @@ export function Bibliography() {
     <div className="page bibliography">
       <div className="toolbar">
         <h1 className="toolbar__title">
-          Bibliography <span className="toolbar__count">{bib.citationCount}</span>
+          Bibliographies <span className="toolbar__count">{bib.citationCount}</span>
         </h1>
         <p className="toolbar__meta">
           Sources deposited with Digital Futures theses — see which projects cite them.
@@ -90,7 +90,7 @@ export function Bibliography() {
         </div>
         <div className="bib-search">
           <label className="sr-only" htmlFor="bib-q">
-            Search bibliography
+            Search bibliographies
           </label>
           <input
             id="bib-q"

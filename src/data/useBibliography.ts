@@ -23,7 +23,7 @@ export function useBibliography() {
       } catch (err) {
         if (!cancelled) {
           setData(null)
-          setError(err instanceof Error ? err.message : 'Failed to load bibliography')
+          setError(err instanceof Error ? err.message : 'Failed to load bibliographies')
         }
       } finally {
         if (!cancelled) setLoading(false)

@@ -19,7 +19,7 @@ export function Layout() {
               <NavLink to="/advisors">Advisors</NavLink>
               <NavLink to="/years">Years</NavLink>
               <NavLink to="/topics">Topics</NavLink>
-              <NavLink to="/bibliography">Bibliography</NavLink>
+              <NavLink to="/bibliographies">Bibliographies</NavLink>
             </nav>
           </div>
           <SearchBar />
