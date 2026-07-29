@@ -9,7 +9,13 @@ export function Home() {
 
   if (loading || !data) return <LoadingState />
 
-  const recent = sortTheses(data.theses, 'year').slice(0, 12)
+  const latestYear = data.years[0]?.year
+  const latestYearProjects = latestYear
+    ? sortTheses(
+        data.theses.filter((t) => t.year === latestYear),
+        'title',
+      )
+    : []
   const topTopics = [...data.topics].sort((a, b) => b.count - a.count).slice(0, 18)
 
   return (
@@ -56,19 +62,21 @@ export function Home() {
         </ul>
       </section>
 
-      <section className="section section--tight">
-        <div className="section__head">
-          <h2 className="section__title">Recent projects</h2>
-          <Link to="/projects" className="text-link">
-            All projects
-          </Link>
-        </div>
-        <div className="card-grid">
-          {recent.map((t) => (
-            <ProjectCard key={t.id} thesis={t} />
-          ))}
-        </div>
-      </section>
+      {latestYear ? (
+        <section className="section section--tight">
+          <div className="section__head">
+            <h2 className="section__title">{latestYear} projects</h2>
+            <Link to={`/years/${latestYear}`} className="text-link">
+              All
+            </Link>
+          </div>
+          <div className="card-grid">
+            {latestYearProjects.map((t) => (
+              <ProjectCard key={t.id} thesis={t} />
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <section className="section section--tight">
         <div className="section__head">
