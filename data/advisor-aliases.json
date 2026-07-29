@@ -1,4 +1,8 @@
 {
+  "ignoreIds": [
+    "advisor-0lf3uw",
+    "advisor-r1tjn5"
+  ],
   "canonical": [
     {
       "id": "adam-tindale",
@@ -36,7 +40,12 @@
         "Morris Alexis",
         "Dr. Alexis Morris",
         "Dr. Alexis Morris Dr. Alexis Morris",
-        "Alexis Morris Alexis Morris"
+        "Alexis Morris Alexis Morris",
+        ". Alexis Morris",
+        "Alexsis Morries",
+        ". Alexsis Morries",
+        "Dr. Alexsis Morries",
+        "alexsis morries"
       ]
     },
     {

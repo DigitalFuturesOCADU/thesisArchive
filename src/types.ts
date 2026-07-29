@@ -75,6 +75,21 @@ export interface YearBucket {
   projectIds: number[]
 }
 
+export interface Citation {
+  id: string
+  text: string
+  urls: string[]
+  projectIds: number[]
+  count: number
+}
+
+export interface BibliographyData {
+  generatedAt: string
+  sourceLabel: string
+  citationCount: number
+  citations: Citation[]
+}
+
 export interface ArchiveData {
   generatedAt: string
   sourceLabel: string
@@ -82,15 +97,4 @@ export interface ArchiveData {
   advisors: Advisor[]
   topics: Topic[]
   years: YearBucket[]
-}
-
-export interface FieldPolicyEntry {
-  field: string
-  reason: string
-}
-
-export interface FieldPolicy {
-  intro: string
-  kept: FieldPolicyEntry[]
-  ignored: FieldPolicyEntry[]
 }

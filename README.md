@@ -6,10 +6,10 @@ Live site (GitHub Pages): `https://digitalfuturesocadu.github.io/thesisArchive/`
 
 ## Features
 
-- Browse by project, year, topic, student, and faculty advisor
-- Advisor pages include every project where they appear as primary or secondary (committee, reader, etc.)
+- Browse by project, year, topic, student, faculty advisor, and bibliography
+- Advisor pages include every project where they appear as primary or secondary
+- Bibliography search with most-cited sources and links back to projects
 - Live links to Open Research records and PDF downloads
-- Documented keep/ignore field policy at `/data`
 
 ## Development
 
@@ -33,7 +33,7 @@ Sources are listed in [`data/sources.json`](data/sources.json) (Digital Futures 
 | Script | Command | Purpose |
 |--------|---------|---------|
 | Scrape | `npm run scrape` | Fetch year JSON exports into `data/raw/` |
-| Normalize | `npm run normalize` | Merge advisors, apply field policy, write `public/data/archive.json` |
+| Normalize | `npm run normalize` | Merge advisors, apply field policy, write `public/data/archive.json` + `bibliography.json` |
 | Both | `npm run build:data` | Scrape then normalize |
 
 `data/raw/` is gitignored. Commit the generated `public/data/archive.json` so Pages deploys do not need to hit Open Research at build time.
@@ -47,7 +47,7 @@ Raw deposits use inconsistent advisor names and emails. Canonical people live in
 
 ### Field policy
 
-[`data/field-policy.json`](data/field-policy.json) is the keep/ignore contract. The site `/data` page renders the same file. The normalize script reads it so documentation and output stay aligned.
+[`data/field-policy.json`](data/field-policy.json) documents which Open Research fields are kept vs ignored; the normalize script reads it as the output contract.
 
 ## Deploy
 

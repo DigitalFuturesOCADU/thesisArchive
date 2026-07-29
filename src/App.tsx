@@ -9,7 +9,7 @@ import { Years } from './pages/Years'
 import { YearDetail } from './pages/YearDetail'
 import { Topics } from './pages/Topics'
 import { TopicDetail } from './pages/TopicDetail'
-import { DataPage } from './pages/DataPage'
+import { Bibliography } from './pages/Bibliography'
 
 export default function App() {
   return (
@@ -25,7 +25,7 @@ export default function App() {
           <Route path="years/:year" element={<YearDetail />} />
           <Route path="topics" element={<Topics />} />
           <Route path="topics/:slug" element={<TopicDetail />} />
-          <Route path="data" element={<DataPage />} />
+          <Route path="bibliography" element={<Bibliography />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
       </Routes>

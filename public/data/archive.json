@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T22:03:22.926Z",
+  "generatedAt": "2026-07-29T22:15:50.097Z",
   "sourceLabel": "Digital Futures",
   "theses": [
     {
@@ -4040,8 +4040,8 @@
         {
           "role": "pa",
           "roleLabel": "Primary advisor",
-          "advisorId": "alexsis-morries",
-          "name": ". Alexsis Morries",
+          "advisorId": "alexis-morris",
+          "name": "Alexis Morris",
           "rawName": ". Alexsis Morries",
           "email": null
         },
@@ -12006,20 +12006,6 @@
           "name": "Adam Tindale",
           "rawName": "Adam Tindale",
           "email": "atindale@faculty.ocadu.ca"
-        },
-        {
-          "role": "cm",
-          "roleLabel": "Secondary advisor",
-          "advisorId": "advisor-0lf3uw",
-          "name": "advisor-0lf3uw",
-          "email": null
-        },
-        {
-          "role": "cm",
-          "roleLabel": "Secondary advisor",
-          "advisorId": "advisor-r1tjn5",
-          "name": "advisor-r1tjn5",
-          "email": null
         }
       ],
       "documents": [
@@ -17691,17 +17677,6 @@
   ],
   "advisors": [
     {
-      "id": "alexsis-morries",
-      "name": ". Alexsis Morries",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        4457
-      ],
-      "primaryCount": 1,
-      "secondaryCount": 0
-    },
-    {
       "id": "adam-tindale",
       "name": "Adam Tindale",
       "aliases": [
@@ -17781,28 +17756,6 @@
       "secondaryCount": 0
     },
     {
-      "id": "advisor-0lf3uw",
-      "name": "advisor-0lf3uw",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        2318
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
-      "id": "advisor-r1tjn5",
-      "name": "advisor-r1tjn5",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        2318
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
       "id": "m",
       "name": "Akiyama Mitchel",
       "aliases": [],
@@ -17854,6 +17807,7 @@
       "name": "Alexis Morris",
       "aliases": [
         ". Alexis Morris",
+        ". Alexsis Morries",
         "ALEXIS MORRIS",
         "Morris Alexis",
         "alexis morris"
@@ -17870,6 +17824,7 @@
         4639,
         4471,
         4460,
+        4457,
         4448,
         4386,
         4359,
@@ -17893,7 +17848,7 @@
         2512,
         2496
       ],
-      "primaryCount": 19,
+      "primaryCount": 20,
       "secondaryCount": 10
     },
     {

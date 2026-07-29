@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom'
 import { LoadingState } from '../components/LoadingState'
 import { useArchive } from '../data/useArchive'
+import { lastNameSortKey } from '../lib/roles'
 
 export function Advisors() {
   const { data, loading } = useArchive()
   if (loading || !data) return <LoadingState />
 
-  const advisors = [...data.advisors].sort(
-    (a, b) => b.projectIds.length - a.projectIds.length || a.name.localeCompare(b.name),
+  const advisors = [...data.advisors].sort((a, b) =>
+    lastNameSortKey(a.name).localeCompare(lastNameSortKey(b.name)),
   )
 
   return (

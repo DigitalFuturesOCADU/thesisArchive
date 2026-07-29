@@ -4,7 +4,7 @@ import { EmptyState, LoadingState } from '../components/LoadingState'
 import { ProjectCard } from '../components/ProjectCard'
 import { useArchive } from '../data/useArchive'
 import { filterTheses, sortTheses } from '../lib/filter'
-import { degreeLabel } from '../lib/roles'
+import { degreeLabel, lastNameSortKey } from '../lib/roles'
 
 export function Projects() {
   const { data, loading } = useArchive()
@@ -69,11 +69,13 @@ export function Projects() {
             <span className="sr-only">Advisor</span>
             <select value={advisor} onChange={(e) => set('advisor', e.target.value)}>
               <option value="">Advisor</option>
-              {data.advisors.map((a) => (
-                <option key={a.id} value={a.id}>
-                  {a.name}
-                </option>
-              ))}
+              {[...data.advisors]
+                .sort((a, b) => lastNameSortKey(a.name).localeCompare(lastNameSortKey(b.name)))
+                .map((a) => (
+                  <option key={a.id} value={a.id}>
+                    {a.name}
+                  </option>
+                ))}
             </select>
           </label>
           <label>

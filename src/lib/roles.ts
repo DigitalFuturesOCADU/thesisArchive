@@ -13,6 +13,15 @@ export function formatPersonName(given?: string | null, family?: string | null):
   return [given, family].filter(Boolean).join(' ').replace(/\s+/g, ' ').trim()
 }
 
+/** Sort key by family name (last token), then full name. */
+export function lastNameSortKey(fullName: string): string {
+  const parts = fullName.trim().split(/\s+/).filter(Boolean)
+  if (parts.length === 0) return ''
+  const last = parts[parts.length - 1] ?? ''
+  const rest = parts.slice(0, -1).join(' ')
+  return `${last.toLowerCase()}\u0000${rest.toLowerCase()}`
+}
+
 export function slugify(value: string): string {
   return value
     .toLowerCase()

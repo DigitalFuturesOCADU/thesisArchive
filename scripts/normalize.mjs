@@ -6,9 +6,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
 const rawDir = path.join(root, 'data', 'raw')
 const outPath = path.join(root, 'public', 'data', 'archive.json')
+const bibliographyPath = path.join(root, 'public', 'data', 'bibliography.json')
 const aliasesPath = path.join(root, 'data', 'advisor-aliases.json')
 const fieldPolicyPath = path.join(root, 'data', 'field-policy.json')
 const sourcesPath = path.join(root, 'data', 'sources.json')
+
+const URL_RE = /https?:\/\/[^\s<>"')\]]+/gi
+const DOI_RE = /(?:doi\.org\/|doi:\s*)(10\.\d{4,}\/[^\s<>"')\]]+)/i
+const NOISE_ENTRY =
+  /^(bibliography|references|works cited|additional bibliography|retrieved from|university press|notes?|endnotes?)\.?$/i
 
 function isPrimary(role) {
   return role === 'pa'
@@ -96,10 +102,13 @@ function buildAliasIndex(canonical) {
   return { byEmail, byName, byLocal }
 }
 
-function resolveAdvisor(raw, aliasIndex, dynamicPeople) {
+function resolveAdvisor(raw, aliasIndex, dynamicPeople, ignoreIds) {
   const email = normalizeEmail(raw.id)
   const rawName = formatName(raw.name)
   const nameKey = rawName.toLowerCase()
+
+  // Blank deposits (no name, no email) produce junk advisor-* ids — drop them.
+  if (!email && !rawName) return null
 
   let person =
     (email && aliasIndex.byEmail.get(email)) ||
@@ -116,9 +125,8 @@ function resolveAdvisor(raw, aliasIndex, dynamicPeople) {
   }
 
   if (!person) {
-    const id = email
-      ? slugify(emailLocal(email))
-      : slugify(rawName) || `advisor-${Math.random().toString(36).slice(2, 8)}`
+    const id = email ? slugify(emailLocal(email)) : slugify(rawName)
+    if (!id || ignoreIds.has(id)) return null
     person = {
       id,
       name: rawName || id,
@@ -134,6 +142,8 @@ function resolveAdvisor(raw, aliasIndex, dynamicPeople) {
       aliasIndex.byLocal.set(emailLocal(email), person)
     }
   }
+
+  if (ignoreIds.has(person.id)) return null
 
   return {
     role: raw.type ?? null,
@@ -183,16 +193,16 @@ function relatedUrls(record) {
   return urls
 }
 
-function normalizeRecord(record, sourceMeta, aliasIndex, dynamicPeople, advisorsAcc) {
+function normalizeRecord(record, sourceMeta, aliasIndex, dynamicPeople, advisorsAcc, ignoreIds) {
   const creators = (record.creators ?? []).map((c) => ({
     given: cleanNamePart(c.name?.given),
     family: cleanNamePart(c.name?.family),
   }))
   const creatorNames = creators.map((c) => [c.given, c.family].filter(Boolean).join(' '))
 
-  const advisors = (record.thesis_advisors ?? []).map((a) =>
-    resolveAdvisor(a, aliasIndex, dynamicPeople),
-  )
+  const advisors = (record.thesis_advisors ?? [])
+    .map((a) => resolveAdvisor(a, aliasIndex, dynamicPeople, ignoreIds))
+    .filter(Boolean)
 
   const year =
     record.convocation_date?.year ??
@@ -245,11 +255,144 @@ function normalizeRecord(record, sourceMeta, aliasIndex, dynamicPeople, advisors
   return thesis
 }
 
+function trimUrl(url) {
+  return String(url).replace(/[.,;:]+$/g, '')
+}
+
+function splitReferenceEntries(raw) {
+  const normalized = String(raw).replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim()
+  if (!normalized) return []
+
+  let chunks = normalized
+    .split(/\n\s*\n+/)
+    .map((c) => c.replace(/\n+/g, ' ').replace(/\s+/g, ' ').trim())
+    .filter(Boolean)
+
+  if (chunks.length <= 1) {
+    chunks = normalized
+      .split(/\n+/)
+      .map((c) => c.replace(/\s+/g, ' ').trim())
+      .filter((c) => c.length > 12)
+  }
+
+  return chunks
+}
+
+function extractUrls(text) {
+  return [...new Set([...text.matchAll(URL_RE)].map((m) => trimUrl(m[0])))]
+}
+
+function stableUrlKey(url) {
+  try {
+    const u = new URL(url)
+    const host = u.hostname.replace(/^www\./, '').toLowerCase()
+    if (!host || host === 'www') return null
+
+    // DOI hosts are handled separately via DOI_RE on the full text.
+    if (host.includes('doi.org')) return null
+
+    const pathPart = u.pathname.replace(/\/+$/, '') || ''
+    const params = u.searchParams
+
+    // YouTube / Vimeo-style watch URLs need the video id, not just /watch.
+    const videoId = params.get('v')
+    if (videoId) return `url:${host}${pathPart}?v=${videoId}`
+
+    const docId = params.get('docID') || params.get('docId') || params.get('id')
+    if (docId) return `url:${host}${pathPart}?id=${docId}`
+
+    // Generic paths without identifying query params are too weak to merge on.
+    if (!pathPart || pathPart === '/') return null
+    if (['/watch', '/detail.action', '/url', '/search'].includes(pathPart)) return null
+
+    return `url:${host}${pathPart}`.toLowerCase()
+  } catch {
+    return null
+  }
+}
+
+function citationKey(text, urls) {
+  const doiMatch = text.match(DOI_RE)
+  if (doiMatch) {
+    return `doi:${doiMatch[1].replace(/[.,;:]+$/g, '').toLowerCase()}`
+  }
+  for (const url of urls) {
+    const key = stableUrlKey(url)
+    if (key) return key
+  }
+  const bare = text
+    .replace(URL_RE, ' ')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .replace(/\b(retrieved|from|accessed|available|online|http|https|www)\b/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+  if (bare.length < 40 || NOISE_ENTRY.test(bare)) return null
+  return `text:${bare.slice(0, 120)}`
+}
+
+function buildBibliography(theses) {
+  const map = new Map()
+
+  for (const thesis of theses) {
+    if (!thesis.references) continue
+    for (const text of splitReferenceEntries(thesis.references)) {
+      if (NOISE_ENTRY.test(text) || text.length < 24) continue
+      const urls = extractUrls(text)
+      const key = citationKey(text, urls)
+      if (!key) continue
+
+      let entry = map.get(key)
+      if (!entry) {
+        entry = {
+          id: slugify(key).slice(0, 80) || `cite-${map.size + 1}`,
+          key,
+          text,
+          urls,
+          projectIds: new Set(),
+        }
+        map.set(key, entry)
+      }
+      entry.projectIds.add(thesis.id)
+      // Prefer a longer, cleaner display string when merging variants.
+      if (text.length > entry.text.length) entry.text = text
+      for (const url of urls) {
+        if (!entry.urls.includes(url)) entry.urls.push(url)
+      }
+    }
+  }
+
+  // Ensure unique ids
+  const used = new Set()
+  const citations = [...map.values()]
+    .map((c) => {
+      let id = c.id
+      let n = 2
+      while (used.has(id)) {
+        id = `${c.id}-${n}`
+        n += 1
+      }
+      used.add(id)
+      return {
+        id,
+        text: c.text,
+        urls: c.urls,
+        projectIds: [...c.projectIds].sort((a, b) => b - a),
+        count: c.projectIds.size,
+      }
+    })
+    .sort((a, b) => b.count - a.count || a.text.localeCompare(b.text))
+
+  return citations
+}
+
 async function main() {
   // Touch field policy so normalize stays coupled to the documented contract.
   await readFile(fieldPolicyPath, 'utf8')
   const { sources } = JSON.parse(await readFile(sourcesPath, 'utf8'))
-  const { canonical } = JSON.parse(await readFile(aliasesPath, 'utf8'))
+  const aliasesFile = JSON.parse(await readFile(aliasesPath, 'utf8'))
+  const { canonical } = aliasesFile
+  const ignoreIds = new Set(aliasesFile.ignoreIds ?? [])
   const aliasIndex = buildAliasIndex(canonical)
   const dynamicPeople = new Map()
   const advisorsAcc = new Map()
@@ -277,6 +420,7 @@ async function main() {
         aliasIndex,
         dynamicPeople,
         advisorsAcc,
+        ignoreIds,
       )
       byId.set(thesis.id, thesis)
     }
@@ -332,9 +476,11 @@ async function main() {
     y.count += 1
   }
   const years = [...yearMap.values()].sort((a, b) => b.year - a.year)
+  const citations = buildBibliography(theses)
+  const generatedAt = new Date().toISOString()
 
   const archive = {
-    generatedAt: new Date().toISOString(),
+    generatedAt,
     sourceLabel: sources.map((s) => s.label).join(', '),
     theses,
     advisors,
@@ -342,10 +488,18 @@ async function main() {
     years,
   }
 
+  const bibliography = {
+    generatedAt,
+    sourceLabel: archive.sourceLabel,
+    citationCount: citations.length,
+    citations,
+  }
+
   await mkdir(path.dirname(outPath), { recursive: true })
   await writeFile(outPath, JSON.stringify(archive, null, 2))
+  await writeFile(bibliographyPath, JSON.stringify(bibliography, null, 2))
   console.log(
-    `Wrote ${theses.length} theses, ${advisors.length} advisors, ${topics.length} topics → ${path.relative(root, outPath)}`,
+    `Wrote ${theses.length} theses, ${advisors.length} advisors, ${topics.length} topics, ${citations.length} citations → ${path.relative(root, outPath)} + bibliography.json`,
   )
 }
 
