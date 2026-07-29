@@ -1,0 +1,280 @@
+{
+  "canonical": [
+    {
+      "id": "adam-tindale",
+      "name": "Adam Tindale",
+      "emails": ["atindale@ocadu.ca", "atindale@faculty.ocadu.ca", "adam.tindale2ocadu.ca"],
+      "nameAliases": [
+        "Adam Tindale",
+        "adam tindale",
+        "Tindale Adam",
+        "Adam / AT Tindale",
+        "Dr. Adam Tindale"
+      ]
+    },
+    {
+      "id": "nick-puckett",
+      "name": "Nick Puckett",
+      "emails": ["npuckett@ocadu.ca", "npuckett@faculty.ocadu.ca"],
+      "nameAliases": [
+        "Nick Puckett",
+        "Nicholas Puckett",
+        "Nick Pucket",
+        "Puckett Nick",
+        "puckett nick",
+        "Puckett Nicholas"
+      ]
+    },
+    {
+      "id": "alexis-morris",
+      "name": "Alexis Morris",
+      "emails": ["amorris@ocadu.ca", "amorris@faculty.ocadu.ca"],
+      "nameAliases": [
+        "Alexis Morris",
+        "ALEXIS MORRIS",
+        "alexis morris",
+        "Morris Alexis",
+        "Dr. Alexis Morris",
+        "Dr. Alexis Morris Dr. Alexis Morris",
+        "Alexis Morris Alexis Morris"
+      ]
+    },
+    {
+      "id": "kate-hartman",
+      "name": "Kate Hartman",
+      "emails": ["khartman@ocadu.ca", "khartman@faculty.ocadu.ca"],
+      "nameAliases": ["Kate Hartman", "kate hartman"]
+    },
+    {
+      "id": "emma-westecott",
+      "name": "Emma Westecott",
+      "emails": ["ewestecott@ocadu.ca", "ewestecott@faculty.ocadu.ca"],
+      "nameAliases": [
+        "Emma Westecott",
+        "Dr. Emma Westecott",
+        "Dr. Emma Westecott Dr. Emma Westecott"
+      ]
+    },
+    {
+      "id": "cindy-poremba",
+      "name": "Cindy Poremba",
+      "emails": ["cporemba@ocadu.ca", "cporemba@faculty.ocadu.ca"],
+      "nameAliases": ["Cindy Poremba", "CINDY POREMBA", "Dr. Cindy Poremba"]
+    },
+    {
+      "id": "martha-ladly",
+      "name": "Martha Ladly",
+      "emails": ["mladly@ocadu.ca", "mladly@faculty.ocadu.ca"],
+      "nameAliases": ["Martha Ladly", "Ladly Martha"]
+    },
+    {
+      "id": "suzanne-stein",
+      "name": "Suzanne Stein",
+      "emails": ["sstein@ocadu.ca", "sstein@faculty.ocadu.ca"],
+      "nameAliases": ["Suzanne Stein", "Suzannestein Stein"]
+    },
+    {
+      "id": "isabel-meirelles",
+      "name": "Isabel Meirelles",
+      "emails": ["imeirelles@ocadu.ca", "imeirelles@faculty.ocadu.ca"],
+      "nameAliases": ["Isabel Meirelles", "Isabel Meirelles."]
+    },
+    {
+      "id": "maria-belen-ordonez",
+      "name": "Maria-Belén Ordóñez",
+      "emails": ["mordonez@ocadu.ca", "mordonez@faculty.ocadu.ca"],
+      "nameAliases": [
+        "Maria-Belen Ordonez",
+        "Maria Belen-Ordonez",
+        "Maria-Belén Ordonez",
+        "Maria Belén Ordóñez"
+      ]
+    },
+    {
+      "id": "barbara-rauch",
+      "name": "Barbara Rauch",
+      "emails": ["barbararauch@ocadu.ca"],
+      "nameAliases": ["Barbara Rauch", "Rauch Barbara"]
+    },
+    {
+      "id": "paula-gardner",
+      "name": "Paula Gardner",
+      "emails": ["gardnerp@mcmaster.ca"],
+      "nameAliases": ["Paula Gardner", "paula gardner"]
+    },
+    {
+      "id": "david-mcintosh",
+      "name": "David McIntosh",
+      "emails": ["dmcintosh@faculty.ocadu.ca"],
+      "nameAliases": ["David McIntosh", "David Mcintosh"]
+    },
+    {
+      "id": "haru-ji",
+      "name": "Haru Ji",
+      "emails": ["hji@ocadu.ca", "hji@faculty.ocadu.ca"],
+      "nameAliases": ["Haru Ji", "Hyunkyung Ji", "Haru Hyunkyung Ji"]
+    },
+    {
+      "id": "ashok-mathur",
+      "name": "Ashok Mathur",
+      "emails": ["amathur@ocadu.ca"],
+      "nameAliases": ["Ashok Mathur", "Dr. Ashok Mathur"]
+    },
+    {
+      "id": "jay-irizawa",
+      "name": "Jay Irizawa",
+      "emails": ["jirizawa@ocadu.ca"],
+      "nameAliases": ["Jay Irizawa", "jay irizawa"]
+    },
+    {
+      "id": "michelle-miller",
+      "name": "Michelle Miller",
+      "emails": ["michellemiller@ocadu.ca", "mmiller@ocadu.ca"],
+      "nameAliases": ["Michelle Miller", "Miller Michelle"]
+    },
+    {
+      "id": "judith-doyle",
+      "name": "Judith Doyle",
+      "emails": ["jdoyle@ocadu.ca", "jdoyle@faculty.ocadu.ca"],
+      "nameAliases": ["Judith Doyle", "Doyle Judith"]
+    },
+    {
+      "id": "fidelia-lam",
+      "name": "Fidelia Lam",
+      "emails": ["lamf@ocadu.ca"],
+      "nameAliases": ["Fidelia Lam", "Lam Fidelia"]
+    },
+    {
+      "id": "greg-van-alstyne",
+      "name": "Greg Van Alstyne",
+      "emails": ["gvanalstyne@ocadu.ca", "gvanalstyne@faculty.ocadu.ca"],
+      "nameAliases": ["Greg Van Alstyne", "Greg van Alstyne"]
+    },
+    {
+      "id": "bill-leeming",
+      "name": "Bill Leeming",
+      "emails": ["bleeming@ocadu.ca", "bleeming@faculty.ocadu.ca"],
+      "nameAliases": ["Bill Leeming", "bill leeming", "William Leeming"]
+    },
+    {
+      "id": "bentley-jarvis",
+      "name": "Bentley Jarvis",
+      "emails": ["bjarvis@ocadu.ca", "bjarvis@faculty.ocadu.ca"],
+      "nameAliases": ["Bentley Jarvis", "Bentley Jarvais", "Jarvis Bentley", "Bently Jarvis"]
+    },
+    {
+      "id": "philippe-blanchard",
+      "name": "Philippe Blanchard",
+      "emails": ["pblanchard@faculty.ocadu.ca"],
+      "nameAliases": ["Philippe Blanchard", "Blanchard Philippe", "Phillipe Blanchard"]
+    },
+    {
+      "id": "sara-diamond",
+      "name": "Sara Diamond",
+      "emails": ["sdiamond@ocadu.ca"],
+      "nameAliases": ["Sara Diamond"]
+    },
+    {
+      "id": "patricio-davila",
+      "name": "Patricio Davila",
+      "emails": ["pdavila@faculty.ocadu.ca"],
+      "nameAliases": ["Patricio Davila"]
+    },
+    {
+      "id": "tom-barker",
+      "name": "Tom Barker",
+      "emails": ["tom.designer@googlemail.com"],
+      "nameAliases": ["Tom Barker"]
+    },
+    {
+      "id": "simone-jones",
+      "name": "Simone Jones",
+      "emails": ["sjones@ocadu.ca", "sjones@faculty.ocadu.ca"],
+      "nameAliases": ["Simone Jones"]
+    },
+    {
+      "id": "immony-men",
+      "name": "Immony Men",
+      "emails": ["imen@ocadu.ca", "imen@faculty.ocadu.ca"],
+      "nameAliases": ["Immony Men"]
+    },
+    {
+      "id": "ali-qadeer",
+      "name": "Ali Qadeer",
+      "emails": ["aqadeer@ocadu.ca", "aqadeer@faculty.ocadu.ca", "ali.qadeer@ocadu.ca"],
+      "nameAliases": ["Ali Qadeer", "Ali Shamas Qadeer"]
+    },
+    {
+      "id": "ala-roushan",
+      "name": "Ala Roushan",
+      "emails": ["aroushan@ocadu.ca", "aroushan@faculty.ocadu.ca", "lroushan@faculty.ocadu.ca"],
+      "nameAliases": ["Ala Roushan"]
+    },
+    {
+      "id": "job-rutgers",
+      "name": "Job Rutgers",
+      "emails": ["jrutgers@faculty.ocadu.ca"],
+      "nameAliases": ["Job Rutgers"]
+    },
+    {
+      "id": "kate-sellen",
+      "name": "Kate Sellen",
+      "emails": ["ksellen@faculty.ocadu.ca"],
+      "nameAliases": ["Kate Sellen"]
+    },
+    {
+      "id": "ian-clarke",
+      "name": "Ian Clarke",
+      "emails": ["iclarke@ocadu.ca", "iclarke@faculty.ocadu.ca", "iclarke@facult.ocadu.ca"],
+      "nameAliases": ["Ian Clarke"]
+    },
+    {
+      "id": "jeff-watson",
+      "name": "Jeff Watson",
+      "emails": ["remotedevice@gmail.com", "jeff.watson@cinema.usc.edu"],
+      "nameAliases": ["Jeff Watson"]
+    },
+    {
+      "id": "parantap-bhatt",
+      "name": "Parantap Bhatt",
+      "emails": ["pbhatt@ocadu.ca"],
+      "nameAliases": ["Parantap Bhatt"]
+    },
+    {
+      "id": "claire-brunet",
+      "name": "Claire Brunet",
+      "emails": ["cbrunet@ocadu.ca"],
+      "nameAliases": ["Claire Brunet"]
+    },
+    {
+      "id": "selmin-kara",
+      "name": "Selmin Kara",
+      "emails": ["skara@faculty.ocadu.ca"],
+      "nameAliases": ["Selmin Kara"]
+    },
+    {
+      "id": "veronika-szkudlarek",
+      "name": "Veronika Szkudlarek",
+      "emails": ["vszkudlarek@ocadu.ca"],
+      "nameAliases": ["Veronika Szkudlarek"]
+    },
+    {
+      "id": "alia-weston",
+      "name": "Alia Weston",
+      "emails": ["aweston@faculty.ocadu.ca"],
+      "nameAliases": ["Alia Weston"]
+    },
+    {
+      "id": "ayumi-goto",
+      "name": "Ayumi Goto",
+      "emails": ["agoto@ocadu.ca"],
+      "nameAliases": ["Ayumi Goto", "Ayumi Goto Ayumi Goto"]
+    },
+    {
+      "id": "sowmya-somanath",
+      "name": "Sowmya Somanath",
+      "emails": ["ssomanath@faculty.ocadu.ca"],
+      "nameAliases": ["Sowmya Somanath", "Sowmya / SS Somanath"]
+    }
+  ]
+}

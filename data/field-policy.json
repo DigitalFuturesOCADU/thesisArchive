@@ -1,0 +1,179 @@
+{
+  "intro": "This archive is derived from the OCAD University Open Research Repository Digital Futures division export. We keep fields that help students discover projects, advisors, topics, and related reading. Repository admin metadata and low-value constants are omitted — the full record remains on Open Research.",
+  "kept": [
+    {
+      "field": "eprintid",
+      "reason": "Stable unique identifier for each thesis record"
+    },
+    {
+      "field": "uri",
+      "reason": "Live link to the Open Research record page"
+    },
+    {
+      "field": "title",
+      "reason": "Primary display and search field"
+    },
+    {
+      "field": "abstract",
+      "reason": "Project description for browsing and discovery"
+    },
+    {
+      "field": "keywords",
+      "reason": "Topic browsing and filtering"
+    },
+    {
+      "field": "date",
+      "reason": "Completion date; also used as year fallback"
+    },
+    {
+      "field": "convocation_date",
+      "reason": "Cohort year and season for browsing by year"
+    },
+    {
+      "field": "department",
+      "reason": "Program label; enables future multi-program advising views"
+    },
+    {
+      "field": "divisions",
+      "reason": "Repository division codes for source tracking"
+    },
+    {
+      "field": "thesis_type",
+      "reason": "Degree level (e.g. masters)"
+    },
+    {
+      "field": "thesis_degree_name",
+      "reason": "Degree name (MDES, MFA, MA)"
+    },
+    {
+      "field": "creators",
+      "reason": "Student / author names"
+    },
+    {
+      "field": "thesis_advisors",
+      "reason": "Primary and secondary advisors with roles (merged identities)"
+    },
+    {
+      "field": "documents",
+      "reason": "Live download links to PDFs and other files"
+    },
+    {
+      "field": "related_url",
+      "reason": "Project sites, repos, and other external links"
+    },
+    {
+      "field": "official_url",
+      "reason": "Official project URL when provided"
+    },
+    {
+      "field": "thesis_defence_date",
+      "reason": "Defence date context"
+    },
+    {
+      "field": "referencetext",
+      "reason": "Bibliography for discovering related reading; shown as a structured list on the project page"
+    }
+  ],
+  "ignored": [
+    {
+      "field": "date_type",
+      "reason": "Almost always “completed”; year/season cover browsing needs"
+    },
+    {
+      "field": "full_text_status",
+      "reason": "Nearly always public for this corpus; PDF links are enough"
+    },
+    {
+      "field": "thesis_defence_location",
+      "reason": "Low value for discovery"
+    },
+    {
+      "field": "pages",
+      "reason": "Marginal for browsing; available on Open Research"
+    },
+    {
+      "field": "output_media",
+      "reason": "Rarely populated"
+    },
+    {
+      "field": "note",
+      "reason": "Rarely populated"
+    },
+    {
+      "field": "institution",
+      "reason": "Always OCAD University in this corpus"
+    },
+    {
+      "field": "type",
+      "reason": "Always thesis in this corpus"
+    },
+    {
+      "field": "userid",
+      "reason": "Internal repository user id"
+    },
+    {
+      "field": "student_id",
+      "reason": "Student number; not needed for public browsing"
+    },
+    {
+      "field": "dir",
+      "reason": "Internal storage path"
+    },
+    {
+      "field": "rev_number",
+      "reason": "Internal revision counter"
+    },
+    {
+      "field": "datestamp",
+      "reason": "Internal deposit timestamp"
+    },
+    {
+      "field": "lastmod",
+      "reason": "Internal last-modified timestamp"
+    },
+    {
+      "field": "status_changed",
+      "reason": "Internal workflow timestamp"
+    },
+    {
+      "field": "metadata_visibility",
+      "reason": "Repository visibility flag"
+    },
+    {
+      "field": "eprint_status",
+      "reason": "Internal archive workflow status"
+    },
+    {
+      "field": "ispublished",
+      "reason": "Publication flag not useful for this browse UI"
+    },
+    {
+      "field": "coversheets_dirty",
+      "reason": "Internal coversheet processing flag"
+    },
+    {
+      "field": "item_issues_count",
+      "reason": "Internal QA counter"
+    },
+    {
+      "field": "succeeds",
+      "reason": "Internal record succession id"
+    },
+    {
+      "field": "reb_approval",
+      "reason": "REB workflow code; not used for discovery"
+    },
+    {
+      "field": "refereed",
+      "reason": "Rare / low-value for this corpus"
+    },
+    {
+      "field": "file hash / hash_type",
+      "reason": "Checksums not needed for linking to live files"
+    },
+    {
+      "field": "publisher / publication / pagerange / source / contributors",
+      "reason": "Sparse or redundant fields for theses in this division"
+    }
+  ]
+}

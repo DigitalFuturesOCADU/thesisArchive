@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {
+      "id": "digital-futures",
+      "label": "Digital Futures",
+      "division": "sch_gs_dfu",
+      "browseUrl": "https://openresearch.ocadu.ca/view/divisions/sch=5Fgs=5Fdfu/",
+      "exportUrlTemplate": "https://openresearch.ocadu.ca/cgi/exportview/divisions/sch=5Fgs=5Fdfu/{year}/JSON/sch=5Fgs=5Fdfu_{year}.js",
+      "yearStart": 2013
+    }
+  ]
+}
