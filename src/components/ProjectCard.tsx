@@ -9,10 +9,7 @@ export function ProjectCard({
   thesis: Thesis
   badge?: string
 }) {
-  const advisors = thesis.advisors
-    .filter((a) => !isExternalExaminerRole(a.role))
-    .map((a) => a.name)
-    .join(', ')
+  const advisors = thesis.advisors.filter((a) => !isExternalExaminerRole(a.role))
 
   return (
     <article className="project-card">
@@ -24,8 +21,17 @@ export function ProjectCard({
         </div>
         <p className="project-card__author">{thesis.creatorNames.join(', ') || '—'}</p>
         <h2 className="project-card__title">{thesis.title}</h2>
-        <p className="project-card__advisor">{advisors || '—'}</p>
       </Link>
+      <p className="project-card__advisor">
+        {advisors.length > 0
+          ? advisors.map((a, i) => (
+              <span key={`${a.advisorId}-${i}`}>
+                {i > 0 ? ', ' : null}
+                <Link to={`/advisors/${a.advisorId}`}>{a.name}</Link>
+              </span>
+            ))
+          : '—'}
+      </p>
       {thesis.keywords.length > 0 ? (
         <ul className="tag-list">
           {thesis.keywords.slice(0, 3).map((k) => (
