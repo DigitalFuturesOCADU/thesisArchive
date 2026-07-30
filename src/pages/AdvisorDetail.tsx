@@ -33,9 +33,6 @@ export function AdvisorDetail() {
           {advisor.secondaryCount} secondary
         </p>
       </div>
-      {advisor.aliases.length > 0 ? (
-        <p className="muted tight">Also recorded as: {advisor.aliases.join('; ')}</p>
-      ) : null}
 
       <div className="card-grid">
         {projects.map((t) => {

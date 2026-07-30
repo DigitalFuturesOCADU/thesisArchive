@@ -667,7 +667,15 @@ button {
   max-width: 52rem;
 }
 
-.project-media img,
+.project-media img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 28rem;
+  border: 1px solid var(--line);
+}
+
 .project-media__video {
   display: block;
   width: 100%;

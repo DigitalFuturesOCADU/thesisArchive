@@ -15,7 +15,9 @@ export function Layout() {
               <span className="brand__title">Thesis Archive</span>
             </NavLink>
             <nav className="nav" aria-label="Primary">
-              <NavLink to="/projects">Projects</NavLink>
+              <NavLink to="/" end>
+                Projects
+              </NavLink>
               <NavLink to="/advisors">Advisors</NavLink>
               <NavLink to="/years">Years</NavLink>
               <NavLink to="/topics">Topics</NavLink>
