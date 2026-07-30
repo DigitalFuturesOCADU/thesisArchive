@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import { EmptyState, LoadingState } from '../components/LoadingState'
 import { ProjectCard } from '../components/ProjectCard'
+import { TopicBrowseSections } from '../components/TopicBrowseSections'
 import { topicBySlug, useArchive } from '../data/useArchive'
 import { sortTheses } from '../lib/filter'
 
@@ -35,6 +36,8 @@ export function TopicDetail() {
           <ProjectCard key={t.id} thesis={t} />
         ))}
       </div>
+
+      <TopicBrowseSections topics={data.topics} excludeSlug={topic.slug} />
     </div>
   )
 }
