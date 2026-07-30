@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "scrape": "node scripts/scrape.mjs",
     "normalize": "node scripts/normalize.mjs",
-    "build:data": "npm run scrape && npm run normalize"
+    "build:data": "npm run scrape && npm run normalize",
+    "update:data": "node scripts/update-data.mjs"
   },
   "dependencies": {
     "react": "^19.2.7",

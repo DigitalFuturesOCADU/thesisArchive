@@ -24,7 +24,8 @@ async function main() {
 
   for (const source of sources) {
     const start = source.yearStart ?? 2013
-    const end = source.yearEnd ?? currentYear
+    // Include next calendar year so early deposits tagged ahead are picked up.
+    const end = source.yearEnd ?? currentYear + 1
     console.log(`Scraping ${source.label} (${start}–${end})…`)
 
     for (let year = start; year <= end; year++) {

@@ -11,11 +11,34 @@ Live site (GitHub Pages): `https://digitalfuturesocadu.github.io/thesisArchive/`
 - Bibliographies search with most-cited sources and links back to projects
 - Live links to Open Research records and PDF downloads
 
+## Annual data refresh
+
+Run this after each graduating cohort lands in Open Research (or whenever new DF deposits appear). One command rebuilds the committed site data:
+
+```bash
+npm install          # first time / after clone
+npm run update:data  # scrape Open Research + rebuild public/data
+```
+
+Then:
+
+```bash
+npm run dev          # optional spot-check at http://127.0.0.1:5173/thesisArchive/
+git add public/data/archive.json public/data/bibliography.json
+git commit -m "Refresh archive data from Open Research"
+git push             # deploys GitHub Pages from main
+```
+
+- Scrapes Digital Futures year exports from `yearStart` through **next calendar year** (missing years are skipped with a warning)
+- Writes `public/data/archive.json` and `public/data/bibliography.json` — these are what the live site reads
+- `data/raw/` is gitignored; do not commit raw scrapes
+- If duplicate advisor pages show up, merge them in [`data/advisor-aliases.json`](data/advisor-aliases.json) and run `npm run normalize` again
+
 ## Development
 
 ```bash
 npm install
-npm run build:data   # scrape + normalize (optional if public/data/archive.json exists)
+npm run update:data   # or skip if public/data/archive.json already exists
 npm run dev
 ```
 
@@ -32,11 +55,12 @@ Sources are listed in [`data/sources.json`](data/sources.json) (Digital Futures 
 
 | Script | Command | Purpose |
 |--------|---------|---------|
+| Update | `npm run update:data` | **Annual refresh** — scrape, normalize, print summary + next steps |
 | Scrape | `npm run scrape` | Fetch year JSON exports into `data/raw/` |
-| Normalize | `npm run normalize` | Merge advisors, apply field policy, write `public/data/archive.json` + `bibliography.json` |
-| Both | `npm run build:data` | Scrape then normalize |
+| Normalize | `npm run normalize` | Merge advisors, apply field policy, write `public/data/*.json` |
+| Both | `npm run build:data` | Scrape then normalize (no summary banner) |
 
-`data/raw/` is gitignored. Commit the generated `public/data/archive.json` so Pages deploys do not need to hit Open Research at build time.
+Pages deploys do **not** hit Open Research; they build from the committed `public/data/` files.
 
 ### Advisor name merges
 
