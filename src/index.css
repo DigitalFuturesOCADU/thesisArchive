@@ -983,6 +983,33 @@ button {
   margin-bottom: var(--space-3);
 }
 
+.lottery .muted.tight {
+  margin-bottom: var(--space-3);
+}
+
+.lottery-btn {
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: #fff;
+  padding: 0.65rem 1.15rem;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lottery-btn:hover {
+  background: #222;
+}
+
+.lottery-result {
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--line);
+  max-width: 48rem;
+  animation: rise 280ms ease both;
+}
+
 .cite-rank {
   list-style: none;
   margin: 0;

@@ -15,6 +15,7 @@ export function Bibliography() {
   const [params, setParams] = useSearchParams()
   const q = params.get('q') ?? ''
   const [minCited, setMinCited] = useState(false)
+  const [lottery, setLottery] = useState<Citation | null>(null)
 
   const thesisMap = useMemo(() => {
     const map = new Map<number, Thesis>()
@@ -71,6 +72,12 @@ export function Bibliography() {
     if (value.trim()) next.set('q', value)
     else next.delete('q')
     setParams(next, { replace: true })
+  }
+
+  function drawLottery() {
+    if (!bib || bib.citations.length === 0) return
+    const pick = bib.citations[Math.floor(Math.random() * bib.citations.length)]
+    setLottery(pick)
   }
 
   return (
@@ -132,6 +139,23 @@ export function Bibliography() {
             </ul>
           </>
         )}
+      </section>
+
+      <section className="section section--tight lottery">
+        <div className="section__head">
+          <h2 className="section__title">DF Lottery</h2>
+        </div>
+        <p className="muted tight">
+          Pull a random source from the Digital Futures citation pool.
+        </p>
+        <button type="button" className="lottery-btn" onClick={drawLottery}>
+          DF Lottery
+        </button>
+        {lottery ? (
+          <div className="lottery-result">
+            <CitationBlock citation={lottery} thesisMap={thesisMap} />
+          </div>
+        ) : null}
       </section>
 
       <section className="section section--tight">
