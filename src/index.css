@@ -983,10 +983,6 @@ button {
   margin-bottom: var(--space-3);
 }
 
-.lottery .muted.tight {
-  margin-bottom: var(--space-3);
-}
-
 .lottery-control {
   position: relative;
   display: inline-block;

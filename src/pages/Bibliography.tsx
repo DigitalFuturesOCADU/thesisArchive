@@ -178,12 +178,6 @@ export function Bibliography() {
       </section>
 
       <section className="section section--tight lottery">
-        <div className="section__head">
-          <h2 className="section__title">DF Lottery</h2>
-        </div>
-        <p className="muted tight">
-          Pull a random source from the Digital Futures citation pool.
-        </p>
         <div className="lottery-control">
           <button
             type="button"
@@ -192,7 +186,7 @@ export function Bibliography() {
             disabled={drawing}
             aria-busy={drawing}
           >
-            DF Lottery
+            DF BIBLOTTERY
           </button>
           {drawing ? (
             <span className="lottery-rings" aria-hidden="true">
