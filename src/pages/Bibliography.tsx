@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { EmptyState, LoadingState } from '../components/LoadingState'
 import { useArchive } from '../data/useArchive'
@@ -16,6 +16,10 @@ export function Bibliography() {
   const q = params.get('q') ?? ''
   const [minCited, setMinCited] = useState(false)
   const [lottery, setLottery] = useState<Citation | null>(null)
+  const [drawing, setDrawing] = useState(false)
+  const [drawKey, setDrawKey] = useState(0)
+  const [shufflePreview, setShufflePreview] = useState<string | null>(null)
+  const drawTimer = useRef<number | null>(null)
 
   const thesisMap = useMemo(() => {
     const map = new Map<number, Thesis>()
@@ -75,9 +79,41 @@ export function Bibliography() {
   }
 
   function drawLottery() {
-    if (!bib || bib.citations.length === 0) return
-    const pick = bib.citations[Math.floor(Math.random() * bib.citations.length)]
-    setLottery(pick)
+    if (!bib || bib.citations.length === 0 || drawing) return
+
+    const prefersReduced =
+      typeof window !== 'undefined' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+    if (prefersReduced) {
+      const pick = bib.citations[Math.floor(Math.random() * bib.citations.length)]
+      setLottery(pick)
+      setDrawKey((k) => k + 1)
+      return
+    }
+
+    if (drawTimer.current !== null) window.clearInterval(drawTimer.current)
+
+    setDrawing(true)
+    setLottery(null)
+    setShufflePreview(null)
+
+    const ticks = 7
+    let i = 0
+    drawTimer.current = window.setInterval(() => {
+      const sample = bib.citations[Math.floor(Math.random() * bib.citations.length)]
+      setShufflePreview(truncatePreview(sample.text))
+      i += 1
+      if (i >= ticks) {
+        if (drawTimer.current !== null) window.clearInterval(drawTimer.current)
+        drawTimer.current = null
+        const pick = bib.citations[Math.floor(Math.random() * bib.citations.length)]
+        setShufflePreview(null)
+        setLottery(pick)
+        setDrawKey((k) => k + 1)
+        setDrawing(false)
+      }
+    }, 85)
   }
 
   return (
@@ -148,11 +184,31 @@ export function Bibliography() {
         <p className="muted tight">
           Pull a random source from the Digital Futures citation pool.
         </p>
-        <button type="button" className="lottery-btn" onClick={drawLottery}>
-          DF Lottery
-        </button>
+        <div className="lottery-control">
+          <button
+            type="button"
+            className="lottery-btn"
+            onClick={drawLottery}
+            disabled={drawing}
+            aria-busy={drawing}
+          >
+            DF Lottery
+          </button>
+          {drawing ? (
+            <span className="lottery-rings" aria-hidden="true">
+              <span className="lottery-ring" />
+              <span className="lottery-ring" />
+              <span className="lottery-ring" />
+            </span>
+          ) : null}
+        </div>
+        {drawing && shufflePreview ? (
+          <p key={shufflePreview} className="lottery-shuffle" aria-hidden="true">
+            {shufflePreview}
+          </p>
+        ) : null}
         {lottery ? (
-          <div className="lottery-result">
+          <div key={drawKey} className="lottery-result">
             <CitationBlock citation={lottery} thesisMap={thesisMap} />
           </div>
         ) : null}
@@ -238,4 +294,9 @@ function shortUrl(url: string): string {
   } catch {
     return url.length > 52 ? `${url.slice(0, 49)}…` : url
   }
+}
+
+function truncatePreview(text: string, max = 88): string {
+  const clean = text.replace(/\s+/g, ' ').trim()
+  return clean.length > max ? `${clean.slice(0, max - 1)}…` : clean
 }
