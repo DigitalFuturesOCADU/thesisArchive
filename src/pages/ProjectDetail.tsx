@@ -1,7 +1,10 @@
 import { Link, useParams } from 'react-router-dom'
+import { DocumentsGrid } from '../components/DocumentsGrid'
 import { LoadingState, EmptyState } from '../components/LoadingState'
+import { ProjectMedia } from '../components/ProjectMedia'
 import { ReferencesSection } from '../components/ReferencesSection'
 import { thesisById, useArchive } from '../data/useArchive'
+import { heroMedia } from '../lib/media'
 import { degreeLabel, isExternalExaminerRole, slugify } from '../lib/roles'
 
 export function ProjectDetail() {
@@ -12,6 +15,8 @@ export function ProjectDetail() {
 
   const thesis = thesisById(data, Number(id))
   if (!thesis) return <EmptyState label="Project not found." />
+
+  const media = heroMedia(thesis)
 
   return (
     <div className="page detail">
@@ -29,12 +34,9 @@ export function ProjectDetail() {
         </p>
         <h1>{thesis.title}</h1>
         <p className="detail-authors">{thesis.creatorNames.join(', ')}</p>
-        {thesis.references ? (
-          <p className="detail-jump">
-            <a href="#references">References</a>
-          </p>
-        ) : null}
       </header>
+
+      {media ? <ProjectMedia media={media} title={thesis.title} /> : null}
 
       {thesis.abstract ? (
         <section className="section">
@@ -74,43 +76,7 @@ export function ProjectDetail() {
         </section>
       ) : null}
 
-      <section className="section">
-        <h2>Documents &amp; links</h2>
-        <ul className="plain-list">
-          <li>
-            <a href={thesis.uri} target="_blank" rel="noreferrer">
-              Open Research record
-            </a>
-          </li>
-          {thesis.officialUrl ? (
-            <li>
-              <a href={thesis.officialUrl} target="_blank" rel="noreferrer">
-                Official URL
-              </a>
-            </li>
-          ) : null}
-          {thesis.relatedUrls.map((r) => (
-            <li key={r.url}>
-              <a href={r.url} target="_blank" rel="noreferrer">
-                {r.description || r.url}
-              </a>
-            </li>
-          ))}
-          {thesis.documents.map((d) => (
-            <li key={d.downloadUrl}>
-              <a href={d.downloadUrl} target="_blank" rel="noreferrer">
-                {d.filename}
-              </a>
-              {d.mimeType ? <span className="muted"> · {d.mimeType}</span> : null}
-            </li>
-          ))}
-        </ul>
-        {thesis.documents.length === 0 &&
-        thesis.relatedUrls.length === 0 &&
-        !thesis.officialUrl ? (
-          <p className="muted">No additional files listed for this record.</p>
-        ) : null}
-      </section>
+      <DocumentsGrid thesis={thesis} />
 
       {thesis.references ? <ReferencesSection references={thesis.references} /> : null}
     </div>
