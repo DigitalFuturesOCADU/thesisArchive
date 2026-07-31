@@ -1,0 +1,61 @@
+# Refresh archive JSON from Open Research when deposits change.
+# Runs monthly and on demand; opens a PR only when data actually changed.
+name: Refresh archive data
+
+on:
+  schedule:
+    # 14:00 UTC on the 1st of each month
+    - cron: "0 14 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh-archive-data
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Scrape and normalize
+        run: npm run update:data
+
+      - name: Detect meaningful data changes
+        id: changes
+        run: node scripts/has-data-changes.mjs
+
+      - name: Create pull request
+        if: steps.changes.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: Refresh archive data from Open Research
+          title: Refresh archive data from Open Research
+          body: |
+            Automated scrape found updates in the Open Research Digital Futures export.
+
+            **Before merging**
+            - Spot-check new projects and advisor pages
+            - If duplicate advisors appear, update `data/advisor-aliases.json` and re-run `npm run normalize`
+
+            You can also refresh locally anytime with `npm run update:data`.
+          branch: chore/refresh-archive-data
+          delete-branch: true
+          add-paths: |
+            public/data/archive.json
+            public/data/bibliography.json

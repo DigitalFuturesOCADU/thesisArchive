@@ -13,6 +13,8 @@ Live site (GitHub Pages): `https://digitalfuturesocadu.github.io/thesisArchive/`
 
 ## Annual data refresh
 
+### Manual (local)
+
 Run this after each graduating cohort lands in Open Research (or whenever new DF deposits appear). One command rebuilds the committed site data:
 
 ```bash
@@ -28,6 +30,17 @@ git add public/data/archive.json public/data/bibliography.json
 git commit -m "Refresh archive data from Open Research"
 git push             # deploys GitHub Pages from main
 ```
+
+### Automated (monthly)
+
+A GitHub Action (`.github/workflows/refresh-data.yml`) runs on the **1st of each month** and can also be started manually from the Actions tab (**Refresh archive data** → Run workflow).
+
+- Scrapes and normalizes the same way as `npm run update:data`
+- Ignores `generatedAt`-only churn
+- Opens a PR only when thesis/advisor/topic/bibliography content actually changed
+- Review advisor pages before merging (update `data/advisor-aliases.json` if needed)
+
+### Notes
 
 - Scrapes Digital Futures year exports from `yearStart` through **next calendar year** (missing years are skipped with a warning)
 - Writes `public/data/archive.json` and `public/data/bibliography.json` — these are what the live site reads
@@ -55,7 +68,8 @@ Sources are listed in [`data/sources.json`](data/sources.json) (Digital Futures 
 
 | Script | Command | Purpose |
 |--------|---------|---------|
-| Update | `npm run update:data` | **Annual refresh** — scrape, normalize, print summary + next steps |
+| Update | `npm run update:data` | **Manual refresh** — scrape, normalize, print summary + next steps |
+| Change check | `node scripts/has-data-changes.mjs` | Used by CI; ignores `generatedAt`-only diffs |
 | Scrape | `npm run scrape` | Fetch year JSON exports into `data/raw/` |
 | Normalize | `npm run normalize` | Merge advisors, apply field policy, write `public/data/*.json` |
 | Both | `npm run build:data` | Scrape then normalize (no summary banner) |
