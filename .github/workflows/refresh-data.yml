@@ -59,4 +59,5 @@ jobs:
           add-paths: |
             public/data/archive.json
             public/data/bibliography.json
+            public/data/project-images.json
             data/faculty-directory.json

@@ -8,6 +8,7 @@ const root = path.resolve(__dirname, '..')
 const paths = [
   'public/data/archive.json',
   'public/data/bibliography.json',
+  'public/data/project-images.json',
   'data/faculty-directory.json',
 ]
 const GIT_MAX_BUFFER = 64 * 1024 * 1024

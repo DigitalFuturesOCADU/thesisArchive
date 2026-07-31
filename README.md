@@ -26,7 +26,7 @@ Then:
 
 ```bash
 npm run dev          # optional spot-check at http://127.0.0.1:5173/thesisArchive/
-git add public/data/archive.json public/data/bibliography.json
+git add public/data/archive.json public/data/bibliography.json public/data/project-images.json
 git commit -m "Refresh archive data from Open Research"
 git push             # deploys GitHub Pages from main
 ```
@@ -43,7 +43,7 @@ A GitHub Action (`.github/workflows/refresh-data.yml`) runs on the **1st of each
 ### Notes
 
 - Scrapes Digital Futures year exports from `yearStart` through **next calendar year** (missing years are skipped with a warning)
-- Writes `public/data/archive.json` and `public/data/bibliography.json` — these are what the live site reads
+- Writes `public/data/archive.json`, `public/data/bibliography.json`, and `public/data/project-images.json` — these are what the live site reads
 - `data/raw/` is gitignored; do not commit raw scrapes
 - If duplicate advisor pages show up, merge them in [`data/advisor-aliases.json`](data/advisor-aliases.json) and run `npm run normalize` again
 

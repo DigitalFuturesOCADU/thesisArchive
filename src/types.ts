@@ -102,3 +102,28 @@ export interface ArchiveData {
   topics: Topic[]
   years: YearBucket[]
 }
+
+export interface ProjectImage {
+  filename: string
+  url: string
+  mimeType?: string
+  thumbnailUrl?: string
+  source: 'document' | 'related'
+  description?: string
+}
+
+export interface ProjectImageGroup {
+  id: number
+  title: string
+  year: number
+  creatorNames: string[]
+  images: ProjectImage[]
+}
+
+export interface ProjectImagesData {
+  generatedAt: string
+  sourceLabel: string
+  projectCount: number
+  imageCount: number
+  projects: ProjectImageGroup[]
+}

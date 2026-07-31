@@ -47,7 +47,7 @@ async function printSummary() {
   console.log('  2. If duplicate advisors appear, update data/advisor-aliases.json and re-run npm run normalize')
   console.log('  3. Commit refreshed data:')
   console.log(
-    '       git add public/data/archive.json public/data/bibliography.json data/faculty-directory.json',
+    '       git add public/data/archive.json public/data/bibliography.json public/data/project-images.json data/faculty-directory.json',
   )
   console.log('       git commit -m "Refresh archive data from Open Research"')
   console.log('       git push')

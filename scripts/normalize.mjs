@@ -7,6 +7,7 @@ const root = path.resolve(__dirname, '..')
 const rawDir = path.join(root, 'data', 'raw')
 const outPath = path.join(root, 'public', 'data', 'archive.json')
 const bibliographyPath = path.join(root, 'public', 'data', 'bibliography.json')
+const projectImagesPath = path.join(root, 'public', 'data', 'project-images.json')
 const aliasesPath = path.join(root, 'data', 'advisor-aliases.json')
 const committeesPath = path.join(root, 'data', 'advisor-committees.json')
 const fieldPolicyPath = path.join(root, 'data', 'field-policy.json')
@@ -490,6 +491,81 @@ async function loadFacultyDirectory() {
   }
 }
 
+function isPublicDoc(doc) {
+  return !doc.security || doc.security === 'public'
+}
+
+function isRasterImageDocument(doc) {
+  if (!isPublicDoc(doc)) return false
+  const filename = String(doc.filename || '')
+  // Skip SVGs and junk deposits (e.g. YouTube URLs saved as image filenames).
+  if (/\.svg$/i.test(filename) || /%3[fF]|[?&]sqp=|maxresdefault\.jpg%/i.test(filename)) {
+    return false
+  }
+  const mime = String(doc.mimeType || '').toLowerCase()
+  if (mime.startsWith('image/') && !mime.includes('svg')) return true
+  return /\.(jpe?g|png|gif|webp|avif)$/i.test(filename)
+}
+
+function isRasterImageUrl(url) {
+  return /\.(jpe?g|png|gif|webp|avif)(\?|#|$)/i.test(String(url || ''))
+}
+
+function eprintsThumbnailUrl(downloadUrl, size = 'medium') {
+  try {
+    const url = new URL(downloadUrl)
+    const match = url.pathname.match(/^(\/id\/eprint\/\d+)\/(\d+)\/(.+)$/)
+    if (!match) return undefined
+    const [, base, pos, filename] = match
+    return `${url.origin}${base}/${pos}.has${size}ThumbnailVersion/${filename}`
+  } catch {
+    return undefined
+  }
+}
+
+function buildProjectImages(theses) {
+  const projects = []
+  for (const thesis of theses) {
+    const images = []
+    for (const doc of thesis.documents ?? []) {
+      if (!isRasterImageDocument(doc)) continue
+      const entry = {
+        filename: doc.filename,
+        url: doc.downloadUrl,
+        mimeType: doc.mimeType,
+        source: 'document',
+      }
+      // Prefer lightbox thumbs for UI bands — they keep the source aspect ratio.
+      // "medium" thumbs are padded to a fixed 200×150 box and look letterboxed.
+      const thumb = eprintsThumbnailUrl(doc.downloadUrl, 'lightbox')
+      if (thumb) entry.thumbnailUrl = thumb
+      images.push(entry)
+    }
+    for (const related of thesis.relatedUrls ?? []) {
+      if (!related?.url || !isRasterImageUrl(related.url)) continue
+      images.push({
+        filename: related.url.split('/').pop()?.split('?')[0] || related.url,
+        url: related.url,
+        source: 'related',
+        description: related.description,
+      })
+    }
+    if (images.length === 0) continue
+    projects.push({
+      id: thesis.id,
+      title: thesis.title,
+      year: thesis.year,
+      creatorNames: thesis.creatorNames,
+      images,
+    })
+  }
+  return {
+    projectCount: projects.length,
+    imageCount: projects.reduce((n, p) => n + p.images.length, 0),
+    projects,
+  }
+}
+
 function facultyMatchFor(advisor, facultyDir) {
   const byName = facultyDir.byName.get(nameKey(advisor.name))
   if (byName) return byName
@@ -643,11 +719,21 @@ async function main() {
     citations,
   }
 
+  const projectImages = {
+    generatedAt,
+    sourceLabel: archive.sourceLabel,
+    ...buildProjectImages(theses),
+  }
+
   await mkdir(path.dirname(outPath), { recursive: true })
   await writeFile(outPath, JSON.stringify(archive, null, 2))
   await writeFile(bibliographyPath, JSON.stringify(bibliography, null, 2))
+  await writeFile(projectImagesPath, JSON.stringify(projectImages, null, 2))
   console.log(
     `Wrote ${theses.length} theses, ${advisors.length} advisors, ${topics.length} topics, ${citations.length} citations → ${path.relative(root, outPath)} + bibliography.json`,
+  )
+  console.log(
+    `Wrote ${projectImages.imageCount} images across ${projectImages.projectCount} projects → ${path.relative(root, projectImagesPath)}`,
   )
 }
 
