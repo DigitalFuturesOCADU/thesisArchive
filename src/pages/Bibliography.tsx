@@ -186,7 +186,7 @@ export function Bibliography() {
             disabled={drawing}
             aria-busy={drawing}
           >
-            DF BIBLOTTERY
+            DF Bibliottery
           </button>
           {drawing ? (
             <span className="lottery-rings" aria-hidden="true">
