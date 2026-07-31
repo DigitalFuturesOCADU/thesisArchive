@@ -535,9 +535,9 @@ function buildProjectImages(theses) {
         mimeType: doc.mimeType,
         source: 'document',
       }
-      // Prefer lightbox thumbs for UI bands — they keep the source aspect ratio.
-      // "medium" thumbs are padded to a fixed 200×150 box and look letterboxed.
-      const thumb = eprintsThumbnailUrl(doc.downloadUrl, 'lightbox')
+      // Preview thumbs keep source aspect ratio and stay small (~400px).
+      // Avoid "medium" — those are padded to a fixed 200×150 box.
+      const thumb = eprintsThumbnailUrl(doc.downloadUrl, 'preview')
       if (thumb) entry.thumbnailUrl = thumb
       images.push(entry)
     }
