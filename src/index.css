@@ -579,6 +579,26 @@ button {
   gap: 0.45rem 0.85rem;
 }
 
+.advisor-section {
+  margin-bottom: var(--space-6);
+}
+
+.advisor-section .advisor-section {
+  margin-bottom: var(--space-5);
+}
+
+.advisor-section__title {
+  margin: 0;
+  font-size: clamp(1.15rem, 1.8vw, 1.45rem);
+  letter-spacing: -0.02em;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.advisor-section .section__head {
+  margin-bottom: var(--space-3);
+}
+
 .person-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

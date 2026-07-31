@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T12:32:15.783Z",
+  "generatedAt": "2026-07-31T12:55:40.502Z",
   "sourceLabel": "Digital Futures",
   "theses": [
     {
@@ -6452,14 +6452,6 @@
           "name": "Jay Irizawa",
           "rawName": "jay irizawa",
           "email": "jirizawa@ocadu.ca"
-        },
-        {
-          "role": "cm",
-          "roleLabel": "Secondary advisor",
-          "advisorId": "ali-mazalek",
-          "name": "Ali Mazalek",
-          "rawName": "ali aazalek",
-          "email": "mazalek@ryerson.ca"
         },
         {
           "role": "pd",
@@ -17456,7 +17448,8 @@
       ],
       "primaryCount": 21,
       "secondaryCount": 29,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/atindale"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/atindale",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "ala-roushan",
@@ -17478,7 +17471,8 @@
       ],
       "primaryCount": 2,
       "secondaryCount": 5,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/aroushan"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/aroushan",
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "amanu",
@@ -17492,7 +17486,8 @@
       ],
       "primaryCount": 1,
       "secondaryCount": 0,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/amanu"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/amanu",
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "alexis-morris",
@@ -17542,22 +17537,8 @@
       ],
       "primaryCount": 20,
       "secondaryCount": 10,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/amorris"
-    },
-    {
-      "id": "ali-mazalek",
-      "name": "Ali Mazalek",
-      "aliases": [
-        "ali aazalek"
-      ],
-      "emails": [
-        "mazalek@ryerson.ca"
-      ],
-      "projectIds": [
-        3735
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/amorris",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "ali-qadeer",
@@ -17573,7 +17554,8 @@
         2567
       ],
       "primaryCount": 1,
-      "secondaryCount": 2
+      "secondaryCount": 2,
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "alia-weston",
@@ -17587,7 +17569,8 @@
         2505
       ],
       "primaryCount": 1,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "aserrana",
@@ -17613,7 +17596,8 @@
         3357
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "aseeschaafveres",
@@ -17627,7 +17611,8 @@
       ],
       "primaryCount": 0,
       "secondaryCount": 1,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/aseeschaafveres"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/aseeschaafveres",
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "annie-tung",
@@ -17643,7 +17628,8 @@
       ],
       "primaryCount": 0,
       "secondaryCount": 1,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/atung"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/atung",
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "ashok-mathur",
@@ -17676,7 +17662,8 @@
         4725
       ],
       "primaryCount": 2,
-      "secondaryCount": 0
+      "secondaryCount": 0,
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "barbara-rauch",
@@ -17719,7 +17706,8 @@
         210
       ],
       "primaryCount": 0,
-      "secondaryCount": 7
+      "secondaryCount": 7,
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "bill-leeming",
@@ -17740,7 +17728,8 @@
       ],
       "primaryCount": 3,
       "secondaryCount": 1,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/bleeming"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/bleeming",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "bdevine",
@@ -17753,7 +17742,8 @@
         2265
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "camille-isaacs",
@@ -17765,7 +17755,8 @@
       ],
       "primaryCount": 0,
       "secondaryCount": 1,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/cisaacs"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/cisaacs",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "caroline-langill",
@@ -17791,7 +17782,8 @@
         5034
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "cindy-poremba",
@@ -17831,7 +17823,8 @@
       ],
       "primaryCount": 8,
       "secondaryCount": 15,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/cporemba"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/cporemba",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "claire-brunet",
@@ -17846,7 +17839,8 @@
         4100
       ],
       "primaryCount": 1,
-      "secondaryCount": 2
+      "secondaryCount": 2,
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "collinharry",
@@ -17859,7 +17853,8 @@
         4281
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "david-cecchetto",
@@ -17870,7 +17865,8 @@
         211
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "david-mcintosh",
@@ -17937,7 +17933,8 @@
       ],
       "primaryCount": 16,
       "secondaryCount": 14,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/ewestecott"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/ewestecott",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "eric-blais",
@@ -17948,7 +17945,8 @@
         294
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "fidelia-lam",
@@ -17967,7 +17965,8 @@
       ],
       "primaryCount": 1,
       "secondaryCount": 3,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/lamf"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/lamf",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "gmoser",
@@ -17980,7 +17979,8 @@
         2616
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "geoffrey-shea",
@@ -17998,7 +17998,8 @@
       ],
       "primaryCount": 0,
       "secondaryCount": 5,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/gshea"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/gshea",
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "gmcmaster",
@@ -18011,7 +18012,8 @@
         836
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "gsims",
@@ -18024,7 +18026,8 @@
         623
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "greg-van-alstyne",
@@ -18044,7 +18047,8 @@
       ],
       "primaryCount": 2,
       "secondaryCount": 2,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/gvanalstyne"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/gvanalstyne",
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "haru-ji",
@@ -18066,7 +18070,8 @@
         2471
       ],
       "primaryCount": 4,
-      "secondaryCount": 2
+      "secondaryCount": 2,
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "ian-clarke",
@@ -18084,7 +18089,8 @@
       ],
       "primaryCount": 1,
       "secondaryCount": 2,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/iclarke"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/iclarke",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "immony-men",
@@ -18105,7 +18111,8 @@
       ],
       "primaryCount": 2,
       "secondaryCount": 5,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/imen"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/imen",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "isabel-meirelles",
@@ -18131,7 +18138,8 @@
       ],
       "primaryCount": 6,
       "secondaryCount": 4,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/imeirelles"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/imeirelles",
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "jbaerg",
@@ -18144,7 +18152,8 @@
         2616
       ],
       "primaryCount": 1,
-      "secondaryCount": 0
+      "secondaryCount": 0,
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "jay-irizawa",
@@ -18161,7 +18170,8 @@
         3735
       ],
       "primaryCount": 3,
-      "secondaryCount": 0
+      "secondaryCount": 0,
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "jeff-watson",
@@ -18186,7 +18196,8 @@
         4366
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "job-rutgers",
@@ -18204,7 +18215,8 @@
       ],
       "primaryCount": 4,
       "secondaryCount": 1,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/jrutgers"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/jrutgers",
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "judith-doyle",
@@ -18243,7 +18255,8 @@
       ],
       "primaryCount": 1,
       "secondaryCount": 0,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/julianhaladyn"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/julianhaladyn",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "jutta-treviranus",
@@ -18255,7 +18268,8 @@
       ],
       "primaryCount": 0,
       "secondaryCount": 1,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/jtreviranus"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/jtreviranus",
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "kate-hartman",
@@ -18307,7 +18321,8 @@
       ],
       "primaryCount": 16,
       "secondaryCount": 20,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/khartman"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/khartman",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "kate-sellen",
@@ -18325,7 +18340,8 @@
       ],
       "primaryCount": 4,
       "secondaryCount": 1,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/ksellen"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/ksellen",
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "kmoscou",
@@ -18339,7 +18355,8 @@
       ],
       "primaryCount": 0,
       "secondaryCount": 1,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/kmoscou"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/kmoscou",
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "lpainter",
@@ -18353,7 +18370,8 @@
       ],
       "primaryCount": 0,
       "secondaryCount": 1,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/lpainter"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/lpainter",
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "mgordon",
@@ -18367,7 +18385,8 @@
       ],
       "primaryCount": 0,
       "secondaryCount": 1,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/mgordon"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/mgordon",
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "maria-belen-ordonez",
@@ -18395,7 +18414,8 @@
       ],
       "primaryCount": 0,
       "secondaryCount": 9,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/mordonez"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/mordonez",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "marie-o-mahony",
@@ -18455,7 +18475,8 @@
       ],
       "primaryCount": 0,
       "secondaryCount": 1,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/mleepoy"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/mleepoy",
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "michael-prokopow",
@@ -18472,7 +18493,8 @@
       ],
       "primaryCount": 0,
       "secondaryCount": 2,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/mprokopow"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/mprokopow",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "mmastroeni",
@@ -18485,7 +18507,8 @@
         3570
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "michelle-gay",
@@ -18496,7 +18519,8 @@
         4037
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "michelle-miller",
@@ -18517,7 +18541,8 @@
       ],
       "primaryCount": 1,
       "secondaryCount": 4,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/michellemiller"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/michellemiller",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "nick-puckett",
@@ -18579,7 +18604,8 @@
       ],
       "primaryCount": 17,
       "secondaryCount": 25,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/npuckett"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/npuckett",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "nick-goso",
@@ -18590,7 +18616,8 @@
         3625
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "parantap-bhatt",
@@ -18606,7 +18633,8 @@
       ],
       "primaryCount": 2,
       "secondaryCount": 1,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/pbhatt"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/pbhatt",
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "patricio-davila",
@@ -18666,7 +18694,8 @@
       ],
       "primaryCount": 0,
       "secondaryCount": 1,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/pjones"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/pjones",
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "pmorin",
@@ -18679,7 +18708,8 @@
         2616
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "philippe-blanchard",
@@ -18700,7 +18730,8 @@
       ],
       "primaryCount": 1,
       "secondaryCount": 5,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/pblanchard"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/pblanchard",
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "phillip-joe",
@@ -18711,7 +18742,8 @@
         222
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Art"
     },
     {
       "id": "roderick-grant",
@@ -18725,7 +18757,8 @@
       ],
       "primaryCount": 1,
       "secondaryCount": 0,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/rgrant"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/rgrant",
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "sara-diamond",
@@ -18746,7 +18779,8 @@
       ],
       "primaryCount": 5,
       "secondaryCount": 3,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/sdiamond"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/sdiamond",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "selmin-kara",
@@ -18760,7 +18794,8 @@
         215
       ],
       "primaryCount": 0,
-      "secondaryCount": 2
+      "secondaryCount": 2,
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "simone-jones",
@@ -18789,7 +18824,8 @@
       ],
       "primaryCount": 2,
       "secondaryCount": 13,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/sjones"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/sjones",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "sowmya-somanath",
@@ -18805,7 +18841,8 @@
         2496
       ],
       "primaryCount": 1,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "ocaduFaculty": "Faculty of Design"
     },
     {
       "id": "scandy",
@@ -18851,7 +18888,8 @@
       ],
       "primaryCount": 8,
       "secondaryCount": 9,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/sstein"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/sstein",
+      "ocaduFaculty": "Faculty of Arts & Science"
     },
     {
       "id": "tom-barker",
@@ -18888,7 +18926,8 @@
       ],
       "primaryCount": 0,
       "secondaryCount": 2,
-      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/vszkudlarek"
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/vszkudlarek",
+      "ocaduFaculty": "Faculty of Art"
     }
   ],
   "topics": [

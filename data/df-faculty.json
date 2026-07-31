@@ -1,0 +1,33 @@
+{
+  "description": "Curated advisor groupings for the Advisors browse page. Display order within Current/Previous is alphabetical by last name.",
+  "current": [
+    "kate-hartman",
+    "emma-westecott",
+    "cindy-poremba",
+    "suzanne-stein",
+    "adam-tindale",
+    "nick-puckett",
+    "simone-jones",
+    "fidelia-lam",
+    "barbara-rauch",
+    "immony-men",
+    "sara-diamond",
+    "alexis-morris"
+  ],
+  "previous": [
+    "tom-barker",
+    "judith-doyle",
+    "martha-ladly",
+    "jeff-watson",
+    "paula-gardner",
+    "scandy",
+    "patricio-davila",
+    "david-mcintosh",
+    "marie-o-mahony",
+    "caroline-langill"
+  ],
+  "administration": [
+    "ashok-mathur",
+    "aserrana"
+  ]
+}

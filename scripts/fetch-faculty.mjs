@@ -21,15 +21,17 @@ function decode(html) {
 function parseRows(html) {
   const out = []
   const re =
-    /simple-card--title"><a href="(\/academics\/explore-faculty\/([^"]+))"[^>]*>([^<]+)<\/a>/g
+    /simple-card--title"><a href="(\/academics\/explore-faculty\/([^"]+))"[^>]*>([^<]+)<\/a><\/h3><\/div>\s*<div><span class="simple-card--tag">([^<]*)<\/span>/g
   let m
   while ((m = re.exec(html))) {
     const slug = decode(m[2]).trim()
     const name = decode(m[3]).trim()
+    const faculty = decode(m[4]).trim()
     if (!slug || !name) continue
     out.push({
       name,
       slug,
+      faculty: faculty || undefined,
       url: `${BASE}/${slug}`,
     })
   }
@@ -57,6 +59,7 @@ async function main() {
   }
 
   const people = [...bySlug.values()].sort((a, b) => a.name.localeCompare(b.name))
+  const withFaculty = people.filter((p) => p.faculty).length
   const payload = {
     fetchedAt: new Date().toISOString(),
     sourceUrl: BASE,
@@ -66,7 +69,9 @@ async function main() {
 
   await mkdir(path.dirname(outPath), { recursive: true })
   await writeFile(outPath, JSON.stringify(payload, null, 2))
-  console.log(`Wrote ${people.length} faculty bios → ${path.relative(root, outPath)}`)
+  console.log(
+    `Wrote ${people.length} faculty bios (${withFaculty} with faculty tag) → ${path.relative(root, outPath)}`,
+  )
 }
 
 main().catch((err) => {

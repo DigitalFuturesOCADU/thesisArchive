@@ -62,6 +62,8 @@ export interface Advisor {
   secondaryCount: number
   /** OCAD U Explore Faculty bio page, when matched. */
   facultyBioUrl?: string
+  /** OCAD U faculty unit from Explore Faculty (e.g. Faculty of Design). */
+  ocaduFaculty?: string
 }
 
 export interface Topic {

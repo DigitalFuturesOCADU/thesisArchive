@@ -12,6 +12,7 @@ const committeesPath = path.join(root, 'data', 'advisor-committees.json')
 const fieldPolicyPath = path.join(root, 'data', 'field-policy.json')
 const sourcesPath = path.join(root, 'data', 'sources.json')
 const facultyDirectoryPath = path.join(root, 'data', 'faculty-directory.json')
+const facultyOverridesPath = path.join(root, 'data', 'faculty-overrides.json')
 
 const URL_RE = /https?:\/\/[^\s<>"')\]]+/gi
 const DOI_RE = /(?:doi\.org\/|doi:\s*)(10\.\d{4,}\/[^\s<>"')\]]+)/i
@@ -477,8 +478,8 @@ async function loadFacultyDirectory() {
     const bySlug = new Map()
     for (const person of raw.people ?? []) {
       if (!person?.url || !person?.name) continue
-      byName.set(nameKey(person.name), person.url)
-      if (person.slug) bySlug.set(String(person.slug).toLowerCase(), person.url)
+      byName.set(nameKey(person.name), person)
+      if (person.slug) bySlug.set(String(person.slug).toLowerCase(), person)
     }
     return { byName, bySlug }
   } catch {
@@ -489,7 +490,7 @@ async function loadFacultyDirectory() {
   }
 }
 
-function facultyBioUrlFor(advisor, facultyDir) {
+function facultyMatchFor(advisor, facultyDir) {
   const byName = facultyDir.byName.get(nameKey(advisor.name))
   if (byName) return byName
   for (const alias of advisor.aliases ?? []) {
@@ -553,6 +554,13 @@ async function main() {
   )
 
   const facultyDir = await loadFacultyDirectory()
+  let facultyOverrides = {}
+  try {
+    const raw = JSON.parse(await readFile(facultyOverridesPath, 'utf8'))
+    facultyOverrides = raw.advisors ?? {}
+  } catch {
+    // optional
+  }
 
   const advisors = [...advisorsAcc.values()]
     .map((a) => {
@@ -565,14 +573,22 @@ async function main() {
         primaryCount: a.primaryCount,
         secondaryCount: a.secondaryCount,
       }
-      const facultyBioUrl = facultyBioUrlFor(advisor, facultyDir)
-      if (facultyBioUrl) advisor.facultyBioUrl = facultyBioUrl
+      const match = facultyMatchFor(advisor, facultyDir)
+      if (match?.url) advisor.facultyBioUrl = match.url
+      if (match?.faculty) advisor.ocaduFaculty = match.faculty
+      const override = facultyOverrides[advisor.id]
+      if (override?.facultyBioUrl) advisor.facultyBioUrl = override.facultyBioUrl
+      if (override?.ocaduFaculty) advisor.ocaduFaculty = override.ocaduFaculty
       return advisor
     })
     .sort((a, b) => a.name.localeCompare(b.name))
 
   const withBios = advisors.filter((a) => a.facultyBioUrl).length
-  console.log(`Faculty bio links matched for ${withBios}/${advisors.length} advisors`)
+  const withFaculty = advisors.filter((a) => a.ocaduFaculty).length
+  const overridden = advisors.filter((a) => facultyOverrides[a.id]).length
+  console.log(
+    `Faculty bio links matched for ${withBios}/${advisors.length} advisors (${withFaculty} with OCAD faculty tag, ${overridden} overrides)`,
+  )
 
   const topicMap = new Map()
   for (const t of theses) {

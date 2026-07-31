@@ -1,0 +1,105 @@
+{
+  "description": "Manual OCAD faculty placements for advisors missing from Explore Faculty. Applied during normalize as ocaduFaculty.",
+  "advisors": {
+    "mmastroeni": {
+      "ocaduFaculty": "Faculty of Design",
+      "note": "GPD DHEA/INCD/SFI; Assistant Professor, Faculty of Design"
+    },
+    "jay-irizawa": {
+      "ocaduFaculty": "Faculty of Art",
+      "note": "GPD IAMD; Associate Professor, Faculty of Art"
+    },
+    "jbowes": {
+      "ocaduFaculty": "Faculty of Design",
+      "note": "Professor, Environmental Design / SFI"
+    },
+    "nick-goso": {
+      "ocaduFaculty": "Faculty of Design",
+      "note": "Associate Professor; Advertising / Faculty of Design"
+    },
+    "ali-qadeer": {
+      "ocaduFaculty": "Faculty of Design",
+      "note": "Chair, Graphic Design"
+    },
+    "sowmya-somanath": {
+      "ocaduFaculty": "Faculty of Design",
+      "note": "Assistant Professor, Faculty of Design / HCI"
+    },
+    "collinharry": {
+      "ocaduFaculty": "Faculty of Design",
+      "note": "Faculty of Design"
+    },
+    "afatona": {
+      "ocaduFaculty": "Faculty of Arts & Science",
+      "note": "Associate Professor; Canada Research Chair"
+    },
+    "alia-weston": {
+      "ocaduFaculty": "Faculty of Arts & Science",
+      "note": "Associate Professor, Creative & Business Enterprise"
+    },
+    "selmin-kara": {
+      "ocaduFaculty": "Faculty of Arts & Science",
+      "note": "Associate Professor of Film and New Media Studies"
+    },
+    "bdevine": {
+      "ocaduFaculty": "Faculty of Arts & Science",
+      "note": "Faculty of Arts & Science"
+    },
+    "jbaerg": {
+      "ocaduFaculty": "Faculty of Art",
+      "note": "Faculty of Art; Sculpture/Installation & Integrated Media"
+    },
+    "claire-brunet": {
+      "ocaduFaculty": "Faculty of Art",
+      "note": "Associate Professor, Faculty of Art; Faculty Senator"
+    },
+    "bentley-jarvis": {
+      "ocaduFaculty": "Faculty of Art",
+      "note": "Faculty of Art (studio faculty)"
+    },
+    "haru-ji": {
+      "ocaduFaculty": "Faculty of Art",
+      "note": "Digital Futures / DPXA; Faculty of Art"
+    },
+    "ayumi-goto": {
+      "ocaduFaculty": "Faculty of Art",
+      "note": "Faculty of Art"
+    },
+    "catherine-feraday-miller": {
+      "ocaduFaculty": "Faculty of Art",
+      "note": "Faculty of Art"
+    },
+    "david-cecchetto": {
+      "ocaduFaculty": "Faculty of Art",
+      "note": "Faculty of Art"
+    },
+    "eric-blais": {
+      "ocaduFaculty": "Faculty of Art",
+      "note": "Faculty of Art"
+    },
+    "gmoser": {
+      "ocaduFaculty": "Faculty of Art",
+      "note": "Faculty of Art"
+    },
+    "gmcmaster": {
+      "ocaduFaculty": "Faculty of Art",
+      "note": "Faculty of Art"
+    },
+    "gsims": {
+      "ocaduFaculty": "Faculty of Art",
+      "note": "Faculty of Art"
+    },
+    "michelle-gay": {
+      "ocaduFaculty": "Faculty of Art",
+      "note": "Faculty of Art"
+    },
+    "pmorin": {
+      "ocaduFaculty": "Faculty of Art",
+      "note": "Faculty of Art"
+    },
+    "phillip-joe": {
+      "ocaduFaculty": "Faculty of Art",
+      "note": "Faculty of Art"
+    }
+  }
+}

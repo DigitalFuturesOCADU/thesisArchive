@@ -88,6 +88,10 @@ Raw deposits use inconsistent advisor names and emails. Canonical people live in
 
 Some deposits list extra committee members or wrong roles. Corrected committees live in [`data/advisor-committees.json`](data/advisor-committees.json) (applied during normalize). Remaining multi-advisor oddities to revisit: [`data/advisor-committee-review.json`](data/advisor-committee-review.json).
 
+### Advisor page groupings
+
+[`data/df-faculty.json`](data/df-faculty.json) lists Current / Previous Digital Futures faculty and OCADU Administration. Remaining advisors are grouped by OCAD faculty from [`data/faculty-directory.json`](data/faculty-directory.json), with manual placements in [`data/faculty-overrides.json`](data/faculty-overrides.json).
+
 ### Field policy
 
 [`data/field-policy.json`](data/field-policy.json) documents which Open Research fields are kept vs ignored; the normalize script reads it as the output contract.
