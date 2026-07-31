@@ -5,11 +5,15 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
-const paths = ['public/data/archive.json', 'public/data/bibliography.json']
+const paths = [
+  'public/data/archive.json',
+  'public/data/bibliography.json',
+  'data/faculty-directory.json',
+]
 const GIT_MAX_BUFFER = 64 * 1024 * 1024
 
-function stripGeneratedAt(json) {
-  const { generatedAt: _ignored, ...rest } = json
+function stripTimestamps(json) {
+  const { generatedAt: _g, fetchedAt: _f, ...rest } = json
   return JSON.stringify(rest)
 }
 
@@ -40,7 +44,7 @@ async function main() {
     }
 
     const prev = JSON.parse(prevRaw)
-    if (stripGeneratedAt(next) !== stripGeneratedAt(prev)) {
+    if (stripTimestamps(next) !== stripTimestamps(prev)) {
       changed = true
     } else {
       // Timestamp-only churn — restore committed file so git stays clean.

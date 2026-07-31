@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T22:28:27.493Z",
+  "generatedAt": "2026-07-31T12:32:15.783Z",
   "sourceLabel": "Digital Futures",
   "theses": [
     {
@@ -39,7 +39,7 @@
           "role": "ia",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nicholas Puckett",
           "email": "npuckett@ocadu.ca"
         }
@@ -104,8 +104,8 @@
         {
           "role": "ia",
           "roleLabel": "Secondary advisor",
-          "advisorId": "cferadaymiller",
-          "name": "Catherine Miller",
+          "advisorId": "catherine-feraday-miller",
+          "name": "Catherine Feraday Miller",
           "rawName": "Catherine Miller",
           "email": "cferadaymiller@ocadu.ca"
         }
@@ -417,7 +417,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nicholas Puckett",
           "email": "npuckett@ocadu.ca"
         },
@@ -428,14 +428,6 @@
           "name": "Immony Men",
           "rawName": "Immony Men",
           "email": "imen@ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "maria-yablonina",
-          "name": "Maria Yablonina",
-          "rawName": "Maria Yablonina",
-          "email": "maria.yablonina@daniels.utoronto.ca"
         }
       ],
       "documents": [
@@ -609,8 +601,8 @@
         {
           "role": "sr",
           "roleLabel": "Secondary advisor",
-          "advisorId": "atung",
-          "name": "Tung Annie",
+          "advisorId": "annie-tung",
+          "name": "Annie Tung",
           "rawName": "Tung Annie",
           "email": "atung@ocadu.ca"
         }
@@ -685,14 +677,6 @@
           "name": "Veronika Szkudlarek",
           "rawName": "Veronika Szkudlarek",
           "email": "vszkudlarek@ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "judith-doyle",
-          "name": "Judith Doyle",
-          "rawName": "Judith Doyle",
-          "email": "jdoyle@ocadu.ca"
         }
       ],
       "documents": [
@@ -844,7 +828,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nicholas Puckett",
           "email": null
         },
@@ -1151,42 +1135,10 @@
         {
           "role": "cm",
           "roleLabel": "Secondary advisor",
-          "advisorId": "bentley-jarvis",
-          "name": "Bentley Jarvis",
-          "rawName": "Jarvis Bentley",
-          "email": "bjarvis@ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "m",
-          "name": "Akiyama Mitchel",
-          "rawName": "Akiyama Mitchel",
-          "email": "m@mitchellakiyama.com"
-        },
-        {
-          "role": "cm",
-          "roleLabel": "Secondary advisor",
-          "advisorId": "mmastroeni",
-          "name": "Michele Mastroeni",
-          "rawName": "Michele Mastroni",
-          "email": "mmastroeni@ocadu.ca"
-        },
-        {
-          "role": "pd",
-          "roleLabel": "Secondary advisor",
           "advisorId": "simone-jones",
           "name": "Simone Jones",
           "rawName": "Simone Jones",
           "email": "sjones@ocadu.ca"
-        },
-        {
-          "role": "sr",
-          "roleLabel": "Secondary advisor",
-          "advisorId": "gracegrothaus",
-          "name": "Grace Grothaus",
-          "rawName": "Grace Grothaus",
-          "email": "gracegrothaus@ocadu.ca"
         }
       ],
       "documents": [
@@ -1562,14 +1514,6 @@
           "advisorId": "adam-tindale",
           "name": "Adam Tindale",
           "rawName": "Adam Tindale",
-          "email": null
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "steve-engels",
-          "name": "Steve Engels",
-          "rawName": "Steve Engels",
           "email": null
         }
       ],
@@ -1976,14 +1920,6 @@
           "name": "Claire Brunet",
           "rawName": "Claire Brunet",
           "email": "cbrunet@ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "pgivord",
-          "name": "Priam Givord",
-          "rawName": "Priam Givord",
-          "email": "pgivord@gmail.com"
         }
       ],
       "documents": [
@@ -2107,14 +2043,6 @@
           "name": "Ala Roushan",
           "rawName": "Ala Roushan",
           "email": "aroushan@ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "akhor001",
-          "name": "Andrea Khôra",
-          "rawName": "Andrea Khôra",
-          "email": "akhor001@gold.ac.uk"
         }
       ],
       "documents": [
@@ -2171,14 +2099,6 @@
           "name": "Haru Ji",
           "rawName": "Haru Ji",
           "email": "hji@ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "jtingley",
-          "name": "Tinley Jane",
-          "rawName": "Tinley Jane",
-          "email": "jtingley@yorku.ca"
         }
       ],
       "documents": [
@@ -2288,22 +2208,6 @@
           "name": "Emma Westecott",
           "rawName": "Emma Westecott",
           "email": "ewestecott@ocadu.ca"
-        },
-        {
-          "role": "cm",
-          "roleLabel": "Secondary advisor",
-          "advisorId": "kate-hartman",
-          "name": "Kate Hartman",
-          "rawName": "Kate Hartman",
-          "email": "khartman@ocadu.ca"
-        },
-        {
-          "role": null,
-          "roleLabel": "Secondary advisor",
-          "advisorId": "dave",
-          "name": "Dave Proctor",
-          "rawName": "Dave Proctor",
-          "email": "dave@mightyyell.com"
         }
       ],
       "documents": [
@@ -2364,7 +2268,7 @@
           "role": null,
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Puckett Nicholas",
           "email": null
         }
@@ -2579,14 +2483,6 @@
           "name": "Fidelia Lam",
           "rawName": "Fidelia Lam",
           "email": null
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "shital-desai",
-          "name": "Shital Desai",
-          "rawName": "Shital Desai",
-          "email": null
         }
       ],
       "documents": [
@@ -2679,7 +2575,7 @@
           "role": "ia",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Puckett Nicholas",
           "email": "npuckett@ocadu.ca"
         }
@@ -2746,7 +2642,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nicholas Puckett",
           "email": "npuckett@ocadu.ca"
         },
@@ -2765,14 +2661,6 @@
           "name": "Simone Jones",
           "rawName": "Simone Jones",
           "email": "sjones@ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "yshaik72",
-          "name": "Yifat Shaik",
-          "rawName": "Yifat Shaik",
-          "email": "yshaik72@yorku.ca"
         }
       ],
       "documents": [
@@ -3044,14 +2932,6 @@
           "email": "mordonez@ocadu.ca"
         },
         {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "shanbell",
-          "name": "Shannon Bell",
-          "rawName": "Shannon Bell",
-          "email": "shanbell@yorku.ca"
-        },
-        {
           "role": "cm",
           "roleLabel": "Secondary advisor",
           "advisorId": "judith-doyle",
@@ -3136,7 +3016,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nicholas Puckett",
           "email": "npuckett@ocadu.ca"
         },
@@ -3155,14 +3035,6 @@
           "name": "Adam Tindale",
           "rawName": "Adam Tindale",
           "email": "atindale@ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "alicia",
-          "name": "Alicia Seidle",
-          "rawName": "Alicia Seidle",
-          "email": "alicia@oshwa.org"
         }
       ],
       "documents": [
@@ -3322,14 +3194,6 @@
           "name": "Greg Van Alstyne",
           "rawName": "Greg Van Alstyne",
           "email": "gvanalstyne@ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "ali-qadeer",
-          "name": "Ali Qadeer",
-          "rawName": "Ali Shamas Qadeer",
-          "email": "aqadeer@ocadu.ca"
         }
       ],
       "documents": [
@@ -3391,14 +3255,6 @@
           "name": "Isabel Meirelles",
           "rawName": "Isabel Meirelles",
           "email": "imeirelles@ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "haru-ji",
-          "name": "Haru Ji",
-          "rawName": "Haru Ji",
-          "email": "hji@ocadu.ca"
         }
       ],
       "documents": [
@@ -3570,7 +3426,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nicholas Puckett",
           "email": "npuckett@ocadu.ca"
         },
@@ -3749,7 +3605,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nicholas Puckett",
           "email": "npuckett@ocadu.ca"
         },
@@ -4229,7 +4085,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nicholas Puckett",
           "email": "npuckett@ocadu.ca"
         },
@@ -4404,7 +4260,7 @@
           "role": "sr",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nicholas Puckett",
           "email": null
         }
@@ -4538,35 +4394,19 @@
       ],
       "advisors": [
         {
-          "role": null,
-          "roleLabel": "Secondary advisor",
+          "role": "pa",
+          "roleLabel": "Primary advisor",
           "advisorId": "adam-tindale",
           "name": "Adam Tindale",
           "rawName": "Adam Tindale",
           "email": null
         },
         {
-          "role": null,
-          "roleLabel": "Secondary advisor",
-          "advisorId": "kate-hartman",
-          "name": "Kate Hartman",
-          "rawName": "Kate Hartman",
-          "email": null
-        },
-        {
-          "role": null,
+          "role": "cm",
           "roleLabel": "Secondary advisor",
           "advisorId": "bentley-jarvis",
           "name": "Bentley Jarvis",
           "rawName": "Bentley Jarvis",
-          "email": null
-        },
-        {
-          "role": null,
-          "roleLabel": "Secondary advisor",
-          "advisorId": "debashis-sinha",
-          "name": "Debashis Sinha",
-          "rawName": "Debashis Sinha",
           "email": null
         }
       ],
@@ -4676,7 +4516,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": "npuckett@ocadu.ca"
         },
@@ -4759,36 +4599,12 @@
           "email": "sdiamond@ocadu.ca"
         },
         {
-          "role": "ia",
+          "role": "cm",
           "roleLabel": "Secondary advisor",
           "advisorId": "jbowes",
           "name": "Jeremy Bowes",
           "rawName": "Jeremy Bowes",
           "email": "jbowes@ocadu.ca"
-        },
-        {
-          "role": "ia",
-          "roleLabel": "Secondary advisor",
-          "advisorId": "adam-tindale",
-          "name": "Adam Tindale",
-          "rawName": "Adam Tindale",
-          "email": "atindale@ocadu.ca"
-        },
-        {
-          "role": "ia",
-          "roleLabel": "Secondary advisor",
-          "advisorId": "emma-westecott",
-          "name": "Emma Westecott",
-          "rawName": "Emma Westecott",
-          "email": "ewestecott@ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "cgiraudy",
-          "name": "Cheryl Giraudy",
-          "rawName": "Cheryl Giraudy",
-          "email": "cgiraudy@ocadu.ca"
         }
       ],
       "documents": [
@@ -5294,14 +5110,6 @@
           "name": "Cindy Poremba",
           "rawName": "Cindy Poremba",
           "email": "cporemba@ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "jstoll",
-          "name": "Jeremy Stoll",
-          "rawName": "Jeremy Stoll",
-          "email": "jstoll@ccad.edu"
         }
       ],
       "documents": [
@@ -5357,7 +5165,7 @@
           "role": "sr",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": null
         }
@@ -5634,14 +5442,6 @@
           "advisorId": "cindy-poremba",
           "name": "Cindy Poremba",
           "rawName": "Cindy Poremba",
-          "email": null
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "paul-darvasi",
-          "name": "Paul Darvasi",
-          "rawName": "Paul Darvasi",
           "email": null
         }
       ],
@@ -5940,7 +5740,7 @@
           "role": "sr",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nicholas Puckett",
           "email": null
         }
@@ -5996,7 +5796,7 @@
           "role": "ia",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nicholas Puckett",
           "email": "npuckett@ocadu.ca"
         }
@@ -6338,14 +6138,6 @@
           "name": "Camille Isaacs",
           "rawName": "Camille Isaacs",
           "email": null
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "johann-diedrick",
-          "name": "Johann Diedrick",
-          "rawName": "Johann Diedrick",
-          "email": null
         }
       ],
       "documents": [
@@ -6415,8 +6207,8 @@
         {
           "role": "pa",
           "roleLabel": "Primary advisor",
-          "advisorId": "adam-tinsdale",
-          "name": "Adam Tinsdale",
+          "advisorId": "adam-tindale",
+          "name": "Adam Tindale",
           "rawName": "Adam Tinsdale",
           "email": null
         },
@@ -6664,8 +6456,8 @@
         {
           "role": "cm",
           "roleLabel": "Secondary advisor",
-          "advisorId": "mazalek",
-          "name": "ali aazalek",
+          "advisorId": "ali-mazalek",
+          "name": "Ali Mazalek",
           "rawName": "ali aazalek",
           "email": "mazalek@ryerson.ca"
         },
@@ -6808,8 +6600,8 @@
         {
           "role": "ia",
           "roleLabel": "Secondary advisor",
-          "advisorId": "michael-propokow",
-          "name": "Michael Propokow",
+          "advisorId": "michael-prokopow",
+          "name": "Michael Prokopow",
           "rawName": "Michael Propokow",
           "email": "michael.propokow@ocadu.ca"
         }
@@ -6943,7 +6735,7 @@
           "role": "ia",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nicholas Puckett",
           "email": "npuckett@ocadu.ca"
         }
@@ -7556,7 +7348,7 @@
           "role": "cm",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nicholas Puckett",
           "email": "npuckett@faculty.ocadu.ca"
         }
@@ -7712,7 +7504,7 @@
           "role": "sr",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nicholas Puckett",
           "email": "npuckett@faculty.ocadu.ca"
         }
@@ -8158,7 +7950,7 @@
           "role": "sr",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nicholas Puckett",
           "email": "npuckett@faculty.ocadu.ca"
         }
@@ -8298,8 +8090,8 @@
         {
           "role": "cm",
           "roleLabel": "Secondary advisor",
-          "advisorId": "mleepoy",
-          "name": "Michael Poy",
+          "advisorId": "michael-lee-poy",
+          "name": "Michael Lee Poy",
           "rawName": "Michael Poy",
           "email": "mleepoy@faculty.ocadu.ca"
         }
@@ -8498,7 +8290,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": null
         },
@@ -8728,7 +8520,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Pucket",
           "email": "npuckett@faculty.ocadu.ca"
         },
@@ -8974,14 +8766,6 @@
           "name": "Adam Tindale",
           "rawName": "Adam / AT Tindale",
           "email": null
-        },
-        {
-          "role": "cm",
-          "roleLabel": "Secondary advisor",
-          "advisorId": "fraser-fa-anderson",
-          "name": "Fraser / FA Anderson",
-          "rawName": "Fraser / FA Anderson",
-          "email": null
         }
       ],
       "documents": [
@@ -9053,7 +8837,7 @@
           "role": "cm",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": "npuckett@faculty.ocadu.ca"
         }
@@ -9837,7 +9621,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": "npuckett@faculty.ocadu.ca"
         },
@@ -10044,14 +9828,6 @@
           "name": "Ali Qadeer",
           "rawName": "Ali Qadeer",
           "email": null
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "graham-wakefield",
-          "name": "Graham Wakefield",
-          "rawName": "Graham Wakefield",
-          "email": null
         }
       ],
       "documents": [
@@ -10122,14 +9898,6 @@
           "advisorId": "kate-hartman",
           "name": "Kate Hartman",
           "rawName": "Kate Hartman",
-          "email": null
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "graham-wakefield",
-          "name": "Graham Wakefield",
-          "rawName": "Graham Wakefield",
           "email": null
         },
         {
@@ -10261,7 +10029,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": "npuckett@faculty.ocadu.ca"
         },
@@ -10333,7 +10101,7 @@
           "role": "cm",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": "npuckett@faculty.ocadu.ca"
         },
@@ -11138,14 +10906,6 @@
           "name": "Peter Morin",
           "rawName": "Peter Morin",
           "email": "pmorin@faculty.ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "gabriel-barcia-colombo",
-          "name": "Gabriel Barcia-Colombo",
-          "rawName": "Gabriel Barcia-Colombo",
-          "email": null
         }
       ],
       "documents": [
@@ -11365,7 +11125,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": "npuckett@faculty.ocadu.ca"
         },
@@ -11797,14 +11557,6 @@
           "name": "Bonnie Devine",
           "rawName": "Bonnie Devine",
           "email": "bdevine@faculty.ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "kbenzon",
-          "name": "Kiki Benzon",
-          "rawName": "Kiki Benzon",
-          "email": "kbenzon@cinema.usc.edu"
         },
         {
           "role": "pd",
@@ -12565,7 +12317,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": null
         },
@@ -13247,7 +12999,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": "npuckett@faculty.ocadu.ca"
         },
@@ -13318,7 +13070,7 @@
           "role": "cm",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": "npuckett@faculty.ocadu.ca"
         }
@@ -13384,7 +13136,7 @@
         {
           "role": "pa",
           "roleLabel": "Primary advisor",
-          "advisorId": "momahony",
+          "advisorId": "marie-o-mahony",
           "name": "Marie O'Mahony",
           "rawName": "Marie O'Mahony",
           "email": "momahony@faculty.ocadu.ca"
@@ -13468,7 +13220,7 @@
           "role": "pd",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": "npuckett@faculty.ocadu.ca"
         },
@@ -13479,14 +13231,6 @@
           "name": "Luke Painter",
           "rawName": "Luke Painter",
           "email": "lpainter@faculty.ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "jeff-watson",
-          "name": "Jeff Watson",
-          "rawName": "Jeff Watson",
-          "email": "jeff.watson@cinema.usc.edu"
         }
       ],
       "documents": [
@@ -13563,7 +13307,7 @@
           "role": "sr",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Puckett Nick",
           "email": "npuckett@faculty.ocadu.ca"
         }
@@ -13754,7 +13498,7 @@
           "role": "sr",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "puckett nick",
           "email": "npuckett@faculty.ocadu.ca"
         }
@@ -13874,7 +13618,7 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": "npuckett@faculty.ocadu.ca"
         },
@@ -13948,14 +13692,6 @@
           "name": "Stuart Candy",
           "rawName": "Stuart Candy",
           "email": "scandy@faculty.ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "philippe-blanchard",
-          "name": "Philippe Blanchard",
-          "rawName": "Phillipe Blanchard",
-          "email": null
         }
       ],
       "documents": [
@@ -14109,14 +13845,6 @@
           "name": "Greg Van Alstyne",
           "rawName": "Greg Van Alstyne",
           "email": "gvanalstyne@faculty.ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "jeff-watson",
-          "name": "Jeff Watson",
-          "rawName": "Jeff Watson",
-          "email": "remotedevice@gmail.com"
         },
         {
           "role": "pd",
@@ -14299,14 +14027,6 @@
           "email": "sjones@faculty.ocadu.ca"
         },
         {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "jeff-watson",
-          "name": "Jeff Watson",
-          "rawName": "Jeff Watson",
-          "email": null
-        },
-        {
           "role": "pd",
           "roleLabel": "Secondary advisor",
           "advisorId": "martha-ladly",
@@ -14459,8 +14179,8 @@
         {
           "role": null,
           "roleLabel": "Secondary advisor",
-          "advisorId": "shea-geoffrey",
-          "name": "Shea Geoffrey",
+          "advisorId": "geoffrey-shea",
+          "name": "Geoffrey Shea",
           "rawName": "Shea Geoffrey",
           "email": null
         }
@@ -14519,7 +14239,7 @@
           "role": null,
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": null
         },
@@ -14643,17 +14363,9 @@
           "role": "sr",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": "npuckett@faculty.ocadu.ca"
-        },
-        {
-          "role": "ea",
-          "roleLabel": "External examiner",
-          "advisorId": "kiki-benson",
-          "name": "Kiki Benson",
-          "rawName": "Kiki Benson",
-          "email": null
         },
         {
           "role": "ia",
@@ -14783,7 +14495,7 @@
           "role": "cm",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": null
         }
@@ -14842,15 +14554,15 @@
           "role": "pa",
           "roleLabel": "Primary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": null
         },
         {
           "role": "cm",
           "roleLabel": "Secondary advisor",
-          "advisorId": "marie-o-mahoney",
-          "name": "Marie O'Mahoney",
+          "advisorId": "marie-o-mahony",
+          "name": "Marie O'Mahony",
           "rawName": "Marie O'Mahoney",
           "email": null
         }
@@ -14978,7 +14690,7 @@
           "role": null,
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": null
         }
@@ -15307,7 +15019,7 @@
           "role": "cm",
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": null
         }
@@ -16110,7 +15822,7 @@
           "role": null,
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": null
         }
@@ -16166,7 +15878,7 @@
           "role": null,
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": null
         }
@@ -16338,7 +16050,7 @@
           "role": null,
           "roleLabel": "Secondary advisor",
           "advisorId": "nick-puckett",
-          "name": "Nick Puckett",
+          "name": "Nicholas Puckett",
           "rawName": "Nick Puckett",
           "email": null
         },
@@ -16673,8 +16385,8 @@
         {
           "role": "pa",
           "roleLabel": "Primary advisor",
-          "advisorId": "marie-o-mahoney",
-          "name": "Marie O'Mahoney",
+          "advisorId": "marie-o-mahony",
+          "name": "Marie O'Mahony",
           "rawName": "Marie O'Mahoney",
           "email": null
         },
@@ -17682,6 +17394,7 @@
       "aliases": [
         ". Adam Tindale",
         "Adam / AT Tindale",
+        "Adam Tinsdale",
         "Tindale Adam",
         "adam tindale"
       ],
@@ -17703,12 +17416,12 @@
         4457,
         4448,
         4378,
-        4366,
         4359,
         4198,
         4132,
         4024,
         3803,
+        3799,
         3792,
         3699,
         3448,
@@ -17741,19 +17454,9 @@
         290,
         219
       ],
-      "primaryCount": 19,
-      "secondaryCount": 31
-    },
-    {
-      "id": "adam-tinsdale",
-      "name": "Adam Tinsdale",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        3799
-      ],
-      "primaryCount": 1,
-      "secondaryCount": 0
+      "primaryCount": 21,
+      "secondaryCount": 29,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/atindale"
     },
     {
       "id": "ala-roushan",
@@ -17774,7 +17477,8 @@
         2346
       ],
       "primaryCount": 2,
-      "secondaryCount": 5
+      "secondaryCount": 5,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/aroushan"
     },
     {
       "id": "amanu",
@@ -17787,7 +17491,8 @@
         5126
       ],
       "primaryCount": 1,
-      "secondaryCount": 0
+      "secondaryCount": 0,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/amanu"
     },
     {
       "id": "alexis-morris",
@@ -17836,12 +17541,15 @@
         2496
       ],
       "primaryCount": 20,
-      "secondaryCount": 10
+      "secondaryCount": 10,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/amorris"
     },
     {
-      "id": "mazalek",
-      "name": "ali aazalek",
-      "aliases": [],
+      "id": "ali-mazalek",
+      "name": "Ali Mazalek",
+      "aliases": [
+        "ali aazalek"
+      ],
       "emails": [
         "mazalek@ryerson.ca"
       ],
@@ -17918,7 +17626,24 @@
         5070
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/aseeschaafveres"
+    },
+    {
+      "id": "annie-tung",
+      "name": "Annie Tung",
+      "aliases": [
+        "Tung Annie"
+      ],
+      "emails": [
+        "atung@ocadu.ca"
+      ],
+      "projectIds": [
+        5112
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 1,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/atung"
     },
     {
       "id": "ashok-mathur",
@@ -17936,7 +17661,8 @@
         3334
       ],
       "primaryCount": 1,
-      "secondaryCount": 3
+      "secondaryCount": 3,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/amathur"
     },
     {
       "id": "ayumi-goto",
@@ -17977,15 +17703,13 @@
       "name": "Bentley Jarvis",
       "aliases": [
         "Bentley Jarvais",
-        "Bently Jarvis",
-        "Jarvis Bentley"
+        "Bently Jarvis"
       ],
       "emails": [
         "bjarvis@faculty.ocadu.ca",
         "bjarvis@ocadu.ca"
       ],
       "projectIds": [
-        5146,
         5091,
         4746,
         4475,
@@ -17995,7 +17719,7 @@
         210
       ],
       "primaryCount": 0,
-      "secondaryCount": 8
+      "secondaryCount": 7
     },
     {
       "id": "bill-leeming",
@@ -18015,7 +17739,8 @@
         290
       ],
       "primaryCount": 3,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/bleeming"
     },
     {
       "id": "bdevine",
@@ -18039,7 +17764,8 @@
         3795
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/cisaacs"
     },
     {
       "id": "caroline-langill",
@@ -18053,9 +17779,11 @@
       "secondaryCount": 1
     },
     {
-      "id": "cferadaymiller",
-      "name": "Catherine Miller",
-      "aliases": [],
+      "id": "catherine-feraday-miller",
+      "name": "Catherine Feraday Miller",
+      "aliases": [
+        "Catherine Miller"
+      ],
       "emails": [
         "cferadaymiller@ocadu.ca"
       ],
@@ -18102,7 +17830,8 @@
         2312
       ],
       "primaryCount": 8,
-      "secondaryCount": 15
+      "secondaryCount": 15,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/cporemba"
     },
     {
       "id": "claire-brunet",
@@ -18128,19 +17857,6 @@
       ],
       "projectIds": [
         4281
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
-      "id": "dave",
-      "name": "Dave Proctor",
-      "aliases": [],
-      "emails": [
-        "dave@mightyyell.com"
-      ],
-      "projectIds": [
-        4644
       ],
       "primaryCount": 0,
       "secondaryCount": 1
@@ -18178,17 +17894,6 @@
       "secondaryCount": 2
     },
     {
-      "id": "debashis-sinha",
-      "name": "Debashis Sinha",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        4198
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
       "id": "emma-westecott",
       "name": "Emma Westecott",
       "aliases": [
@@ -18209,7 +17914,6 @@
         4487,
         4482,
         4470,
-        4366,
         4037,
         4018,
         4017,
@@ -18232,7 +17936,8 @@
         208
       ],
       "primaryCount": 16,
-      "secondaryCount": 15
+      "secondaryCount": 14,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/ewestecott"
     },
     {
       "id": "eric-blais",
@@ -18261,18 +17966,8 @@
         4661
       ],
       "primaryCount": 1,
-      "secondaryCount": 3
-    },
-    {
-      "id": "fraser-fa-anderson",
-      "name": "Fraser / FA Anderson",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        2946
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 3,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/lamf"
     },
     {
       "id": "gmoser",
@@ -18290,16 +17985,20 @@
     {
       "id": "geoffrey-shea",
       "name": "Geoffrey Shea",
-      "aliases": [],
+      "aliases": [
+        "Shea Geoffrey"
+      ],
       "emails": [],
       "projectIds": [
         2647,
+        694,
         225,
         219,
         214
       ],
       "primaryCount": 0,
-      "secondaryCount": 4
+      "secondaryCount": 5,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/gshea"
     },
     {
       "id": "gmcmaster",
@@ -18310,19 +18009,6 @@
       ],
       "projectIds": [
         836
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
-      "id": "gracegrothaus",
-      "name": "Grace Grothaus",
-      "aliases": [],
-      "emails": [
-        "gracegrothaus@ocadu.ca"
-      ],
-      "projectIds": [
-        5146
       ],
       "primaryCount": 0,
       "secondaryCount": 1
@@ -18357,7 +18043,8 @@
         230
       ],
       "primaryCount": 2,
-      "secondaryCount": 2
+      "secondaryCount": 2,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/gvanalstyne"
     },
     {
       "id": "haru-ji",
@@ -18396,7 +18083,8 @@
         2633
       ],
       "primaryCount": 1,
-      "secondaryCount": 2
+      "secondaryCount": 2,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/iclarke"
     },
     {
       "id": "immony-men",
@@ -18416,7 +18104,8 @@
         2265
       ],
       "primaryCount": 2,
-      "secondaryCount": 5
+      "secondaryCount": 5,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/imen"
     },
     {
       "id": "isabel-meirelles",
@@ -18441,7 +18130,8 @@
         2250
       ],
       "primaryCount": 6,
-      "secondaryCount": 4
+      "secondaryCount": 4,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/imeirelles"
     },
     {
       "id": "jbaerg",
@@ -18513,7 +18203,8 @@
         207
       ],
       "primaryCount": 4,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/jrutgers"
     },
     {
       "id": "judith-doyle",
@@ -18551,7 +18242,8 @@
         3393
       ],
       "primaryCount": 1,
-      "secondaryCount": 0
+      "secondaryCount": 0,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/julianhaladyn"
     },
     {
       "id": "jutta-treviranus",
@@ -18562,7 +18254,8 @@
         4321
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/jtreviranus"
     },
     {
       "id": "kate-hartman",
@@ -18583,11 +18276,9 @@
         4721,
         4684,
         4670,
-        4644,
         4458,
         4454,
         4365,
-        4198,
         3766,
         3756,
         3744,
@@ -18615,7 +18306,8 @@
         221
       ],
       "primaryCount": 16,
-      "secondaryCount": 22
+      "secondaryCount": 20,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/khartman"
     },
     {
       "id": "kate-sellen",
@@ -18632,7 +18324,8 @@
         1647
       ],
       "primaryCount": 4,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/ksellen"
     },
     {
       "id": "kmoscou",
@@ -18645,7 +18338,8 @@
         3756
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/kmoscou"
     },
     {
       "id": "lpainter",
@@ -18658,7 +18352,8 @@
         865
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/lpainter"
     },
     {
       "id": "mgordon",
@@ -18671,7 +18366,8 @@
         2963
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/mgordon"
     },
     {
       "id": "maria-belen-ordonez",
@@ -18698,32 +18394,25 @@
         2252
       ],
       "primaryCount": 0,
-      "secondaryCount": 9
+      "secondaryCount": 9,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/mordonez"
     },
     {
-      "id": "marie-o-mahoney",
-      "name": "Marie O'Mahoney",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        288,
-        227
-      ],
-      "primaryCount": 1,
-      "secondaryCount": 1
-    },
-    {
-      "id": "momahony",
+      "id": "marie-o-mahony",
       "name": "Marie O'Mahony",
-      "aliases": [],
+      "aliases": [
+        "Marie O'Mahoney"
+      ],
       "emails": [
         "momahony@faculty.ocadu.ca"
       ],
       "projectIds": [
-        623
+        623,
+        288,
+        227
       ],
-      "primaryCount": 1,
-      "secondaryCount": 0
+      "primaryCount": 2,
+      "secondaryCount": 1
     },
     {
       "id": "martha-ladly",
@@ -18753,9 +18442,11 @@
       "secondaryCount": 7
     },
     {
-      "id": "mleepoy",
-      "name": "Michael Poy",
-      "aliases": [],
+      "id": "michael-lee-poy",
+      "name": "Michael Lee Poy",
+      "aliases": [
+        "Michael Poy"
+      ],
       "emails": [
         "mleepoy@faculty.ocadu.ca"
       ],
@@ -18763,48 +18454,38 @@
         3334
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/mleepoy"
     },
     {
       "id": "michael-prokopow",
       "name": "Michael Prokopow",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        3044
+      "aliases": [
+        "Michael Propokow"
       ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
-      "id": "michael-propokow",
-      "name": "Michael Propokow",
-      "aliases": [],
       "emails": [
         "michael.propokow@ocadu.ca"
       ],
       "projectIds": [
-        3792
+        3792,
+        3044
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 2,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/mprokopow"
     },
     {
       "id": "mmastroeni",
       "name": "Michele Mastroeni",
-      "aliases": [
-        "Michele Mastroni"
-      ],
+      "aliases": [],
       "emails": [
-        "mmastroeni@faculty.ocadu.ca",
-        "mmastroeni@ocadu.ca"
+        "mmastroeni@faculty.ocadu.ca"
       ],
       "projectIds": [
-        5146,
         3570
       ],
       "primaryCount": 0,
-      "secondaryCount": 2
+      "secondaryCount": 1
     },
     {
       "id": "michelle-gay",
@@ -18835,25 +18516,15 @@
         3655
       ],
       "primaryCount": 1,
-      "secondaryCount": 4
-    },
-    {
-      "id": "nick-goso",
-      "name": "Nick Goso",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        3625
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 4,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/michellemiller"
     },
     {
       "id": "nick-puckett",
-      "name": "Nick Puckett",
+      "name": "Nicholas Puckett",
       "aliases": [
-        "Nicholas Puckett",
         "Nick Pucket",
+        "Nick Puckett",
         "Puckett Nicholas",
         "Puckett Nick",
         "puckett nick"
@@ -18907,7 +18578,19 @@
         215
       ],
       "primaryCount": 17,
-      "secondaryCount": 25
+      "secondaryCount": 25,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/npuckett"
+    },
+    {
+      "id": "nick-goso",
+      "name": "Nick Goso",
+      "aliases": [],
+      "emails": [],
+      "projectIds": [
+        3625
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 1
     },
     {
       "id": "parantap-bhatt",
@@ -18922,7 +18605,8 @@
         5007
       ],
       "primaryCount": 2,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/pbhatt"
     },
     {
       "id": "patricio-davila",
@@ -18981,7 +18665,8 @@
         3762
       ],
       "primaryCount": 0,
-      "secondaryCount": 1
+      "secondaryCount": 1,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/pjones"
     },
     {
       "id": "pmorin",
@@ -19014,7 +18699,8 @@
         36
       ],
       "primaryCount": 1,
-      "secondaryCount": 5
+      "secondaryCount": 5,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/pblanchard"
     },
     {
       "id": "phillip-joe",
@@ -19038,7 +18724,8 @@
         3669
       ],
       "primaryCount": 1,
-      "secondaryCount": 0
+      "secondaryCount": 0,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/rgrant"
     },
     {
       "id": "sara-diamond",
@@ -19058,7 +18745,8 @@
         1680
       ],
       "primaryCount": 5,
-      "secondaryCount": 3
+      "secondaryCount": 3,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/sdiamond"
     },
     {
       "id": "selmin-kara",
@@ -19073,17 +18761,6 @@
       ],
       "primaryCount": 0,
       "secondaryCount": 2
-    },
-    {
-      "id": "shea-geoffrey",
-      "name": "Shea Geoffrey",
-      "aliases": [],
-      "emails": [],
-      "projectIds": [
-        694
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
     },
     {
       "id": "simone-jones",
@@ -19111,7 +18788,8 @@
         228
       ],
       "primaryCount": 2,
-      "secondaryCount": 13
+      "secondaryCount": 13,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/sjones"
     },
     {
       "id": "sowmya-somanath",
@@ -19172,7 +18850,8 @@
         294
       ],
       "primaryCount": 8,
-      "secondaryCount": 9
+      "secondaryCount": 9,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/sstein"
     },
     {
       "id": "tom-barker",
@@ -19197,19 +18876,6 @@
       "secondaryCount": 5
     },
     {
-      "id": "atung",
-      "name": "Tung Annie",
-      "aliases": [],
-      "emails": [
-        "atung@ocadu.ca"
-      ],
-      "projectIds": [
-        5112
-      ],
-      "primaryCount": 0,
-      "secondaryCount": 1
-    },
-    {
       "id": "veronika-szkudlarek",
       "name": "Veronika Szkudlarek",
       "aliases": [],
@@ -19221,7 +18887,8 @@
         4704
       ],
       "primaryCount": 0,
-      "secondaryCount": 2
+      "secondaryCount": 2,
+      "facultyBioUrl": "https://www.ocadu.ca/academics/explore-faculty/vszkudlarek"
     }
   ],
   "topics": [

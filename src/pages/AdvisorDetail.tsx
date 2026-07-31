@@ -14,8 +14,13 @@ export function AdvisorDetail() {
   const advisor = id ? advisorById(data, id) : undefined
   if (!advisor) return <EmptyState label="Advisor not found." />
 
+  // Advisor pages only list primary/secondary work — never external examiner slots.
   const projects = sortTheses(
-    data.theses.filter((t) => advisor.projectIds.includes(t.id)),
+    data.theses.filter((t) =>
+      t.advisors.some(
+        (a) => a.advisorId === advisor.id && !isExternalExaminerRole(a.role),
+      ),
+    ),
     'year',
   )
 
@@ -29,19 +34,32 @@ export function AdvisorDetail() {
       <div className="toolbar">
         <h1 className="toolbar__title">{advisor.name}</h1>
         <p className="toolbar__meta">
-          {advisor.projectIds.length} projects · {advisor.primaryCount} primary ·{' '}
+          {projects.length} projects · {advisor.primaryCount} primary ·{' '}
           {advisor.secondaryCount} secondary
+          {advisor.facultyBioUrl ? (
+            <>
+              {' · '}
+              <a
+                href={advisor.facultyBioUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="text-link"
+              >
+                Faculty Bio
+              </a>
+            </>
+          ) : null}
         </p>
       </div>
 
       <div className="card-grid">
         {projects.map((t) => {
-          const roles = t.advisors.filter((a) => a.advisorId === advisor.id)
+          const roles = t.advisors.filter(
+            (a) => a.advisorId === advisor.id && !isExternalExaminerRole(a.role),
+          )
           const label = roles.some((a) => isPrimaryRole(a.role))
             ? 'Primary advisor'
-            : roles.some((a) => isExternalExaminerRole(a.role))
-              ? 'External examiner'
-              : roleLabel(roles[0]?.role ?? null)
+            : roleLabel(roles[0]?.role ?? null)
           return <ProjectCard key={t.id} thesis={t} badge={label} />
         })}
       </div>

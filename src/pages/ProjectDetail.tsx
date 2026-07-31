@@ -58,20 +58,18 @@ export function ProjectDetail() {
         </section>
       ) : null}
 
-      {thesis.advisors.length > 0 ? (
+      {thesis.advisors.filter((a) => !isExternalExaminerRole(a.role)).length > 0 ? (
         <section className="section">
           <h2>Advisors</h2>
           <ul className="plain-list">
-            {thesis.advisors.map((a, i) => (
-              <li key={`${a.advisorId}-${i}`}>
-                {isExternalExaminerRole(a.role) ? (
-                  <span>{a.name}</span>
-                ) : (
+            {thesis.advisors
+              .filter((a) => !isExternalExaminerRole(a.role))
+              .map((a, i) => (
+                <li key={`${a.advisorId}-${i}`}>
                   <Link to={`/advisors/${a.advisorId}`}>{a.name}</Link>
-                )}
-                <span className="muted"> — {a.roleLabel}</span>
-              </li>
-            ))}
+                  <span className="muted"> — {a.roleLabel}</span>
+                </li>
+              ))}
           </ul>
         </section>
       ) : null}

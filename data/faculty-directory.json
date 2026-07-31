@@ -1,0 +1,762 @@
+{
+  "fetchedAt": "2026-07-31T12:19:03.618Z",
+  "sourceUrl": "https://www.ocadu.ca/academics/explore-faculty",
+  "count": 151,
+  "people": [
+    {
+      "name": "Adam Badzynski",
+      "slug": "abadzynski",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/abadzynski"
+    },
+    {
+      "name": "Adam Tindale",
+      "slug": "atindale",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/atindale"
+    },
+    {
+      "name": "Ala Roushan",
+      "slug": "aroushan",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/aroushan"
+    },
+    {
+      "name": "Alexander Manu",
+      "slug": "amanu",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/amanu"
+    },
+    {
+      "name": "Alexandra Basekic",
+      "slug": "basekica",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/basekica"
+    },
+    {
+      "name": "Alexis Morris",
+      "slug": "amorris",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/amorris"
+    },
+    {
+      "name": "Alison Judd",
+      "slug": "ajudd",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/ajudd"
+    },
+    {
+      "name": "Amanda Boulos",
+      "slug": "amandaboulos",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/amandaboulos"
+    },
+    {
+      "name": "Amish Morrell",
+      "slug": "amorrell",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/amorrell"
+    },
+    {
+      "name": "Amy Swartz",
+      "slug": "aswartz",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/aswartz"
+    },
+    {
+      "name": "Amy Wong",
+      "slug": "awong",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/awong"
+    },
+    {
+      "name": "Andrew Gayed",
+      "slug": "agayed",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/agayed"
+    },
+    {
+      "name": "Angelika Seeschaaf-Veres",
+      "slug": "aseeschaafveres",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/aseeschaafveres"
+    },
+    {
+      "name": "Angus Mok",
+      "slug": "angusmok",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/angusmok"
+    },
+    {
+      "name": "Anna Stielau",
+      "slug": "astielau",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/astielau"
+    },
+    {
+      "name": "Annie Tung",
+      "slug": "atung",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/atung"
+    },
+    {
+      "name": "Ashok Mathur",
+      "slug": "amathur",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/amathur"
+    },
+    {
+      "name": "Bekky O'Neil",
+      "slug": "bekkyoneil",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/bekkyoneil"
+    },
+    {
+      "name": "Bernhard Dietz",
+      "slug": "bdietz",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/bdietz"
+    },
+    {
+      "name": "Bill Leeming",
+      "slug": "bleeming",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/bleeming"
+    },
+    {
+      "name": "Camille Isaacs",
+      "slug": "cisaacs",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/cisaacs"
+    },
+    {
+      "name": "Catherine Black",
+      "slug": "cblack",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/cblack"
+    },
+    {
+      "name": "Charles Reeve",
+      "slug": "creeve",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/creeve"
+    },
+    {
+      "name": "Cheryl Giraudy",
+      "slug": "cgiraudy",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/cgiraudy"
+    },
+    {
+      "name": "Christian Singer",
+      "slug": "csinger",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/csinger"
+    },
+    {
+      "name": "Christine McGlade",
+      "slug": "cmcglade",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/cmcglade"
+    },
+    {
+      "name": "Cindy Poremba",
+      "slug": "cporemba",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/cporemba"
+    },
+    {
+      "name": "Colleen McCarten",
+      "slug": "colleenmccarten",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/colleenmccarten"
+    },
+    {
+      "name": "Colleen Reid",
+      "slug": "cmreid",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/cmreid"
+    },
+    {
+      "name": "Cristal Buemi",
+      "slug": "cristalbuemi",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/cristalbuemi"
+    },
+    {
+      "name": "Daniel Francavilla",
+      "slug": "danielfrancavilla",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/danielfrancavilla"
+    },
+    {
+      "name": "David Clarkson",
+      "slug": "dclarkson",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/dclarkson"
+    },
+    {
+      "name": "David Griffin",
+      "slug": "dgriffin",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/dgriffin"
+    },
+    {
+      "name": "David Thorne",
+      "slug": "dthorne",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/dthorne"
+    },
+    {
+      "name": "Derek Sullivan",
+      "slug": "dsullivan",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/dsullivan"
+    },
+    {
+      "name": "Diane Mikhael",
+      "slug": "dmikhael",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/dmikhael"
+    },
+    {
+      "name": "Dorie Millerson",
+      "slug": "dmillerson",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/dmillerson"
+    },
+    {
+      "name": "Dot Tuer",
+      "slug": "dtuer",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/dtuer"
+    },
+    {
+      "name": "Eli Schwanz",
+      "slug": "elischwanz",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/elischwanz"
+    },
+    {
+      "name": "Emma Nishimura",
+      "slug": "enishimura",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/enishimura"
+    },
+    {
+      "name": "Emma Westecott",
+      "slug": "ewestecott",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/ewestecott"
+    },
+    {
+      "name": "Eric Nay",
+      "slug": "enay",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/enay"
+    },
+    {
+      "name": "Erin Finley",
+      "slug": "efinley",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/efinley"
+    },
+    {
+      "name": "Esery Mondesir",
+      "slug": "emondesir",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/emondesir"
+    },
+    {
+      "name": "Fidelia Lam",
+      "slug": "lamf",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/lamf"
+    },
+    {
+      "name": "Francis Lebouthillier",
+      "slug": "flebouthillier",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/flebouthillier"
+    },
+    {
+      "name": "Frank Zhang",
+      "slug": "frankzhang2",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/frankzhang2"
+    },
+    {
+      "name": "Franziska Erlebach",
+      "slug": "ferlebach",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/ferlebach"
+    },
+    {
+      "name": "Gabrielle Hezekiah",
+      "slug": "ghezekiah",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/ghezekiah"
+    },
+    {
+      "name": "Gary Taxali",
+      "slug": "gtaxali",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/gtaxali"
+    },
+    {
+      "name": "Geoffrey Shea",
+      "slug": "gshea",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/gshea"
+    },
+    {
+      "name": "George Walker",
+      "slug": "gwalker",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/gwalker"
+    },
+    {
+      "name": "Ginette Legare",
+      "slug": "glegare",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/glegare"
+    },
+    {
+      "name": "Grace An",
+      "slug": "gracean",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/gracean"
+    },
+    {
+      "name": "Greg Van Alstyne",
+      "slug": "gvanalstyne",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/gvanalstyne"
+    },
+    {
+      "name": "Halleh Nejadriahi",
+      "slug": "hnejadriahi",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/hnejadriahi"
+    },
+    {
+      "name": "Heather Frise",
+      "slug": "hfrise",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/hfrise"
+    },
+    {
+      "name": "Helmut Reichenbacher",
+      "slug": "hreichenbacher",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/hreichenbacher"
+    },
+    {
+      "name": "Ian Clarke",
+      "slug": "iclarke",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/iclarke"
+    },
+    {
+      "name": "Ilene Sova",
+      "slug": "isova",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/isova"
+    },
+    {
+      "name": "Immony Men",
+      "slug": "imen",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/imen"
+    },
+    {
+      "name": "Isaac King",
+      "slug": "isaacking",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/isaacking"
+    },
+    {
+      "name": "Isabel Meirelles",
+      "slug": "imeirelles",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/imeirelles"
+    },
+    {
+      "name": "Jana Macalik",
+      "slug": "jmacalik",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/jmacalik"
+    },
+    {
+      "name": "Jason Lujan",
+      "slug": "jasonlujan",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/jasonlujan"
+    },
+    {
+      "name": "Jim Drobnick",
+      "slug": "jdrobnick",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/jdrobnick"
+    },
+    {
+      "name": "JJ Lee",
+      "slug": "jjlee",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/jjlee"
+    },
+    {
+      "name": "Job Rutgers",
+      "slug": "jrutgers",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/jrutgers"
+    },
+    {
+      "name": "Julia Rose Sutherland",
+      "slug": "juliasutherland",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/juliasutherland"
+    },
+    {
+      "name": "Julian Haladyn",
+      "slug": "julianhaladyn",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/julianhaladyn"
+    },
+    {
+      "name": "Julius Manapul",
+      "slug": "jmanapul",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/jmanapul"
+    },
+    {
+      "name": "June Pak",
+      "slug": "jpak",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/jpak"
+    },
+    {
+      "name": "Jutta Treviranus",
+      "slug": "jtreviranus",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/jtreviranus"
+    },
+    {
+      "name": "Karen Justl",
+      "slug": "kjustl",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/kjustl"
+    },
+    {
+      "name": "Kate Hartman",
+      "slug": "khartman",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/khartman"
+    },
+    {
+      "name": "Kate Sellen",
+      "slug": "ksellen",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/ksellen"
+    },
+    {
+      "name": "Kathryn Adams",
+      "slug": "kadams",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/kadams"
+    },
+    {
+      "name": "Kathy Moscou",
+      "slug": "kmoscou",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/kmoscou"
+    },
+    {
+      "name": "Katina Constantinou",
+      "slug": "kconstantinou",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/kconstantinou"
+    },
+    {
+      "name": "Keith Bresnahan",
+      "slug": "kbresnahan",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/kbresnahan"
+    },
+    {
+      "name": "Kestin Cornwall",
+      "slug": "kcornwall",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/kcornwall"
+    },
+    {
+      "name": "Leah Shenandoah",
+      "slug": "leahshenandoah",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/leahshenandoah"
+    },
+    {
+      "name": "Lesley-Ann Noel",
+      "slug": "lnoel",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/lnoel"
+    },
+    {
+      "name": "Lisanne Skeoch",
+      "slug": "lisanneskeoch",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/lisanneskeoch"
+    },
+    {
+      "name": "Lori Riva",
+      "slug": "lriva",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/lriva"
+    },
+    {
+      "name": "Luca Campacci",
+      "slug": "lucacampacci",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/lucacampacci"
+    },
+    {
+      "name": "Luke Painter",
+      "slug": "lpainter",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/lpainter"
+    },
+    {
+      "name": "Lynne Milgram",
+      "slug": "lmilgram",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/lmilgram"
+    },
+    {
+      "name": "Marcus Gordon",
+      "slug": "mgordon",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/mgordon"
+    },
+    {
+      "name": "Maria-Belén Ordóñez",
+      "slug": "mordonez",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/mordonez"
+    },
+    {
+      "name": "Mary McIntyre",
+      "slug": "marymcintyre",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/marymcintyre"
+    },
+    {
+      "name": "Maya Desai",
+      "slug": "mdesai",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/mdesai"
+    },
+    {
+      "name": "Meera Margaret Singh",
+      "slug": "msingh",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/msingh"
+    },
+    {
+      "name": "Michael Antkowiak",
+      "slug": "mantkowiak",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/mantkowiak"
+    },
+    {
+      "name": "Michael Lee Poy",
+      "slug": "mleepoy",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/mleepoy"
+    },
+    {
+      "name": "Michael Page",
+      "slug": "mpage",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/mpage"
+    },
+    {
+      "name": "Michael Prokopow",
+      "slug": "mprokopow",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/mprokopow"
+    },
+    {
+      "name": "Michelle Forsyth",
+      "slug": "mforsyth",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/mforsyth"
+    },
+    {
+      "name": "Michelle Miller",
+      "slug": "michellemiller",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/michellemiller"
+    },
+    {
+      "name": "Michelle Wyndham-West",
+      "slug": "mwyndhamwest",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/mwyndhamwest"
+    },
+    {
+      "name": "Nabil Harfoush",
+      "slug": "nharfoush",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/nharfoush"
+    },
+    {
+      "name": "Nadine Hare",
+      "slug": "nhare",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/nhare"
+    },
+    {
+      "name": "Natalie Waldburger",
+      "slug": "nwaldburger",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/nwaldburger"
+    },
+    {
+      "name": "Neal Prabhu",
+      "slug": "nprabhu",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/nprabhu"
+    },
+    {
+      "name": "Nicholas Puckett",
+      "slug": "npuckett",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/npuckett"
+    },
+    {
+      "name": "Nicholas Pye",
+      "slug": "npye",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/npye"
+    },
+    {
+      "name": "Nicole Collins",
+      "slug": "ncollins",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/ncollins"
+    },
+    {
+      "name": "Nithikul Nimkulrat",
+      "slug": "nnimkulrat",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/nnimkulrat"
+    },
+    {
+      "name": "Nooshin Mohtashami",
+      "slug": "nooshinm",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/nooshinm"
+    },
+    {
+      "name": "Onah Jung",
+      "slug": "ojung",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/ojung"
+    },
+    {
+      "name": "Pam Patterson",
+      "slug": "ppatterson",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/ppatterson"
+    },
+    {
+      "name": "Panagiotis Panagiotakopoulos",
+      "slug": "ppanagiotakopoulos",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/ppanagiotakopoulos"
+    },
+    {
+      "name": "Parantap Bhatt",
+      "slug": "pbhatt",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/pbhatt"
+    },
+    {
+      "name": "Parvathy Nair",
+      "slug": "parvathynair",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/parvathynair"
+    },
+    {
+      "name": "Paul Aloisi",
+      "slug": "paloisi",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/paloisi"
+    },
+    {
+      "name": "Paul Dallas",
+      "slug": "pdallas",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/pdallas"
+    },
+    {
+      "name": "Peter Coppin",
+      "slug": "pcoppin",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/pcoppin"
+    },
+    {
+      "name": "Peter Jones",
+      "slug": "pjones",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/pjones"
+    },
+    {
+      "name": "Peter Scott",
+      "slug": "pscott",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/pscott"
+    },
+    {
+      "name": "Philippe Blanchard",
+      "slug": "pblanchard",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/pblanchard"
+    },
+    {
+      "name": "Ranee Lee",
+      "slug": "rlee",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/rlee"
+    },
+    {
+      "name": "Richa Narvekar",
+      "slug": "richan",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/richan"
+    },
+    {
+      "name": "Richard Hunt",
+      "slug": "rhunt",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/rhunt"
+    },
+    {
+      "name": "Richard Smolinski",
+      "slug": "rsmolinski",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/rsmolinski"
+    },
+    {
+      "name": "Roderick Grant",
+      "slug": "rgrant",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/rgrant"
+    },
+    {
+      "name": "Roman Romanov",
+      "slug": "rromanov",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/rromanov"
+    },
+    {
+      "name": "Ross Bullen",
+      "slug": "rbullen",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/rbullen"
+    },
+    {
+      "name": "Ruth Wickremesooriya",
+      "slug": "ruthw",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/ruthw"
+    },
+    {
+      "name": "Ryan Rice",
+      "slug": "rrice",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/rrice"
+    },
+    {
+      "name": "Ryan Whyte",
+      "slug": "rwhyte",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/rwhyte"
+    },
+    {
+      "name": "Sara Diamond",
+      "slug": "sdiamond",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/sdiamond"
+    },
+    {
+      "name": "Sarah Tranum",
+      "slug": "stranum",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/stranum"
+    },
+    {
+      "name": "Sarita Srivastava",
+      "slug": "ssrivastava",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/ssrivastava"
+    },
+    {
+      "name": "Shea Chang",
+      "slug": "schang",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/schang"
+    },
+    {
+      "name": "Simon Glass",
+      "slug": "sglass",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/sglass"
+    },
+    {
+      "name": "Simone Jones",
+      "slug": "sjones",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/sjones"
+    },
+    {
+      "name": "SJ Okemow",
+      "slug": "sjokemow",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/sjokemow"
+    },
+    {
+      "name": "Skot Deeming",
+      "slug": "sdeeming",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/sdeeming"
+    },
+    {
+      "name": "Stephen Foster",
+      "slug": "sfoster",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/sfoster"
+    },
+    {
+      "name": "Sugandha Gaur",
+      "slug": "sgaur",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/sgaur"
+    },
+    {
+      "name": "Suharu Ogawa",
+      "slug": "sogawa",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/sogawa"
+    },
+    {
+      "name": "Susan Campbell",
+      "slug": "scampbell",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/scampbell"
+    },
+    {
+      "name": "Susy Oliveira",
+      "slug": "soliveira",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/soliveira"
+    },
+    {
+      "name": "Suzanne Morrissette",
+      "slug": "smorrissette",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/smorrissette"
+    },
+    {
+      "name": "Suzanne Stein",
+      "slug": "sstein",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/sstein"
+    },
+    {
+      "name": "Tairone Bastien",
+      "slug": "tbastien",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/tbastien"
+    },
+    {
+      "name": "Thomas Sevalrud",
+      "slug": "tsevalrud",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/tsevalrud"
+    },
+    {
+      "name": "Ursula Handleigh",
+      "slug": "uhandleigh",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/uhandleigh"
+    },
+    {
+      "name": "Vanessa Dion Fletcher",
+      "slug": "vdionfletcher",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/vdionfletcher"
+    },
+    {
+      "name": "Veronika Szkudlarek",
+      "slug": "vszkudlarek",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/vszkudlarek"
+    },
+    {
+      "name": "Wrik Mead",
+      "slug": "wmead",
+      "url": "https://www.ocadu.ca/academics/explore-faculty/wmead"
+    }
+  ]
+}

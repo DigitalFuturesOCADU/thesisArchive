@@ -46,7 +46,9 @@ async function printSummary() {
   console.log('  1. Spot-check locally:  npm run dev')
   console.log('  2. If duplicate advisors appear, update data/advisor-aliases.json and re-run npm run normalize')
   console.log('  3. Commit refreshed data:')
-  console.log('       git add public/data/archive.json public/data/bibliography.json')
+  console.log(
+    '       git add public/data/archive.json public/data/bibliography.json data/faculty-directory.json',
+  )
   console.log('       git commit -m "Refresh archive data from Open Research"')
   console.log('       git push')
   console.log('  Pushing main deploys GitHub Pages automatically.')
@@ -57,6 +59,8 @@ async function main() {
   console.log('Updating archive data from Open Research…')
   console.log('')
   await run('scrape.mjs')
+  console.log('')
+  await run('fetch-faculty.mjs')
   console.log('')
   await run('normalize.mjs')
   await printSummary()

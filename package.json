@@ -9,6 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "scrape": "node scripts/scrape.mjs",
+    "fetch:faculty": "node scripts/fetch-faculty.mjs",
     "normalize": "node scripts/normalize.mjs",
     "build:data": "npm run scrape && npm run normalize",
     "update:data": "node scripts/update-data.mjs"

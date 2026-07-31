@@ -9,6 +9,18 @@
       "name": "Maria Yablonina",
       "emails": ["maria.yablonina@daniels.utoronto.ca"],
       "nameAliases": ["Maria Yablonina"]
+    },
+    {
+      "id": "fraser-fa-anderson",
+      "name": "Fraser / FA Anderson",
+      "emails": [],
+      "nameAliases": ["Fraser / FA Anderson", "Fraser Anderson", "FA Anderson"]
+    },
+    {
+      "id": "debashis-sinha",
+      "name": "Debashis Sinha",
+      "emails": [],
+      "nameAliases": ["Debashis Sinha"]
     }
   ],
   "canonical": [
@@ -21,16 +33,19 @@
         "adam tindale",
         "Tindale Adam",
         "Adam / AT Tindale",
-        "Dr. Adam Tindale"
+        "Dr. Adam Tindale",
+        "Adam Tinsdale",
+        "adam tinsdale",
+        "Tinsdale Adam"
       ]
     },
     {
       "id": "nick-puckett",
-      "name": "Nick Puckett",
+      "name": "Nicholas Puckett",
       "emails": ["npuckett@ocadu.ca", "npuckett@faculty.ocadu.ca"],
       "nameAliases": [
-        "Nick Puckett",
         "Nicholas Puckett",
+        "Nick Puckett",
         "Nick Pucket",
         "Puckett Nick",
         "puckett nick",
@@ -292,6 +307,73 @@
       "name": "Sowmya Somanath",
       "emails": ["ssomanath@faculty.ocadu.ca"],
       "nameAliases": ["Sowmya Somanath", "Sowmya / SS Somanath"]
+    },
+    {
+      "id": "michael-lee-poy",
+      "name": "Michael Lee Poy",
+      "emails": ["mleepoy@faculty.ocadu.ca", "mleepoy@ocadu.ca"],
+      "nameAliases": ["Michael Lee Poy", "Michael Poy", "Lee Poy Michael"]
+    },
+    {
+      "id": "annie-tung",
+      "name": "Annie Tung",
+      "emails": ["atung@ocadu.ca", "atung@faculty.ocadu.ca"],
+      "nameAliases": ["Annie Tung", "Tung Annie"]
+    },
+    {
+      "id": "marie-o-mahony",
+      "name": "Marie O'Mahony",
+      "emails": ["momahony@faculty.ocadu.ca", "momahony@ocadu.ca"],
+      "nameAliases": [
+        "Marie O'Mahony",
+        "Marie O'Mahoney",
+        "Marie Omahony",
+        "Marie Omahoney",
+        "O'Mahony Marie",
+        "O'Mahoney Marie"
+      ]
+    },
+    {
+      "id": "geoffrey-shea",
+      "name": "Geoffrey Shea",
+      "emails": ["gshea@ocadu.ca", "gshea@faculty.ocadu.ca"],
+      "nameAliases": ["Geoffrey Shea", "Shea Geoffrey", "geoffrey shea"]
+    },
+    {
+      "id": "michael-prokopow",
+      "name": "Michael Prokopow",
+      "emails": [
+        "mprokopow@ocadu.ca",
+        "mprokopow@faculty.ocadu.ca",
+        "michael.propokow@ocadu.ca"
+      ],
+      "nameAliases": [
+        "Michael Prokopow",
+        "Michael Propokow",
+        "Prokopow Michael",
+        "Propokow Michael"
+      ]
+    },
+    {
+      "id": "ali-mazalek",
+      "name": "Ali Mazalek",
+      "emails": ["mazalek@ryerson.ca", "mazalek@torontomu.ca"],
+      "nameAliases": [
+        "Ali Mazalek",
+        "ali aazalek",
+        "Ali Aazalek",
+        "ali mazalek"
+      ]
+    },
+    {
+      "id": "catherine-feraday-miller",
+      "name": "Catherine Feraday Miller",
+      "emails": ["cferadaymiller@ocadu.ca", "cferadaymiller@faculty.ocadu.ca"],
+      "nameAliases": [
+        "Catherine Feraday Miller",
+        "Catherine Miller",
+        "Feraday Miller Catherine"
+      ]
     }
   ]
 }

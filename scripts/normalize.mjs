@@ -8,8 +8,10 @@ const rawDir = path.join(root, 'data', 'raw')
 const outPath = path.join(root, 'public', 'data', 'archive.json')
 const bibliographyPath = path.join(root, 'public', 'data', 'bibliography.json')
 const aliasesPath = path.join(root, 'data', 'advisor-aliases.json')
+const committeesPath = path.join(root, 'data', 'advisor-committees.json')
 const fieldPolicyPath = path.join(root, 'data', 'field-policy.json')
 const sourcesPath = path.join(root, 'data', 'sources.json')
+const facultyDirectoryPath = path.join(root, 'data', 'faculty-directory.json')
 
 const URL_RE = /https?:\/\/[^\s<>"')\]]+/gi
 const DOI_RE = /(?:doi\.org\/|doi:\s*)(10\.\d{4,}\/[^\s<>"')\]]+)/i
@@ -227,6 +229,29 @@ function relatedUrls(record) {
   return urls
 }
 
+function applyCommitteeOverride(advisors, eprintId, committees) {
+  const override = committees[String(eprintId)]
+  if (!override?.advisors?.length) return advisors
+
+  const byId = new Map(advisors.map((a) => [a.advisorId, a]))
+  const next = []
+  for (const spec of override.advisors) {
+    const existing = byId.get(spec.advisorId)
+    if (!existing) {
+      console.warn(
+        `Committee override for eprint ${eprintId}: advisor ${spec.advisorId} not in deposit`,
+      )
+      continue
+    }
+    next.push({
+      ...existing,
+      role: spec.role,
+      roleLabel: roleLabel(spec.role),
+    })
+  }
+  return next
+}
+
 function normalizeRecord(
   record,
   sourceMeta,
@@ -235,6 +260,7 @@ function normalizeRecord(
   advisorsAcc,
   ignoreIds,
   externalIndex,
+  committees,
 ) {
   const creators = (record.creators ?? []).map((c) => ({
     given: cleanNamePart(c.name?.given),
@@ -242,9 +268,13 @@ function normalizeRecord(
   }))
   const creatorNames = creators.map((c) => [c.given, c.family].filter(Boolean).join(' '))
 
-  const advisors = (record.thesis_advisors ?? [])
+  let advisors = (record.thesis_advisors ?? [])
     .map((a) => resolveAdvisor(a, aliasIndex, dynamicPeople, ignoreIds, externalIndex))
     .filter(Boolean)
+    // External examiners are inconsistently deposited — omit from the public archive.
+    .filter((a) => !isExternalExaminerRole(a.role))
+
+  advisors = applyCommitteeOverride(advisors, record.eprintid, committees)
 
   const year =
     record.convocation_date?.year ??
@@ -431,11 +461,55 @@ function buildBibliography(theses) {
   return citations
 }
 
+function nameKey(value) {
+  return String(value ?? '')
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim()
+}
+
+async function loadFacultyDirectory() {
+  try {
+    const raw = JSON.parse(await readFile(facultyDirectoryPath, 'utf8'))
+    const byName = new Map()
+    const bySlug = new Map()
+    for (const person of raw.people ?? []) {
+      if (!person?.url || !person?.name) continue
+      byName.set(nameKey(person.name), person.url)
+      if (person.slug) bySlug.set(String(person.slug).toLowerCase(), person.url)
+    }
+    return { byName, bySlug }
+  } catch {
+    console.warn(
+      'No data/faculty-directory.json — run npm run fetch:faculty to attach OCAD bio links.',
+    )
+    return { byName: new Map(), bySlug: new Map() }
+  }
+}
+
+function facultyBioUrlFor(advisor, facultyDir) {
+  const byName = facultyDir.byName.get(nameKey(advisor.name))
+  if (byName) return byName
+  for (const alias of advisor.aliases ?? []) {
+    const hit = facultyDir.byName.get(nameKey(alias))
+    if (hit) return hit
+  }
+  for (const email of advisor.emails ?? []) {
+    const local = emailLocal(email)
+    if (local && facultyDir.bySlug.has(local)) return facultyDir.bySlug.get(local)
+  }
+  return undefined
+}
+
 async function main() {
   // Touch field policy so normalize stays coupled to the documented contract.
   await readFile(fieldPolicyPath, 'utf8')
   const { sources } = JSON.parse(await readFile(sourcesPath, 'utf8'))
   const aliasesFile = JSON.parse(await readFile(aliasesPath, 'utf8'))
+  const committeesFile = JSON.parse(await readFile(committeesPath, 'utf8'))
+  const committees = committeesFile.committees ?? {}
   const { canonical } = aliasesFile
   const ignoreIds = new Set(aliasesFile.ignoreIds ?? [])
   const externalIndex = buildExternalExaminerIndex(aliasesFile.externalExaminers ?? [])
@@ -468,6 +542,7 @@ async function main() {
         advisorsAcc,
         ignoreIds,
         externalIndex,
+        committees,
       )
       byId.set(thesis.id, thesis)
     }
@@ -477,17 +552,27 @@ async function main() {
     (a, b) => b.year - a.year || a.title.localeCompare(b.title),
   )
 
+  const facultyDir = await loadFacultyDirectory()
+
   const advisors = [...advisorsAcc.values()]
-    .map((a) => ({
-      id: a.id,
-      name: a.name,
-      aliases: [...a.aliases].sort(),
-      emails: [...a.emails].sort(),
-      projectIds: [...a.projectIds].sort((x, y) => y - x),
-      primaryCount: a.primaryCount,
-      secondaryCount: a.secondaryCount,
-    }))
+    .map((a) => {
+      const advisor = {
+        id: a.id,
+        name: a.name,
+        aliases: [...a.aliases].sort(),
+        emails: [...a.emails].sort(),
+        projectIds: [...a.projectIds].sort((x, y) => y - x),
+        primaryCount: a.primaryCount,
+        secondaryCount: a.secondaryCount,
+      }
+      const facultyBioUrl = facultyBioUrlFor(advisor, facultyDir)
+      if (facultyBioUrl) advisor.facultyBioUrl = facultyBioUrl
+      return advisor
+    })
     .sort((a, b) => a.name.localeCompare(b.name))
+
+  const withBios = advisors.filter((a) => a.facultyBioUrl).length
+  console.log(`Faculty bio links matched for ${withBios}/${advisors.length} advisors`)
 
   const topicMap = new Map()
   for (const t of theses) {

@@ -1,0 +1,33 @@
+{
+  "description": "Per-thesis advisor committee overrides. Only listed advisors are kept; roles replace deposit metadata.",
+  "committees": {
+    "5146": {
+      "note": "Visic — Tensynth",
+      "advisors": [
+        { "advisorId": "suzanne-stein", "role": "pa" },
+        { "advisorId": "simone-jones", "role": "cm" }
+      ]
+    },
+    "4644": {
+      "note": "Costa — Punk Games",
+      "advisors": [
+        { "advisorId": "adam-tindale", "role": "pa" },
+        { "advisorId": "emma-westecott", "role": "cm" }
+      ]
+    },
+    "4366": {
+      "note": "Patterson — Working Elements…",
+      "advisors": [
+        { "advisorId": "sara-diamond", "role": "pa" },
+        { "advisorId": "jbowes", "role": "cm" }
+      ]
+    },
+    "4198": {
+      "note": "Farahani — Dialogue Between Image and Sound",
+      "advisors": [
+        { "advisorId": "adam-tindale", "role": "pa" },
+        { "advisorId": "bentley-jarvis", "role": "cm" }
+      ]
+    }
+  }
+}

@@ -68,9 +68,10 @@ Sources are listed in [`data/sources.json`](data/sources.json) (Digital Futures 
 
 | Script | Command | Purpose |
 |--------|---------|---------|
-| Update | `npm run update:data` | **Manual refresh** — scrape, normalize, print summary + next steps |
+| Update | `npm run update:data` | **Manual refresh** — scrape, faculty directory, normalize, summary |
 | Change check | `node scripts/has-data-changes.mjs` | Used by CI; ignores `generatedAt`-only diffs |
 | Scrape | `npm run scrape` | Fetch year JSON exports into `data/raw/` |
+| Faculty | `npm run fetch:faculty` | Fetch OCAD Explore Faculty bios into `data/faculty-directory.json` |
 | Normalize | `npm run normalize` | Merge advisors, apply field policy, write `public/data/*.json` |
 | Both | `npm run build:data` | Scrape then normalize (no summary banner) |
 
@@ -82,6 +83,10 @@ Raw deposits use inconsistent advisor names and emails. Canonical people live in
 
 - Match by email, then by `@ocadu.ca` / `@faculty.ocadu.ca` local-part, then by known name aliases
 - Add new `canonical` entries when you spot duplicates on an advisor page
+
+### Advisor committee overrides
+
+Some deposits list extra committee members or wrong roles. Corrected committees live in [`data/advisor-committees.json`](data/advisor-committees.json) (applied during normalize). Remaining multi-advisor oddities to revisit: [`data/advisor-committee-review.json`](data/advisor-committee-review.json).
 
 ### Field policy
 

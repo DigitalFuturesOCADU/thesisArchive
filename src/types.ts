@@ -60,6 +60,8 @@ export interface Advisor {
   projectIds: number[]
   primaryCount: number
   secondaryCount: number
+  /** OCAD U Explore Faculty bio page, when matched. */
+  facultyBioUrl?: string
 }
 
 export interface Topic {

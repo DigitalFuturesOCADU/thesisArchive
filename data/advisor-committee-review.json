@@ -1,0 +1,1251 @@
+{
+  "description": "Theses with more than one Primary (pa) or more than one Secondary advisor after committee overrides. Revisit and add entries to advisor-committees.json.",
+  "generatedAt": "2026-07-31T12:32:15.872Z",
+  "count": 46,
+  "theses": [
+    {
+      "eprintId": 5007,
+      "year": 2026,
+      "title": "Exploring Proprioceptive Hand Interactions in Virtual Reality",
+      "authors": [
+        "Peng Guan"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 2,
+      "primary": [
+        {
+          "id": "cindy-poremba",
+          "name": "Cindy Poremba",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "parantap-bhatt",
+          "name": "Parantap Bhatt",
+          "role": "ia"
+        },
+        {
+          "id": "simone-jones",
+          "name": "Simone Jones",
+          "role": "pd"
+        }
+      ]
+    },
+    {
+      "eprintId": 4993,
+      "year": 2026,
+      "title": "Revisitation: An Interactive VR Archive of Embodied Family Memory",
+      "authors": [
+        "Yudi Cao"
+      ],
+      "primaryCount": 2,
+      "secondaryCount": 0,
+      "primary": [
+        {
+          "id": "haru-ji",
+          "name": "Haru Ji",
+          "role": "pa"
+        },
+        {
+          "id": "judith-doyle",
+          "name": "Judith Doyle",
+          "role": "pa"
+        }
+      ],
+      "secondary": []
+    },
+    {
+      "eprintId": 5042,
+      "year": 2026,
+      "title": "Synaptic Echoes",
+      "authors": [
+        "Golnoush Mir salari"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "simone-jones",
+          "name": "Simone Jones",
+          "role": "ia"
+        },
+        {
+          "id": "maria-belen-ordonez",
+          "name": "Maria-Belén Ordóñez",
+          "role": "ia"
+        }
+      ]
+    },
+    {
+      "eprintId": 5087,
+      "year": 2026,
+      "title": "Touchstones: Designing Tactile Communication",
+      "authors": [
+        "Olivia Pasian"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "kate-hartman",
+          "name": "Kate Hartman",
+          "role": null
+        },
+        {
+          "id": "fidelia-lam",
+          "name": "Fidelia Lam",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 4752,
+      "year": 2025,
+      "title": "FloraFun: Exploring Emotional Connections Between Humans and Plants Through Digital Games",
+      "authors": [
+        "Yanjia Yi"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "suzanne-stein",
+          "name": "Suzanne Stein",
+          "role": null
+        },
+        {
+          "id": "cindy-poremba",
+          "name": "Cindy Poremba",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 4704,
+      "year": 2025,
+      "title": "Playing for Change: The Potential of VR Feminist Games in Promoting Gender Equality",
+      "authors": [
+        "Yixin Zhang"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "emma-westecott",
+          "name": "Emma Westecott",
+          "role": null
+        },
+        {
+          "id": "veronika-szkudlarek",
+          "name": "Veronika Szkudlarek",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 4684,
+      "year": 2025,
+      "title": "Radical interfaces",
+      "authors": [
+        "Abha Patil"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "kate-hartman",
+          "name": "Kate Hartman",
+          "role": null
+        },
+        {
+          "id": "nick-puckett",
+          "name": "Nicholas Puckett",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 4660,
+      "year": 2025,
+      "title": "Story Forge: Transforming Books into Interactive Text- Adventure Games using Local Large Language Models",
+      "authors": [
+        "Matthew Armen Nazarian"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 2,
+      "primary": [
+        {
+          "id": "nick-puckett",
+          "name": "Nicholas Puckett",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "michelle-miller",
+          "name": "Michelle Miller",
+          "role": "ia"
+        },
+        {
+          "id": "simone-jones",
+          "name": "Simone Jones",
+          "role": "pd"
+        }
+      ]
+    },
+    {
+      "eprintId": 4751,
+      "year": 2025,
+      "title": "The Elastic Self, A Loving Woman",
+      "authors": [
+        "Pranya Gulati"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 2,
+      "primary": [
+        {
+          "id": "ala-roushan",
+          "name": "Ala Roushan",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "maria-belen-ordonez",
+          "name": "Maria-Belén Ordóñez",
+          "role": "ia"
+        },
+        {
+          "id": "judith-doyle",
+          "name": "Judith Doyle",
+          "role": "cm"
+        }
+      ]
+    },
+    {
+      "eprintId": 4728,
+      "year": 2025,
+      "title": "TinkerPod: An open-source hardware platform for makers",
+      "authors": [
+        "Juan Martin Sulca Coral"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 2,
+      "primary": [
+        {
+          "id": "nick-puckett",
+          "name": "Nicholas Puckett",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "kate-hartman",
+          "name": "Kate Hartman",
+          "role": "ia"
+        },
+        {
+          "id": "adam-tindale",
+          "name": "Adam Tindale",
+          "role": "cm"
+        }
+      ]
+    },
+    {
+      "eprintId": 4615,
+      "year": 2025,
+      "title": "What may be known: methods for activating large texts and graphs in the climate crisis.",
+      "authors": [
+        "Orus Mateo Castaño-Suárez"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 2,
+      "primary": [
+        {
+          "id": "adam-tindale",
+          "name": "Adam Tindale",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "simone-jones",
+          "name": "Simone Jones",
+          "role": "pd"
+        },
+        {
+          "id": "greg-van-alstyne",
+          "name": "Greg Van Alstyne",
+          "role": "sr"
+        }
+      ]
+    },
+    {
+      "eprintId": 4475,
+      "year": 2024,
+      "title": "Designing An Instrument Controller to Enhance Cultural learnings in A Music Blended Video Game",
+      "authors": [
+        "Guo Nicky"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "adam-tindale",
+          "name": "Adam Tindale",
+          "role": null
+        },
+        {
+          "id": "bentley-jarvis",
+          "name": "Bentley Jarvis",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 4321,
+      "year": 2024,
+      "title": "Emotions - A personal narrative of dyslexic adult",
+      "authors": [
+        "Purvi Agarwal"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "isabel-meirelles",
+          "name": "Isabel Meirelles",
+          "role": null
+        },
+        {
+          "id": "jutta-treviranus",
+          "name": "Jutta Treviranus",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 4055,
+      "year": 2023,
+      "title": "CuriosityXR: Contextualizing Learning through Immersive Mixed Reality Experiences Beyond the Classroom",
+      "authors": [
+        "Aaditya Vaze"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "alexis-morris",
+          "name": "Alexis Morris",
+          "role": null
+        },
+        {
+          "id": "ian-clarke",
+          "name": "Ian Clarke",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 4037,
+      "year": 2023,
+      "title": "OurOS: A hybrid physical and digital tabletop game as a tool for rural community members to build sustainable communities",
+      "authors": [
+        "Prayag Ichangimath"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 2,
+      "primary": [
+        {
+          "id": "emma-westecott",
+          "name": "Emma Westecott",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "michelle-gay",
+          "name": "Michelle Gay",
+          "role": "sr"
+        },
+        {
+          "id": "cindy-poremba",
+          "name": "Cindy Poremba",
+          "role": "pd"
+        }
+      ]
+    },
+    {
+      "eprintId": 3735,
+      "year": 2022,
+      "title": "Extending the Metaverse: Exploring Generative Objects with Extended Reality Environments and Adaptive Context Awareness",
+      "authors": [
+        "jie guan"
+      ],
+      "primaryCount": 2,
+      "secondaryCount": 2,
+      "primary": [
+        {
+          "id": "alexis-morris",
+          "name": "Alexis Morris",
+          "role": "pa"
+        },
+        {
+          "id": "jay-irizawa",
+          "name": "Jay Irizawa",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "ali-mazalek",
+          "name": "Ali Mazalek",
+          "role": "cm"
+        },
+        {
+          "id": "kate-hartman",
+          "name": "Kate Hartman",
+          "role": "pd"
+        }
+      ]
+    },
+    {
+      "eprintId": 3414,
+      "year": 2021,
+      "title": "Age and Interface Equipping Older Adults with Technological Tools",
+      "authors": [
+        "Rittika Basu"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "ashok-mathur",
+          "name": "Ashok Mathur",
+          "role": null
+        },
+        {
+          "id": "philippe-blanchard",
+          "name": "Philippe Blanchard",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 3393,
+      "year": 2021,
+      "title": "Hypervolition: Our Sacrifice of Choice",
+      "authors": [
+        "Jevonne E (Jevi) Peters"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 2,
+      "primary": [
+        {
+          "id": "julian-haladyn",
+          "name": "Julian Haladyn",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "ashok-mathur",
+          "name": "Ashok Mathur",
+          "role": "sr"
+        },
+        {
+          "id": "alexis-morris",
+          "name": "Alexis Morris",
+          "role": "ia"
+        }
+      ]
+    },
+    {
+      "eprintId": 3357,
+      "year": 2021,
+      "title": "Our Home and Haunted Land An Exploration of Space, Memory and Virtual Reality",
+      "authors": [
+        "Nadine Valcin"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 2,
+      "primary": [
+        {
+          "id": "immony-men",
+          "name": "Immony Men",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "simone-jones",
+          "name": "Simone Jones",
+          "role": "cm"
+        },
+        {
+          "id": "afatona",
+          "name": "Andrea Fatona",
+          "role": "cm"
+        }
+      ]
+    },
+    {
+      "eprintId": 3054,
+      "year": 2020,
+      "title": "An Uneasy Terrain: An Immersive and Speculative Research-Creation",
+      "authors": [
+        "Amreen Ashraf"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "simone-jones",
+          "name": "Simone Jones",
+          "role": null
+        },
+        {
+          "id": "maria-belen-ordonez",
+          "name": "Maria-Belén Ordóñez",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 2932,
+      "year": 2020,
+      "title": "Multimodalities in Metadata: Gaia Gate",
+      "authors": [
+        "Tyson Moll"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 2,
+      "primary": [
+        {
+          "id": "cindy-poremba",
+          "name": "Cindy Poremba",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "alexis-morris",
+          "name": "Alexis Morris",
+          "role": "cm"
+        },
+        {
+          "id": "kate-hartman",
+          "name": "Kate Hartman",
+          "role": "pd"
+        }
+      ]
+    },
+    {
+      "eprintId": 2575,
+      "year": 2019,
+      "title": "Data Humanism: Examining how the British newspaper, The Guardian, depicted the British Mad Cow Disease Crisis from 1986–1996",
+      "authors": [
+        "Feng Yuan"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 2,
+      "primary": [
+        {
+          "id": "isabel-meirelles",
+          "name": "Isabel Meirelles",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "haru-ji",
+          "name": "Haru Ji",
+          "role": "cm"
+        },
+        {
+          "id": "ali-qadeer",
+          "name": "Ali Qadeer",
+          "role": "ia"
+        }
+      ]
+    },
+    {
+      "eprintId": 2647,
+      "year": 2019,
+      "title": "Designing a neuroatypical weather-based planning tool",
+      "authors": [
+        "Orlando Bascunan"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 3,
+      "primary": [
+        {
+          "id": "patricio-davila",
+          "name": "Patricio Davila",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "ala-roushan",
+          "name": "Ala Roushan",
+          "role": "sr"
+        },
+        {
+          "id": "kate-hartman",
+          "name": "Kate Hartman",
+          "role": "pd"
+        },
+        {
+          "id": "geoffrey-shea",
+          "name": "Geoffrey Shea",
+          "role": "ia"
+        }
+      ]
+    },
+    {
+      "eprintId": 2633,
+      "year": 2019,
+      "title": "Exploring the Human Visual Perception Process to Foster Mindful Seeing (Finding the Angels and Devils in the Details)",
+      "authors": [
+        "David Foster"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 3,
+      "primary": [
+        {
+          "id": "ian-clarke",
+          "name": "Ian Clarke",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "adam-tindale",
+          "name": "Adam Tindale",
+          "role": "cm"
+        },
+        {
+          "id": "nick-puckett",
+          "name": "Nicholas Puckett",
+          "role": "cm"
+        },
+        {
+          "id": "kate-hartman",
+          "name": "Kate Hartman",
+          "role": "pd"
+        }
+      ]
+    },
+    {
+      "eprintId": 2567,
+      "year": 2019,
+      "title": "My Sister in Data: Visualizing an online relationship",
+      "authors": [
+        "Roxolyana Shepko-Hamilton"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 3,
+      "primary": [
+        {
+          "id": "ali-qadeer",
+          "name": "Ali Qadeer",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "isabel-meirelles",
+          "name": "Isabel Meirelles",
+          "role": "cm"
+        },
+        {
+          "id": "maria-belen-ordonez",
+          "name": "Maria-Belén Ordóñez",
+          "role": "ia"
+        },
+        {
+          "id": "kate-hartman",
+          "name": "Kate Hartman",
+          "role": "pd"
+        }
+      ]
+    },
+    {
+      "eprintId": 2616,
+      "year": 2019,
+      "title": "The White People Problem: Experiments in The Reverse Gaze.",
+      "authors": [
+        "Kristy Boyce"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 2,
+      "primary": [
+        {
+          "id": "jbaerg",
+          "name": "Jason Baerg",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "gmoser",
+          "name": "Gabrielle Moser",
+          "role": "cm"
+        },
+        {
+          "id": "pmorin",
+          "name": "Peter Morin",
+          "role": "ia"
+        }
+      ]
+    },
+    {
+      "eprintId": 2306,
+      "year": 2018,
+      "title": "Embodied Expressions",
+      "authors": [
+        "Afaq Ahmed Karadia"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "adam-tindale",
+          "name": "Adam Tindale",
+          "role": null
+        },
+        {
+          "id": "kate-hartman",
+          "name": "Kate Hartman",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 2265,
+      "year": 2018,
+      "title": "Fitrah: A Spiritual Journey",
+      "authors": [
+        "Sara Gazzaz"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 3,
+      "primary": [
+        {
+          "id": "david-mcintosh",
+          "name": "David McIntosh",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "immony-men",
+          "name": "Immony Men",
+          "role": "sr"
+        },
+        {
+          "id": "bdevine",
+          "name": "Bonnie Devine",
+          "role": "ia"
+        },
+        {
+          "id": "kate-hartman",
+          "name": "Kate Hartman",
+          "role": "pd"
+        }
+      ]
+    },
+    {
+      "eprintId": 1667,
+      "year": 2017,
+      "title": "Habitat 44º - The Art of Reconstruction",
+      "authors": [
+        "Marcus A. Gordon"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "martha-ladly",
+          "name": "Martha Ladly",
+          "role": null
+        },
+        {
+          "id": "philippe-blanchard",
+          "name": "Philippe Blanchard",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 1623,
+      "year": 2017,
+      "title": "Learning Holacracy Fundamentals Through Play",
+      "authors": [
+        "Egill Rúnar Viðarsson"
+      ],
+      "primaryCount": 2,
+      "secondaryCount": 0,
+      "primary": [
+        {
+          "id": "suzanne-stein",
+          "name": "Suzanne Stein",
+          "role": "pa"
+        },
+        {
+          "id": "emma-westecott",
+          "name": "Emma Westecott",
+          "role": "pa"
+        }
+      ],
+      "secondary": []
+    },
+    {
+      "eprintId": 865,
+      "year": 2016,
+      "title": "Art Movement: Light, Space and Time",
+      "authors": [
+        "Katie Kotler"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 3,
+      "primary": [
+        {
+          "id": "philippe-blanchard",
+          "name": "Philippe Blanchard",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "martha-ladly",
+          "name": "Martha Ladly",
+          "role": "cm"
+        },
+        {
+          "id": "nick-puckett",
+          "name": "Nicholas Puckett",
+          "role": "pd"
+        },
+        {
+          "id": "lpainter",
+          "name": "Luke Painter",
+          "role": "ia"
+        }
+      ]
+    },
+    {
+      "eprintId": 585,
+      "year": 2016,
+      "title": "MobileSync Web",
+      "authors": [
+        "Chen Ji"
+      ],
+      "primaryCount": 2,
+      "secondaryCount": 3,
+      "primary": [
+        {
+          "id": "tom-barker",
+          "name": "Tom Barker",
+          "role": "pa"
+        },
+        {
+          "id": "adam-tindale",
+          "name": "Adam Tindale",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "emma-westecott",
+          "name": "Emma Westecott",
+          "role": "cm"
+        },
+        {
+          "id": "greg-van-alstyne",
+          "name": "Greg Van Alstyne",
+          "role": "ia"
+        },
+        {
+          "id": "martha-ladly",
+          "name": "Martha Ladly",
+          "role": "pd"
+        }
+      ]
+    },
+    {
+      "eprintId": 746,
+      "year": 2016,
+      "title": "Sitting under a highway: exploring the integration of place mindfulness and immersion in audiovisual art practices.",
+      "authors": [
+        "Hector Centeno Garcia"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 3,
+      "primary": [
+        {
+          "id": "adam-tindale",
+          "name": "Adam Tindale",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "bentley-jarvis",
+          "name": "Bentley Jarvis",
+          "role": "cm"
+        },
+        {
+          "id": "simone-jones",
+          "name": "Simone Jones",
+          "role": "ia"
+        },
+        {
+          "id": "martha-ladly",
+          "name": "Martha Ladly",
+          "role": "pd"
+        }
+      ]
+    },
+    {
+      "eprintId": 694,
+      "year": 2016,
+      "title": "Virtual Pet Companion A digital console to enhance the Experience of Children with Cerebral Palsy",
+      "authors": [
+        "Daniah Saimaldahar"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "tom-barker",
+          "name": "Tom Barker",
+          "role": null
+        },
+        {
+          "id": "geoffrey-shea",
+          "name": "Geoffrey Shea",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 702,
+      "year": 2016,
+      "title": "Virtual tourism – Digital scanning, Augmented Reality and Virtual Reality as a Holistic Approach to Chinese Historic Building Preservation",
+      "authors": [
+        "Yikai Zhang"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "nick-puckett",
+          "name": "Nicholas Puckett",
+          "role": null
+        },
+        {
+          "id": "adam-tindale",
+          "name": "Adam Tindale",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 2151,
+      "year": 2016,
+      "title": "Your Body of Water: A Somaesthetic Display for Embodied Reflection",
+      "authors": [
+        "Lee Jones"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 2,
+      "primary": [
+        {
+          "id": "paula-gardner",
+          "name": "Paula Gardner",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "nick-puckett",
+          "name": "Nicholas Puckett",
+          "role": "sr"
+        },
+        {
+          "id": "kate-sellen",
+          "name": "Kate Sellen",
+          "role": "ia"
+        }
+      ]
+    },
+    {
+      "eprintId": 349,
+      "year": 2015,
+      "title": "Create & Grow Strong: Using Creative Exploration, Expression & Celebration to Foster Resilience in Youth",
+      "authors": [
+        "Laura Stavro-Beauchamp"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "tom-barker",
+          "name": "Tom Barker",
+          "role": null
+        },
+        {
+          "id": "nick-puckett",
+          "name": "Nicholas Puckett",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 214,
+      "year": 2014,
+      "title": "An Audience of One: Building an Interactive Narrative Experience for Mobile Devices",
+      "authors": [
+        "John Andrew Forbes"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "philippe-blanchard",
+          "name": "Philippe Blanchard",
+          "role": null
+        },
+        {
+          "id": "geoffrey-shea",
+          "name": "Geoffrey Shea",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 225,
+      "year": 2014,
+      "title": "From Data to Decision: Non-map-based Visualization of Geospatial Data Sets",
+      "authors": [
+        "Borzu Talaie"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "geoffrey-shea",
+          "name": "Geoffrey Shea",
+          "role": null
+        },
+        {
+          "id": "patricio-davila",
+          "name": "Patricio Davila",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 215,
+      "year": 2014,
+      "title": "Playformance: The Virtual Ampliﬁcation of Spontaneous Hand Gestures in Performance Art",
+      "authors": [
+        "Maziar Ghaderi"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "selmin-kara",
+          "name": "Selmin Kara",
+          "role": null
+        },
+        {
+          "id": "nick-puckett",
+          "name": "Nicholas Puckett",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 360,
+      "year": 2014,
+      "title": "The Red Carpet Experience A video based spatial augmented reality platform",
+      "authors": [
+        "Demosthenes Kandylis"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "tom-barker",
+          "name": "Tom Barker",
+          "role": null
+        },
+        {
+          "id": "jeff-watson",
+          "name": "Jeff Watson",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 226,
+      "year": 2014,
+      "title": "Touching Objects : Objects as Force-Feedback Devices",
+      "authors": [
+        "Ruzette Tanyag"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "nick-puckett",
+          "name": "Nicholas Puckett",
+          "role": null
+        },
+        {
+          "id": "jeff-watson",
+          "name": "Jeff Watson",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 228,
+      "year": 2014,
+      "title": "Urban Integration of Plants and Technology",
+      "authors": [
+        "Lindy Wilkins"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "simone-jones",
+          "name": "Simone Jones",
+          "role": null
+        },
+        {
+          "id": "judith-doyle",
+          "name": "Judith Doyle",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 224,
+      "year": 2013,
+      "title": "New Uses for Old Phones: Upcycling the Rotary Dial Phone in the Age of the Smartphone",
+      "authors": [
+        "Anne Stevens"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 2,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "patricio-davila",
+          "name": "Patricio Davila",
+          "role": null
+        },
+        {
+          "id": "david-mcintosh",
+          "name": "David McIntosh",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 207,
+      "year": 2013,
+      "title": "Responsive Aesthetics for Yogic Meditation: An Innovative Design Theory for Holistic Health that supports Autonomy and Effective Training",
+      "authors": [
+        "Harjot Bal"
+      ],
+      "primaryCount": 1,
+      "secondaryCount": 2,
+      "primary": [
+        {
+          "id": "paula-gardner",
+          "name": "Paula Gardner",
+          "role": "pa"
+        }
+      ],
+      "secondary": [
+        {
+          "id": "barbara-rauch",
+          "name": "Barbara Rauch",
+          "role": "cm"
+        },
+        {
+          "id": "job-rutgers",
+          "name": "Job Rutgers",
+          "role": null
+        }
+      ]
+    },
+    {
+      "eprintId": 36,
+      "year": 2013,
+      "title": "The Gaze Of The Other",
+      "authors": [
+        "Thuy Linh Do"
+      ],
+      "primaryCount": 0,
+      "secondaryCount": 5,
+      "primary": [],
+      "secondary": [
+        {
+          "id": "judith-doyle",
+          "name": "Judith Doyle",
+          "role": null
+        },
+        {
+          "id": "philippe-blanchard",
+          "name": "Philippe Blanchard",
+          "role": null
+        },
+        {
+          "id": "barbara-rauch",
+          "name": "Barbara Rauch",
+          "role": null
+        },
+        {
+          "id": "paula-gardner",
+          "name": "Paula Gardner",
+          "role": null
+        },
+        {
+          "id": "tom-barker",
+          "name": "Tom Barker",
+          "role": null
+        }
+      ]
+    }
+  ]
+}
