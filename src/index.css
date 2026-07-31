@@ -432,6 +432,7 @@ button {
 }
 
 .project-card {
+  position: relative;
   background: var(--bg);
   padding: 0.55rem 0.65rem;
   display: flex;
@@ -440,6 +441,7 @@ button {
   gap: 0.3rem;
   min-height: 100%;
   transition: background 140ms ease;
+  cursor: pointer;
 }
 
 .project-card:hover {
@@ -457,6 +459,20 @@ button {
   row-gap: 0.2rem;
   flex: 0 0 auto;
   align-content: start;
+}
+
+/* Stretch the project link across the card; nested links sit above it */
+.project-card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.project-card__advisor a,
+.project-card .tag-list a {
+  position: relative;
+  z-index: 1;
 }
 
 .project-card__meta {
