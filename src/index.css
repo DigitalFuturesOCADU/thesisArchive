@@ -147,6 +147,28 @@ button {
   flex-wrap: wrap;
 }
 
+.site-header__branding {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 0;
+}
+
+.ocadu-mark {
+  display: block;
+  flex: 0 0 auto;
+  line-height: 0;
+  text-decoration: none;
+}
+
+.ocadu-mark img,
+.ocadu-mark svg {
+  display: block;
+  /* Match ocadu.ca header mark (~62px) */
+  width: 3.875rem;
+  height: 3.875rem;
+}
+
 .brand {
   text-decoration: none;
   display: grid;
@@ -1335,6 +1357,16 @@ button {
     align-items: flex-start;
     flex-direction: column;
     gap: 0.45rem;
+  }
+
+  .site-header__branding {
+    gap: 0.65rem;
+  }
+
+  .ocadu-mark img,
+  .ocadu-mark svg {
+    width: 2.75rem;
+    height: 2.75rem;
   }
 
   .brand__title {

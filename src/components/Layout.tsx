@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from 'react-router-dom'
+import { OcaduMark } from './OcaduMark'
 import { SearchBar } from './SearchBar'
 
 const ORR_DF =
@@ -10,10 +11,21 @@ export function Layout() {
       <header className="site-header">
         <div className="site-header__inner">
           <div className="site-header__top">
-            <NavLink to="/" className="brand" end>
-              <span className="brand__program">Digital Futures</span>
-              <span className="brand__title">Thesis Archive</span>
-            </NavLink>
+            <div className="site-header__branding">
+              <a
+                className="ocadu-mark"
+                href="https://www.ocadu.ca/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="OCAD University"
+              >
+                <OcaduMark />
+              </a>
+              <NavLink to="/" className="brand" end>
+                <span className="brand__program">Digital Futures</span>
+                <span className="brand__title">Thesis Archive</span>
+              </NavLink>
+            </div>
             <nav className="nav" aria-label="Primary">
               <NavLink to="/" end>
                 Projects
