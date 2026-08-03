@@ -30,6 +30,7 @@ export function Layout() {
               <NavLink to="/" end>
                 Projects
               </NavLink>
+              <NavLink to="/authors">Authors</NavLink>
               <NavLink to="/advisors">Advisors</NavLink>
               <NavLink to="/years">Years</NavLink>
               <NavLink to="/topics">Topics</NavLink>
