@@ -338,7 +338,7 @@ button {
   width: 100%;
   min-width: 0;
   align-self: stretch;
-  background: var(--bg-soft);
+  background: var(--bg);
   overflow: hidden;
   text-decoration: none;
 }
@@ -506,14 +506,15 @@ button {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
 }
 
 .project-card {
   position: relative;
   background: var(--bg);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
   padding: 0.55rem 0.65rem;
   display: flex;
   flex-direction: column;
@@ -675,13 +676,14 @@ button {
 .person-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: var(--line);
-  border: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
 }
 
 .person-card {
   background: var(--bg);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
   text-decoration: none;
   padding: var(--space-4);
   display: grid;
@@ -853,7 +855,7 @@ button {
   max-height: 28rem;
   object-fit: contain;
   object-position: left center;
-  background: var(--bg-soft);
+  background: var(--bg);
   border: 1px solid var(--line);
 }
 
@@ -936,12 +938,12 @@ button {
   aspect-ratio: 4 / 3;
   overflow: hidden;
   border: 1px solid var(--line);
-  background: var(--bg-soft);
+  background: var(--bg);
 }
 
 .doc-tile--featured .doc-tile__media {
   aspect-ratio: 3 / 4;
-  background: var(--bg-soft);
+  background: var(--bg);
   color: var(--ink);
 }
 
