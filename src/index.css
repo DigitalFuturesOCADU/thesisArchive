@@ -537,7 +537,7 @@ button {
     auto
     2.1rem /* student @ 0.85rem × 1.25 × 2 */
     3.3rem; /* title @ 1rem × 1.15 × ~2.85 → fits 3 tight lines */
-  row-gap: 0.2rem;
+  row-gap: 0.05rem;
   flex: 0 0 auto;
   align-content: start;
 }
@@ -608,6 +608,7 @@ button {
   -webkit-line-clamp: 2;
   height: 1.95rem; /* 0.78rem × 1.25 × 2 */
   flex: 0 0 auto;
+  margin-bottom: -0.12rem;
 }
 
 .project-card__advisor a {
