@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import type { Thesis } from '../types'
-import { degreeLabel, isExternalExaminerRole, slugify } from '../lib/roles'
+import { isExternalExaminerRole, slugify } from '../lib/roles'
 
 export function ProjectCard({
   thesis,
@@ -13,18 +13,19 @@ export function ProjectCard({
 
   return (
     <article className="project-card">
-      <div className="project-card__meta">
-        <span>{thesis.year}</span>
-        {thesis.degreeName ? <span>{degreeLabel(thesis.degreeName)}</span> : null}
-        {badge ? <span className="project-card__badge">{badge}</span> : null}
-      </div>
-      <p className="project-card__author">{thesis.creatorNames.join(', ') || '—'}</p>
+      {/* Only the advisor pages pass a badge; every other card starts at the title */}
+      {badge ? (
+        <div className="project-card__meta">
+          <span className="project-card__badge">{badge}</span>
+        </div>
+      ) : null}
       <h2 className="project-card__title">
         {/* Stretched via ::after — the whole card is the hit target. */}
         <Link to={`/projects/${thesis.id}`} className="project-card__link">
           {thesis.title}
         </Link>
       </h2>
+      <p className="project-card__author">{thesis.creatorNames.join(', ') || '—'}</p>
       <div className="project-card__foot">
         <p className="project-card__advisor">
           <span className="project-card__advisor-label">
