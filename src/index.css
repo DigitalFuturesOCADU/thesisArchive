@@ -503,24 +503,35 @@ button {
   color: #bbb;
 }
 
+/* Cards tile on the same 4-up module as the home stat boxes. Every row is sized
+   to the tallest card on the page (grid-auto-rows: 1fr), which only stays sane
+   because every text band below is clamped — see the worst-case bound in
+   .project-card. */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
   border-top: 1px solid var(--line);
   border-left: 1px solid var(--line);
 }
 
+/* Two anchored blocks, one gap. Identity (year/degree, student, title) hangs
+   from the top; attribution (advisors, keywords) is pinned to the bottom by
+   .project-card__foot. Whatever slack a short card has collects in the single
+   gap between them instead of scattering between every line.
+
+   Worst case is bounded: meta 1 line + student 2 + title 3 + advisors 2 +
+   keywords 1. Nothing here can grow past that, whatever the record holds. */
 .project-card {
   position: relative;
   background: var(--bg);
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  padding: 0.55rem 0.65rem;
+  padding: var(--space-3) var(--space-4);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   gap: 0.3rem;
-  min-height: 100%;
+  min-width: 0;
   transition: background 140ms ease;
   cursor: pointer;
 }
@@ -529,17 +540,17 @@ button {
   background: var(--bg-soft);
 }
 
-.project-card__link {
-  text-decoration: none;
+.project-card__foot {
+  margin-top: auto;
   display: grid;
-  /* Fixed bands so student / title share a common baseline across cards */
-  grid-template-rows:
-    auto
-    2.1rem /* student @ 0.85rem × 1.25 × 2 */
-    3.3rem; /* title @ 1rem × 1.15 × ~2.85 → fits 3 tight lines */
-  row-gap: 0.05rem;
-  flex: 0 0 auto;
-  align-content: start;
+  gap: 0.3rem;
+  /* Floor on the gap so the footer never butts into a full-height title */
+  padding-top: 0.45rem;
+}
+
+.project-card__link {
+  color: inherit;
+  text-decoration: none;
 }
 
 /* Stretch the project link across the card; nested links sit above it */
@@ -579,17 +590,16 @@ button {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  overflow-wrap: anywhere;
 }
 
-.project-card__author,
-.project-card__title {
-  height: 100%;
-}
-
+/* Grey so the student name reads as attribution and doesn't compete with the
+   title for the eye — both sat at full ink weight before */
 .project-card__author {
   font-size: 0.85rem;
   font-weight: 600;
   line-height: 1.25;
+  color: var(--ink-muted);
   -webkit-line-clamp: 2;
 }
 
@@ -606,9 +616,16 @@ button {
   line-height: 1.25;
   color: var(--ink-muted);
   -webkit-line-clamp: 2;
-  height: 1.95rem; /* 0.78rem × 1.25 × 2 */
-  flex: 0 0 auto;
-  margin-bottom: -0.12rem;
+}
+
+/* Own the gap in CSS — a JSX space between inline children of a -webkit-box
+   is not reliably preserved */
+.project-card__advisor-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-right: 0.4em;
 }
 
 .project-card__advisor a {
@@ -636,6 +653,26 @@ button {
 
 .tag-list--spacer {
   visibility: hidden;
+}
+
+/* Keywords are free text in the source records — one of them is a 450-character
+   run of twenty terms separated by newlines. So the card gives them exactly one
+   line and clips. The mask only bites when a tag actually reaches the edge;
+   when they fit, it fades empty space and nothing shows. */
+.project-card .tag-list {
+  flex-wrap: nowrap;
+  height: 0.95rem;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, #000 calc(100% - 1.5rem), transparent);
+}
+
+.project-card .tag-list li {
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
+.project-card .tag-list a {
+  white-space: nowrap;
 }
 
 .tag-list a {
@@ -1378,6 +1415,13 @@ button {
   }
 }
 
+/* Step down before a column gets too narrow to hold a ~40-character title line */
+@media (max-width: 1180px) {
+  .card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 960px) {
   .card-grid,
   .person-grid {
@@ -1488,24 +1532,34 @@ button {
     grid-template-columns: 1fr;
   }
 
+  /* Single column: no neighbours to align to, so let each card be its own
+     height and drop the clamps that only exist to keep a row uniform. */
+  .card-grid {
+    grid-auto-rows: auto;
+  }
+
   .project-card {
     padding: 0.7rem 0.75rem;
   }
 
-  /* Single column: drop fixed bands — alignment matters less than density */
-  .project-card__link {
-    grid-template-rows: auto;
-    row-gap: 0.25rem;
-  }
-
-  .project-card__author,
   .project-card__title,
   .project-card__advisor {
-    height: auto;
+    -webkit-line-clamp: unset;
   }
 
-  .project-card__advisor {
-    -webkit-line-clamp: unset;
+  .project-card__foot {
+    margin-top: var(--space-1);
+  }
+
+  .project-card .tag-list {
+    flex-wrap: wrap;
+    height: auto;
+    mask-image: none;
+  }
+
+  /* Nothing to line up against in one column, so don't reserve the empty row */
+  .project-card .tag-list--spacer {
+    display: none;
   }
 
   .year-row {
