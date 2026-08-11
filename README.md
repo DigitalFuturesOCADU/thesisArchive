@@ -46,6 +46,7 @@ A GitHub Action (`.github/workflows/refresh-data.yml`) runs on the **1st of each
 - Writes `public/data/archive.json`, `public/data/bibliography.json`, and `public/data/project-images.json` — these are what the live site reads
 - `data/raw/` is gitignored; do not commit raw scrapes
 - If duplicate advisor pages show up, merge them in [`data/advisor-aliases.json`](data/advisor-aliases.json) and run `npm run normalize` again
+- If a non-Digital-Futures thesis appears, add it to [`data/excluded-theses.json`](data/excluded-theses.json) and run `npm run normalize` again
 
 ## Development
 
@@ -87,6 +88,22 @@ Raw deposits use inconsistent advisor names and emails. Canonical people live in
 ### Advisor committee overrides
 
 Some deposits list extra committee members or wrong roles. Corrected committees live in [`data/advisor-committees.json`](data/advisor-committees.json) (applied during normalize). Remaining multi-advisor oddities to revisit: [`data/advisor-committee-review.json`](data/advisor-committee-review.json).
+
+Overrides replace the deposit's advisor list entirely — only the advisors you list are kept, with the roles you give them.
+
+### Program director role (`pd`)
+
+Deposits carry the graduate program director as an advisor with role `pd`. That is an administrative signoff, not thesis supervision, so normalize drops these rows: no project credit, no advisor-page listing.
+
+The filter runs **after** committee overrides, so an explicit entry in `data/advisor-committees.json` can still promote a `pd` person to a real committee role when they genuinely served on that thesis. Do not reorder these two steps.
+
+### Excluded theses
+
+Some deposits are cross-listed into the Digital Futures division but belong to another program, so the scraper picks them up. List them in [`data/excluded-theses.json`](data/excluded-theses.json) with a note explaining why.
+
+Excluded deposits are skipped before normalizing — no project page, no advisor credit, no citations, no images. Normalize warns if a listed id stops appearing in the scrapes so stale entries surface instead of rotting.
+
+Exclude by eprint id rather than by department: the department field has typo variants in the source data (`Digial Futures`, `Digital Future`) and is not safe to filter on.
 
 ### Advisor page groupings
 

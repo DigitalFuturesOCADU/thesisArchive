@@ -10,6 +10,7 @@ const bibliographyPath = path.join(root, 'public', 'data', 'bibliography.json')
 const projectImagesPath = path.join(root, 'public', 'data', 'project-images.json')
 const aliasesPath = path.join(root, 'data', 'advisor-aliases.json')
 const committeesPath = path.join(root, 'data', 'advisor-committees.json')
+const excludedThesesPath = path.join(root, 'data', 'excluded-theses.json')
 const fieldPolicyPath = path.join(root, 'data', 'field-policy.json')
 const sourcesPath = path.join(root, 'data', 'sources.json')
 const facultyDirectoryPath = path.join(root, 'data', 'faculty-directory.json')
@@ -26,6 +27,11 @@ function isPrimary(role) {
 
 function isExternalExaminerRole(role) {
   return role === 'ea'
+}
+
+// "pd" is the program director's signoff on the deposit, not a thesis advising role.
+function isNonAdvisingRole(role) {
+  return role === 'pd'
 }
 
 function roleLabel(role) {
@@ -276,7 +282,10 @@ function normalizeRecord(
     // External examiners are inconsistently deposited — omit from the public archive.
     .filter((a) => !isExternalExaminerRole(a.role))
 
-  advisors = applyCommitteeOverride(advisors, record.eprintid, committees)
+  // Overrides run first so a curated committee can promote a program director to a real role.
+  advisors = applyCommitteeOverride(advisors, record.eprintid, committees).filter(
+    (a) => !isNonAdvisingRole(a.role),
+  )
 
   const year =
     record.convocation_date?.year ??
@@ -590,6 +599,9 @@ async function main() {
   const { canonical } = aliasesFile
   const ignoreIds = new Set(aliasesFile.ignoreIds ?? [])
   const externalIndex = buildExternalExaminerIndex(aliasesFile.externalExaminers ?? [])
+  const excludedFile = JSON.parse(await readFile(excludedThesesPath, 'utf8'))
+  const excludedTheses = new Set(Object.keys(excludedFile.theses ?? {}))
+  const excludedSeen = new Set()
   const aliasIndex = buildAliasIndex(canonical)
   const dynamicPeople = new Map()
   const advisorsAcc = new Map()
@@ -611,6 +623,11 @@ async function main() {
     }
     for (const record of payload.records ?? []) {
       if (!record?.eprintid) continue
+      // Skip before normalizing so excluded deposits never reach advisor credits or citations.
+      if (excludedTheses.has(String(record.eprintid))) {
+        excludedSeen.add(String(record.eprintid))
+        continue
+      }
       const thesis = normalizeRecord(
         record,
         sourceMeta,
@@ -622,6 +639,12 @@ async function main() {
         committees,
       )
       byId.set(thesis.id, thesis)
+    }
+  }
+
+  for (const id of excludedTheses) {
+    if (!excludedSeen.has(id)) {
+      console.warn(`Excluded thesis ${id} not found in any raw scrape — stale entry?`)
     }
   }
 
