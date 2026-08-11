@@ -23,7 +23,7 @@ export function Layout() {
               </a>
               <NavLink to="/" className="brand" end>
                 <span className="brand__program">Digital Futures</span>
-                <span className="brand__title">Thesis Archive</span>
+                <span className="brand__title">Graduate Thesis Archive</span>
               </NavLink>
             </div>
             <nav className="nav" aria-label="Primary">
