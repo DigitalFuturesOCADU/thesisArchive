@@ -108,14 +108,15 @@ export function Home() {
 
   if (loading || !data) return <LoadingState />
 
-  const latestYear = data.years[0]?.year
-  const latestYearProjects = latestYear
-    ? sortTheses(
-        data.theses.filter((t) => t.year === latestYear),
+  const yearSections = data.years
+    .map((y) => ({
+      year: y.year,
+      projects: sortTheses(
+        data.theses.filter((t) => t.year === y.year),
         'title',
-      )
-    : []
-  const topTopics = [...data.topics].sort((a, b) => b.count - a.count).slice(0, 18)
+      ),
+    }))
+    .filter((s) => s.projects.length > 0)
 
   return (
     <div className="page home">
@@ -178,40 +179,21 @@ export function Home() {
         </ul>
       </section>
 
-      {latestYear ? (
-        <section className="section section--tight">
-          <div className="section__head">
-            <h2 className="section__title">{latestYear} projects</h2>
-            <Link to={`/years/${latestYear}`} className="text-link">
-              All
-            </Link>
+      {yearSections.map((s) => (
+        <section key={s.year} className="section section--tight">
+          <div className="section__head year-divider">
+            <h2 className="section__title year-divider__year">{s.year}</h2>
+            <span className="section__meta">
+              {s.projects.length} {s.projects.length === 1 ? 'project' : 'projects'}
+            </span>
           </div>
           <div className="card-grid">
-            {latestYearProjects.map((t) => (
+            {s.projects.map((t) => (
               <ProjectCard key={t.id} thesis={t} />
             ))}
           </div>
         </section>
-      ) : null}
-
-      <section className="section section--tight">
-        <div className="section__head">
-          <h2 className="section__title">Topics</h2>
-          <Link to="/topics" className="text-link">
-            All topics
-          </Link>
-        </div>
-        <ul className="chip-row chip-row--wrap">
-          {topTopics.map((t) => (
-            <li key={t.slug}>
-              <Link to={`/topics/${t.slug}`}>
-                {t.label}
-                <span>{t.count}</span>
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </section>
+      ))}
     </div>
   )
 }

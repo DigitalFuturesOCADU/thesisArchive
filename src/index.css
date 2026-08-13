@@ -438,6 +438,17 @@ button {
   font-weight: 700;
 }
 
+.year-divider {
+  border-top: 2px solid var(--ink);
+  padding-top: var(--space-2);
+  margin-top: var(--space-5);
+}
+
+.year-divider__year {
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+}
+
 .section__meta {
   font-size: 0.72rem;
   font-weight: 700;
@@ -611,11 +622,14 @@ button {
   -webkit-line-clamp: 3;
 }
 
+/* Fixed two-line slot (matching the clamp) so the advisor line and the tag row
+   below it land at the same position in every card, whatever the title does. */
 .project-card__advisor {
   font-size: 0.78rem;
   line-height: 1.25;
   color: var(--ink-muted);
   -webkit-line-clamp: 2;
+  height: 2.5em;
 }
 
 /* Own the gap in CSS — a JSX space between inline children of a -webkit-box
@@ -1415,13 +1429,6 @@ button {
   }
 }
 
-/* Step down before a column gets too narrow to hold a ~40-character title line */
-@media (max-width: 1180px) {
-  .card-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
 @media (max-width: 960px) {
   .card-grid,
   .person-grid {
@@ -1547,6 +1554,11 @@ button {
     -webkit-line-clamp: unset;
   }
 
+  /* Single column: nothing to align with, so don't hold the two-line slot */
+  .project-card__advisor {
+    height: auto;
+  }
+
   .project-card__foot {
     margin-top: var(--space-1);
   }
@@ -1601,5 +1613,208 @@ button {
   *::after {
     animation: none !important;
     transition: none !important;
+  }
+}
+
+/* Media grid — one continuous run of squares. Year and project labels are cells
+   in the same grid, so the images never break into separate ragged blocks. */
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  gap: 1px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+}
+
+/* The 1px gutters are the ink backdrop showing through the gaps, so any unfilled
+   tail of the last row would read as a black block. Media pads that tail with
+   blank cells — see the column measurement in Media.tsx. */
+.media-grid__cell {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--bg);
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Year marker — the strongest subdivision, inverted so it reads as a spine. */
+.media-grid__year {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--space-3);
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.media-grid__year-num {
+  font-size: clamp(1.6rem, 3.4vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.media-grid__year-meta {
+  font-size: 0.7rem;
+  line-height: 1.35;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.72;
+}
+
+.media-grid__year:hover .media-grid__year-meta {
+  opacity: 1;
+}
+
+/* Project label — quiet counterpart to the year cell, on paper. */
+.media-grid__label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3);
+  background: var(--bg-soft);
+}
+
+.media-grid__label-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.media-grid__label-by {
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  line-height: 1.3;
+}
+
+.media-grid__label-count {
+  margin-top: auto;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+}
+
+.media-grid__label:hover {
+  background: var(--bg);
+  box-shadow: inset 0 0 0 2px var(--ink);
+}
+
+/* Years with nothing deposited — keeps the jump legible without breaking rhythm. */
+.media-grid__gap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--bg),
+    var(--bg) 6px,
+    var(--bg-soft) 6px,
+    var(--bg-soft) 12px
+  );
+  color: var(--ink-muted);
+  text-align: center;
+}
+
+.media-grid__gap-years {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.media-grid__gap-note {
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.media-grid__tile img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 220ms ease;
+}
+
+.media-grid__tile:hover img,
+.media-grid__tile:focus-visible img {
+  transform: scale(1.05);
+}
+
+.media-grid__play {
+  position: absolute;
+  right: var(--space-2);
+  bottom: var(--space-2);
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: rgb(0 0 0 / 0.62);
+  color: #fff;
+  pointer-events: none;
+}
+
+.media-grid__play svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Caption rides in on hover so the grid stays uninterrupted at rest. */
+.media-grid__caption {
+  position: absolute;
+  inset: auto 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-2);
+  background: linear-gradient(to top, rgb(0 0 0 / 0.82), rgb(0 0 0 / 0));
+  color: #fff;
+  opacity: 0;
+  transform: translateY(0.4rem);
+  transition: opacity 180ms ease, transform 180ms ease;
+  pointer-events: none;
+}
+
+.media-grid__tile:hover .media-grid__caption,
+.media-grid__tile:focus-visible .media-grid__caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.media-grid__caption strong {
+  font-size: 0.72rem;
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.media-grid__caption em {
+  font-size: 0.66rem;
+  font-style: normal;
+  opacity: 0.82;
+}
+
+@media (max-width: 640px) {
+  .media-grid {
+    grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+  }
+
+  .media-grid__caption {
+    display: none;
   }
 }

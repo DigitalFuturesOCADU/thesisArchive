@@ -1,8 +1,9 @@
 {
-  "generatedAt": "2026-08-11T13:22:10.247Z",
+  "generatedAt": "2026-08-11T15:42:30.964Z",
   "sourceLabel": "Digital Futures",
-  "projectCount": 25,
-  "imageCount": 137,
+  "projectCount": 35,
+  "imageCount": 178,
+  "videoCount": 42,
   "projects": [
     {
       "id": 5121,
@@ -17,6 +18,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5121/3/_MG_6374.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5121/3.haspreviewThumbnailVersion/_MG_6374.png"
         },
         {
@@ -24,6 +26,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5121/4/MG_6374_Internal.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5121/4.haspreviewThumbnailVersion/MG_6374_Internal.png"
         },
         {
@@ -31,6 +34,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5121/5/AWORM%20Final.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5121/5.haspreviewThumbnailVersion/AWORM%20Final.png"
         },
         {
@@ -38,6 +42,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5121/6/AWORM_Prototype_1_Annotated.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5121/6.haspreviewThumbnailVersion/AWORM_Prototype_1_Annotated.png"
         },
         {
@@ -45,6 +50,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5121/7/Diagram_New.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5121/7.haspreviewThumbnailVersion/Diagram_New.png"
         },
         {
@@ -52,6 +58,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5121/8/FinalAWORMP3.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5121/8.haspreviewThumbnailVersion/FinalAWORMP3.png"
         },
         {
@@ -59,6 +66,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5121/10/AWORM%20Interal.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5121/10.haspreviewThumbnailVersion/AWORM%20Interal.png"
         },
         {
@@ -66,6 +74,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5121/11/Group%2011.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5121/11.haspreviewThumbnailVersion/Group%2011.png"
         },
         {
@@ -73,6 +82,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5121/12/AWORMandBirdy.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5121/12.haspreviewThumbnailVersion/AWORMandBirdy.png"
         },
         {
@@ -80,6 +90,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5121/13/AWORMGrass_2_Annotated.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5121/13.haspreviewThumbnailVersion/AWORMGrass_2_Annotated.png"
         },
         {
@@ -87,6 +98,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5121/14/AWORMWithBird.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5121/14.haspreviewThumbnailVersion/AWORMWithBird.png"
         },
         {
@@ -94,7 +106,34 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5121/15/AWORMNiceGrass.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5121/15.haspreviewThumbnailVersion/AWORMNiceGrass.png"
+        },
+        {
+          "filename": "Iterative_Creature_Video_2.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/5121/17/Iterative_Creature_Video_2.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5121/17.haspreviewThumbnailVersion/Iterative_Creature_Video_2.mp4"
+        }
+      ]
+    },
+    {
+      "id": 5061,
+      "title": "ontological bleed: blurring the borders of fictional worlds in interface games",
+      "year": 2026,
+      "creatorNames": [
+        "g blekkenhorst"
+      ],
+      "images": [
+        {
+          "filename": "the_archive_trailer.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/5061/3/the_archive_trailer.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5061/3.haspreviewThumbnailVersion/the_archive_trailer.mov"
         }
       ]
     },
@@ -111,6 +150,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5051/4/Data_Diagram.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5051/4.haspreviewThumbnailVersion/Data_Diagram.png"
         },
         {
@@ -118,6 +158,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5051/5/Playful%20Home%20at%20DFX_Exhibition%20Documentation.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5051/5.haspreviewThumbnailVersion/Playful%20Home%20at%20DFX_Exhibition%20Documentation.jpg"
         },
         {
@@ -125,6 +166,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5051/6/Wobbles.JPG",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5051/6.haspreviewThumbnailVersion/Wobbles.JPG"
         },
         {
@@ -132,6 +174,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5051/7/PlayfulHome_InPlay.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5051/7.haspreviewThumbnailVersion/PlayfulHome_InPlay.jpg"
         }
       ]
@@ -149,7 +192,26 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/5042/7/maxresdefault.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5042/7.haspreviewThumbnailVersion/maxresdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5087,
+      "title": "Touchstones: Designing Tactile Communication",
+      "year": 2026,
+      "creatorNames": [
+        "Olivia Pasian"
+      ],
+      "images": [
+        {
+          "filename": "touchstones interactoin vid.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/5087/2/touchstones%20interactoin%20vid.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/5087/2.haspreviewThumbnailVersion/touchstones%20interactoin%20vid.mp4"
         }
       ]
     },
@@ -166,13 +228,39 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/4639/3/Reddy_Samarth_2025_MDES_DGIF_Thesis_Methodology.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4639/3.haspreviewThumbnailVersion/Reddy_Samarth_2025_MDES_DGIF_Thesis_Methodology.png"
+        },
+        {
+          "filename": "Reddy_Samarth_2025_MDES_DGIF_Thesis_Demo_Indoors_1.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/4639/4/Reddy_Samarth_2025_MDES_DGIF_Thesis_Demo_Indoors_1.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4639/4.haspreviewThumbnailVersion/Reddy_Samarth_2025_MDES_DGIF_Thesis_Demo_Indoors_1.mp4"
+        },
+        {
+          "filename": "Reddy_Samarth_2025_MDES_DGIF_Thesis_Demo_Indoors_2.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/4639/5/Reddy_Samarth_2025_MDES_DGIF_Thesis_Demo_Indoors_2.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4639/5.haspreviewThumbnailVersion/Reddy_Samarth_2025_MDES_DGIF_Thesis_Demo_Indoors_2.mp4"
+        },
+        {
+          "filename": "Reddy_Samarth_2025_MDES_DGIF_Thesis_Demo_Outdoors_1.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/4639/6/Reddy_Samarth_2025_MDES_DGIF_Thesis_Demo_Outdoors_1.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4639/6.haspreviewThumbnailVersion/Reddy_Samarth_2025_MDES_DGIF_Thesis_Demo_Outdoors_1.mp4"
         },
         {
           "filename": "Reddy_Samarth_2025_MDES_DGIF_Thesis_Demo_Image.png",
           "url": "https://openresearch.ocadu.ca/id/eprint/4639/7/Reddy_Samarth_2025_MDES_DGIF_Thesis_Demo_Image.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4639/7.haspreviewThumbnailVersion/Reddy_Samarth_2025_MDES_DGIF_Thesis_Demo_Image.png"
         }
       ]
@@ -186,10 +274,27 @@
       ],
       "images": [
         {
+          "filename": "DFX documentation.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/4684/2/DFX%20documentation.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4684/2.haspreviewThumbnailVersion/DFX%20documentation.mp4"
+        },
+        {
+          "filename": "User Testing compilation.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/4684/3/User%20Testing%20compilation.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4684/3.haspreviewThumbnailVersion/User%20Testing%20compilation.mp4"
+        },
+        {
           "filename": "Radical interfaces family photo.png",
           "url": "https://openresearch.ocadu.ca/id/eprint/4684/4/Radical%20interfaces%20family%20photo.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4684/4.haspreviewThumbnailVersion/Radical%20interfaces%20family%20photo.png"
         },
         {
@@ -197,6 +302,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/4684/5/I%20made%20animations%20on%20excel.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4684/5.haspreviewThumbnailVersion/I%20made%20animations%20on%20excel.png"
         },
         {
@@ -204,6 +310,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/4684/6/125.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4684/6.haspreviewThumbnailVersion/125.png"
         },
         {
@@ -211,6 +318,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/4684/7/A%20font%20that%20inflates.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4684/7.haspreviewThumbnailVersion/A%20font%20that%20inflates.png"
         },
         {
@@ -218,6 +326,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/4684/8/Animating%20flipdots.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4684/8.haspreviewThumbnailVersion/Animating%20flipdots.png"
         },
         {
@@ -225,7 +334,59 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/4684/9/Typing%20with%20the%20rotary%20phone.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4684/9.haspreviewThumbnailVersion/Typing%20with%20the%20rotary%20phone.png"
+        }
+      ]
+    },
+    {
+      "id": 4748,
+      "title": "Road to Heaven",
+      "year": 2025,
+      "creatorNames": [
+        "Yiqun Zhou"
+      ],
+      "images": [
+        {
+          "filename": "MVI_9959.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/4748/2/MVI_9959.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4748/2.haspreviewThumbnailVersion/MVI_9959.mp4"
+        },
+        {
+          "filename": "https://www.youtube.com/watch?v=AL9eaiyXuEY",
+          "url": "https://www.youtube.com/watch?v=AL9eaiyXuEY",
+          "source": "related",
+          "kind": "video",
+          "thumbnailUrl": "https://i.ytimg.com/vi/AL9eaiyXuEY/mqdefault.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4747,
+      "title": "Running on Empty",
+      "year": 2025,
+      "creatorNames": [
+        "Madhu Priya"
+      ],
+      "images": [
+        {
+          "filename": "Running on empty simulation.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/4747/2/Running%20on%20empty%20simulation.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4747/2.haspreviewThumbnailVersion/Running%20on%20empty%20simulation.mp4"
+        },
+        {
+          "filename": "MR Prototype 4 video.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/4747/4/MR%20Prototype%204%20video.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4747/4.haspreviewThumbnailVersion/MR%20Prototype%204%20video.mp4"
         }
       ]
     },
@@ -242,7 +403,22 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/4721/7/Starting%20From%20Scratch_Aishwarya%20Bhattbhatt.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4721/7.haspreviewThumbnailVersion/Starting%20From%20Scratch_Aishwarya%20Bhattbhatt.png"
+        },
+        {
+          "filename": "https://youtu.be/76Lvr7zIE88",
+          "url": "https://youtu.be/76Lvr7zIE88",
+          "source": "related",
+          "kind": "video",
+          "thumbnailUrl": "https://i.ytimg.com/vi/76Lvr7zIE88/mqdefault.jpg"
+        },
+        {
+          "filename": "https://youtu.be/AVuZUQJFGQE",
+          "url": "https://youtu.be/AVuZUQJFGQE",
+          "source": "related",
+          "kind": "video",
+          "thumbnailUrl": "https://i.ytimg.com/vi/AVuZUQJFGQE/mqdefault.jpg"
         }
       ]
     },
@@ -259,6 +435,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/4772/2/TacTile_Hero_Image.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4772/2.haspreviewThumbnailVersion/TacTile_Hero_Image.png"
         },
         {
@@ -266,6 +443,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/4772/3/TacTile%20Hero%20Image.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4772/3.haspreviewThumbnailVersion/TacTile%20Hero%20Image.png"
         },
         {
@@ -273,7 +451,26 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/4772/25/Khurana_Aranya_2025_MDES_DIGF_Family_Photo.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4772/25.haspreviewThumbnailVersion/Khurana_Aranya_2025_MDES_DIGF_Family_Photo.png"
+        }
+      ]
+    },
+    {
+      "id": 4751,
+      "title": "The Elastic Self, A Loving Woman",
+      "year": 2025,
+      "creatorNames": [
+        "Pranya Gulati"
+      ],
+      "images": [
+        {
+          "filename": "A Loving Woman at DFX 2025.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/4751/11/A%20Loving%20Woman%20at%20DFX%202025.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4751/11.haspreviewThumbnailVersion/A%20Loving%20Woman%20at%20DFX%202025.mp4"
         }
       ]
     },
@@ -286,10 +483,19 @@
       ],
       "images": [
         {
+          "filename": "finalFinalVideo.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/4728/2/finalFinalVideo.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4728/2.haspreviewThumbnailVersion/finalFinalVideo.mp4"
+        },
+        {
           "filename": "FamilyPhoto.jpg",
           "url": "https://openresearch.ocadu.ca/id/eprint/4728/3/FamilyPhoto.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4728/3.haspreviewThumbnailVersion/FamilyPhoto.jpg"
         },
         {
@@ -297,7 +503,33 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/4728/4/20250312-IMG_8983.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4728/4.haspreviewThumbnailVersion/20250312-IMG_8983.jpg"
+        },
+        {
+          "filename": "TinkerPod process.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/4728/16/TinkerPod%20process.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/4728/16.haspreviewThumbnailVersion/TinkerPod%20process.mp4"
+        }
+      ]
+    },
+    {
+      "id": 4460,
+      "title": "Towards Mixed Reality Architecture: Context-Specific Design Approach for Mixed Reality Environments",
+      "year": 2024,
+      "creatorNames": [
+        "Sunidhi Pandurang Naik"
+      ],
+      "images": [
+        {
+          "filename": "https://youtu.be/TFN9L8JXPDg?si=fpIfz8wonSpNB_D4",
+          "url": "https://youtu.be/TFN9L8JXPDg?si=fpIfz8wonSpNB_D4",
+          "source": "related",
+          "kind": "video",
+          "thumbnailUrl": "https://i.ytimg.com/vi/TFN9L8JXPDg/mqdefault.jpg"
         }
       ]
     },
@@ -314,6 +546,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3312/5/1-Gateway%20to%20the%20World-Image.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3312/5.haspreviewThumbnailVersion/1-Gateway%20to%20the%20World-Image.jpg"
         },
         {
@@ -321,6 +554,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3312/6/2-Gateway%20to%20the%20World-Sketch.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3312/6.haspreviewThumbnailVersion/2-Gateway%20to%20the%20World-Sketch.jpg"
         },
         {
@@ -328,6 +562,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3312/7/3-Skin%20Lab-Image.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3312/7.haspreviewThumbnailVersion/3-Skin%20Lab-Image.jpg"
         },
         {
@@ -335,6 +570,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3312/8/4-Skin%20Lab-Sketch.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3312/8.haspreviewThumbnailVersion/4-Skin%20Lab-Sketch.jpg"
         },
         {
@@ -342,6 +578,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3312/9/5-COLONIZR-Image.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3312/9.haspreviewThumbnailVersion/5-COLONIZR-Image.jpg"
         },
         {
@@ -349,6 +586,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3312/10/6-COLONIZR-Sketch.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3312/10.haspreviewThumbnailVersion/6-COLONIZR-Sketch.jpg"
         },
         {
@@ -356,6 +594,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3312/11/7-A%20Saree%20like%20Draupadis-Image.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3312/11.haspreviewThumbnailVersion/7-A%20Saree%20like%20Draupadis-Image.jpg"
         },
         {
@@ -363,6 +602,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3312/12/8-A%20Saree%20like%20Draupadis-Sketch.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3312/12.haspreviewThumbnailVersion/8-A%20Saree%20like%20Draupadis-Sketch.jpg"
         },
         {
@@ -370,6 +610,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3312/13/9-Virtual%20Sanskrit%20Archive-Image.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3312/13.haspreviewThumbnailVersion/9-Virtual%20Sanskrit%20Archive-Image.jpg"
         },
         {
@@ -377,6 +618,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3312/14/10-Virtual%20Sanskrit%20Archive-Sketch.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3312/14.haspreviewThumbnailVersion/10-Virtual%20Sanskrit%20Archive-Sketch.jpg"
         }
       ]
@@ -394,20 +636,15 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3330/13/Audio-visual%20composition%20created%20by%20Elisa%20Heinonen%20via%20Can%20you%20hear%20your%20drawing%20app.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3330/13.haspreviewThumbnailVersion/Audio-visual%20composition%20created%20by%20Elisa%20Heinonen%20via%20Can%20you%20hear%20your%20drawing%20app.png"
-        },
-        {
-          "filename": "Audio-visual compositions created by Elisa Heinonen via Can you hear your drawing app, February 2021.png",
-          "url": "https://openresearch.ocadu.ca/id/eprint/3330/21/Audio-visual%20compositions%20created%20by%20Elisa%20Heinonen%20via%20Can%20you%20hear%20your%20drawing%20app%2C%20February%202021.png",
-          "mimeType": "image/png",
-          "source": "document",
-          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3330/21.haspreviewThumbnailVersion/Audio-visual%20compositions%20created%20by%20Elisa%20Heinonen%20via%20Can%20you%20hear%20your%20drawing%20app%2C%20February%202021.png"
         },
         {
           "filename": "Audio-visual composition #1 created by the participant with colour-hearing via Can you hear your drawing_ the app, February 2021.png",
           "url": "https://openresearch.ocadu.ca/id/eprint/3330/22/Audio-visual%20composition%20%231%20created%20by%20the%20participant%20with%20colour-hearing%20via%20Can%20you%20hear%20your%20drawing_%20the%20app%2C%20February%202021.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3330/22.haspreviewThumbnailVersion/Audio-visual%20composition%20%231%20created%20by%20the%20participant%20with%20colour-hearing%20via%20Can%20you%20hear%20your%20drawing_%20the%20app%2C%20February%202021.png"
         },
         {
@@ -415,6 +652,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3330/23/Audio-visual%20composition%20%232%20created%20by%20the%20participant%20with%20colour-hearing%20via%20Can%20you%20hear%20your%20drawing_%20the%20app%2C%20February%202021.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3330/23.haspreviewThumbnailVersion/Audio-visual%20composition%20%232%20created%20by%20the%20participant%20with%20colour-hearing%20via%20Can%20you%20hear%20your%20drawing_%20the%20app%2C%20February%202021.png"
         },
         {
@@ -422,6 +660,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3330/24/MariaShirokova_Canyouhearyourdrawing_1cover.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3330/24.haspreviewThumbnailVersion/MariaShirokova_Canyouhearyourdrawing_1cover.png"
         },
         {
@@ -429,6 +668,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3330/25/MariaShirokova_Canyouhearyourdrawing_3.gif",
           "mimeType": "image/gif",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3330/25.haspreviewThumbnailVersion/MariaShirokova_Canyouhearyourdrawing_3.gif"
         }
       ]
@@ -446,6 +686,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3072/3/InfoSpread_Mar9_NODRIVERS.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3072/3.haspreviewThumbnailVersion/InfoSpread_Mar9_NODRIVERS.png"
         },
         {
@@ -453,6 +694,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3072/4/WhatisMisinformation_Mar13-03.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3072/4.haspreviewThumbnailVersion/WhatisMisinformation_Mar13-03.png"
         },
         {
@@ -460,6 +702,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3072/5/misinformation_image.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3072/5.haspreviewThumbnailVersion/misinformation_image.png"
         }
       ]
@@ -477,6 +720,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2963/3/Data%20Map-Female.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2963/3.haspreviewThumbnailVersion/Data%20Map-Female.jpg"
         },
         {
@@ -484,6 +728,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2963/4/Data%20Map-Male.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2963/4.haspreviewThumbnailVersion/Data%20Map-Male.jpg"
         },
         {
@@ -491,6 +736,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2963/5/Data%20Map-Infant.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2963/5.haspreviewThumbnailVersion/Data%20Map-Infant.jpg"
         },
         {
@@ -498,6 +744,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2963/6/Menstrual%20Visualization.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2963/6.haspreviewThumbnailVersion/Menstrual%20Visualization.jpg"
         },
         {
@@ -505,6 +752,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2963/7/Menstrual%20Interaction.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2963/7.haspreviewThumbnailVersion/Menstrual%20Interaction.jpg"
         },
         {
@@ -512,6 +760,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2963/8/Restoration%20Visualization.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2963/8.haspreviewThumbnailVersion/Restoration%20Visualization.jpg"
         },
         {
@@ -519,6 +768,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2963/9/Restoration%20Interaction.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2963/9.haspreviewThumbnailVersion/Restoration%20Interaction.jpg"
         }
       ]
@@ -536,6 +786,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3046/2/ARZines_Collection.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3046/2.haspreviewThumbnailVersion/ARZines_Collection.jpg"
         },
         {
@@ -543,6 +794,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3046/3/ARZines_8-page%20Format.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3046/3.haspreviewThumbnailVersion/ARZines_8-page%20Format.jpg"
         },
         {
@@ -550,6 +802,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3046/4/Aisha_Title%20Page.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3046/4.haspreviewThumbnailVersion/Aisha_Title%20Page.png"
         },
         {
@@ -557,6 +810,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3046/5/Aisha-Level1.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3046/5.haspreviewThumbnailVersion/Aisha-Level1.png"
         },
         {
@@ -564,6 +818,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3046/6/Aisha_End%20Page.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3046/6.haspreviewThumbnailVersion/Aisha_End%20Page.png"
         }
       ]
@@ -581,6 +836,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3026/7/benches1.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3026/7.haspreviewThumbnailVersion/benches1.png"
         },
         {
@@ -588,6 +844,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3026/8/benches2.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3026/8.haspreviewThumbnailVersion/benches2.png"
         },
         {
@@ -595,6 +852,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3026/9/benches3.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3026/9.haspreviewThumbnailVersion/benches3.png"
         },
         {
@@ -602,6 +860,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/3026/10/benches4.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/3026/10.haspreviewThumbnailVersion/benches4.png"
         }
       ]
@@ -619,6 +878,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2485/7/Quinn%20Thesis%20Installation1jpg.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2485/7.haspreviewThumbnailVersion/Quinn%20Thesis%20Installation1jpg.jpg"
         },
         {
@@ -626,6 +886,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2485/8/Quinn%20Thesis%20Installation%202.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2485/8.haspreviewThumbnailVersion/Quinn%20Thesis%20Installation%202.jpg"
         }
       ]
@@ -643,6 +904,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2496/9/AlRabbaa_MRsive_01.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2496/9.haspreviewThumbnailVersion/AlRabbaa_MRsive_01.png"
         },
         {
@@ -650,6 +912,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2496/10/AlRabbaa_MRsive_02.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2496/10.haspreviewThumbnailVersion/AlRabbaa_MRsive_02.png"
         },
         {
@@ -657,6 +920,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2496/11/AlRabbaa_MRsive_03.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2496/11.haspreviewThumbnailVersion/AlRabbaa_MRsive_03.png"
         },
         {
@@ -664,6 +928,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2496/12/AlRabbaa_MRsive_04.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2496/12.haspreviewThumbnailVersion/AlRabbaa_MRsive_04.png"
         },
         {
@@ -671,6 +936,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2496/13/AlRabbaa_MRsive_05.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2496/13.haspreviewThumbnailVersion/AlRabbaa_MRsive_05.png"
         }
       ]
@@ -688,6 +954,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2616/5/IMG_0027.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2616/5.haspreviewThumbnailVersion/IMG_0027.jpg"
         },
         {
@@ -695,6 +962,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2616/6/_DSC4883.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2616/6.haspreviewThumbnailVersion/_DSC4883.jpg"
         },
         {
@@ -702,6 +970,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2616/8/_DSC4883.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2616/8.haspreviewThumbnailVersion/_DSC4883.jpg"
         },
         {
@@ -709,6 +978,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2616/9/_DSC4907.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2616/9.haspreviewThumbnailVersion/_DSC4907.jpg"
         },
         {
@@ -716,6 +986,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2616/10/_DSC4831.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2616/10.haspreviewThumbnailVersion/_DSC4831.jpg"
         }
       ]
@@ -733,6 +1004,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2534/2/Image.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2534/2.haspreviewThumbnailVersion/Image.png"
         }
       ]
@@ -750,6 +1022,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2354/8/20180219_023412.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2354/8.haspreviewThumbnailVersion/20180219_023412.jpg"
         },
         {
@@ -757,7 +1030,52 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/2354/9/20180504_123204.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/2354/9.haspreviewThumbnailVersion/20180504_123204.jpg"
+        }
+      ]
+    },
+    {
+      "id": 654,
+      "title": "Dynamic Pattern Creates Interactive Fashion",
+      "year": 2016,
+      "creatorNames": [
+        "Yutong Han"
+      ],
+      "images": [
+        {
+          "filename": "thesis-SD.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/654/2/thesis-SD.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/654/2.haspreviewThumbnailVersion/thesis-SD.mp4"
+        }
+      ]
+    },
+    {
+      "id": 766,
+      "title": "Seeker Number 1",
+      "year": 2016,
+      "creatorNames": [
+        "Tatiana Jennings"
+      ],
+      "images": [
+        {
+          "filename": "Nathan.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/766/4/Nathan.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/766/4.haspreviewThumbnailVersion/Nathan.mp4"
+        },
+        {
+          "filename": "Sam.mp4",
+          "url": "https://openresearch.ocadu.ca/id/eprint/766/5/Sam.mp4",
+          "mimeType": "video/mp4",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/766/5.haspreviewThumbnailVersion/Sam.mp4"
         }
       ]
     },
@@ -774,6 +1092,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/214/4/AppFinalLayout.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/214/4.haspreviewThumbnailVersion/AppFinalLayout.png"
         },
         {
@@ -781,6 +1100,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/214/6/zoomTest_04-2000x1560.gif",
           "mimeType": "image/gif",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/214/6.haspreviewThumbnailVersion/zoomTest_04-2000x1560.gif"
         },
         {
@@ -788,6 +1108,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/214/8/pecheursLarge_01.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/214/8.haspreviewThumbnailVersion/pecheursLarge_01.png"
         },
         {
@@ -795,7 +1116,32 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/214/9/istanbulLarge_02.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/214/9.haspreviewThumbnailVersion/istanbulLarge_02.png"
+        },
+        {
+          "filename": "InteractiveVideoOverlatInterface_MockUp.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/214/10/InteractiveVideoOverlatInterface_MockUp.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/214/10.haspreviewThumbnailVersion/InteractiveVideoOverlatInterface_MockUp.mov"
+        },
+        {
+          "filename": "AudienceOfOne_v1.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/214/11/AudienceOfOne_v1.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/214/11.haspreviewThumbnailVersion/AudienceOfOne_v1.mov"
+        },
+        {
+          "filename": "AudienceOfOne_v2.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/214/12/AudienceOfOne_v2.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/214/12.haspreviewThumbnailVersion/AudienceOfOne_v2.mov"
         }
       ]
     },
@@ -812,6 +1158,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/220/2/Marker2.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/220/2.haspreviewThumbnailVersion/Marker2.jpg"
         },
         {
@@ -819,6 +1166,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/220/3/Marker3.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/220/3.haspreviewThumbnailVersion/Marker3.png"
         },
         {
@@ -826,6 +1174,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/220/4/Marker1.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/220/4.haspreviewThumbnailVersion/Marker1.jpg"
         },
         {
@@ -833,6 +1182,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/220/5/Marker4.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/220/5.haspreviewThumbnailVersion/Marker4.png"
         },
         {
@@ -840,6 +1190,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/220/6/marker5.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/220/6.haspreviewThumbnailVersion/marker5.png"
         }
       ]
@@ -857,6 +1208,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/218/11/corg.gif",
           "mimeType": "image/gif",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/218/11.haspreviewThumbnailVersion/corg.gif"
         },
         {
@@ -864,6 +1216,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/218/13/Grimoire.gif",
           "mimeType": "image/gif",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/218/13.haspreviewThumbnailVersion/Grimoire.gif"
         },
         {
@@ -871,6 +1224,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/218/14/omm.gif",
           "mimeType": "image/gif",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/218/14.haspreviewThumbnailVersion/omm.gif"
         },
         {
@@ -878,6 +1232,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/218/15/PornGame.gif",
           "mimeType": "image/gif",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/218/15.haspreviewThumbnailVersion/PornGame.gif"
         },
         {
@@ -885,6 +1240,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/218/16/psXXYborg.gif",
           "mimeType": "image/gif",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/218/16.haspreviewThumbnailVersion/psXXYborg.gif"
         },
         {
@@ -892,6 +1248,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/218/21/cyborg_continue.gif",
           "mimeType": "image/gif",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/218/21.haspreviewThumbnailVersion/cyborg_continue.gif"
         },
         {
@@ -899,6 +1256,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/218/22/goddess_continue.gif",
           "mimeType": "image/gif",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/218/22.haspreviewThumbnailVersion/goddess_continue.gif"
         },
         {
@@ -906,7 +1264,42 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/218/23/stars_playagain.gif",
           "mimeType": "image/gif",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/218/23.haspreviewThumbnailVersion/stars_playagain.gif"
+        }
+      ]
+    },
+    {
+      "id": 221,
+      "title": "SPOOKY ACTION AT A DISTANCE: FRAGMENTS OF PRESENCE IN REMOTE OBJECTS",
+      "year": 2014,
+      "creatorNames": [
+        "Jackson McConnell"
+      ],
+      "images": [
+        {
+          "filename": "Quantum_Butt.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/221/2/Quantum_Butt.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/221/2.haspreviewThumbnailVersion/Quantum_Butt.mov"
+        },
+        {
+          "filename": "Media_Mobile.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/221/3/Media_Mobile.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/221/3.haspreviewThumbnailVersion/Media_Mobile.mov"
+        },
+        {
+          "filename": "Knock_Knock.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/221/4/Knock_Knock.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/221/4.haspreviewThumbnailVersion/Knock_Knock.mov"
         }
       ]
     },
@@ -923,6 +1316,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/210/2/1%20-%20overall%20set%20up.JPG",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/210/2.haspreviewThumbnailVersion/1%20-%20overall%20set%20up.JPG"
         },
         {
@@ -930,6 +1324,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/210/3/3%20-%20hanging%20set%20up.JPG",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/210/3.haspreviewThumbnailVersion/3%20-%20hanging%20set%20up.JPG"
         },
         {
@@ -937,6 +1332,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/210/4/4%20-%20hanging%20set%20up.JPG",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/210/4.haspreviewThumbnailVersion/4%20-%20hanging%20set%20up.JPG"
         },
         {
@@ -944,6 +1340,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/210/5/2%20-%20floor%20sticker%20under%20the%20webcam%20(leaving%20trace%20area)%20.JPG",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/210/5.haspreviewThumbnailVersion/2%20-%20floor%20sticker%20under%20the%20webcam%20(leaving%20trace%20area)%20.JPG"
         },
         {
@@ -951,6 +1348,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/210/6/5%20-%20installation.JPG",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/210/6.haspreviewThumbnailVersion/5%20-%20installation.JPG"
         },
         {
@@ -958,6 +1356,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/210/7/6%20-%20installation.JPG",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/210/7.haspreviewThumbnailVersion/6%20-%20installation.JPG"
         },
         {
@@ -965,6 +1364,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/210/8/8%20-%20opening%20night.JPG",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/210/8.haspreviewThumbnailVersion/8%20-%20opening%20night.JPG"
         },
         {
@@ -972,6 +1372,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/210/9/7%20-%20hidden%20webcam.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/210/9.haspreviewThumbnailVersion/7%20-%20hidden%20webcam.jpg"
         },
         {
@@ -979,6 +1380,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/210/10/8%20-%20opening%20night.JPG",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/210/10.haspreviewThumbnailVersion/8%20-%20opening%20night.JPG"
         },
         {
@@ -986,6 +1388,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/210/11/9%20-%20active%20participant.JPG",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/210/11.haspreviewThumbnailVersion/9%20-%20active%20participant.JPG"
         },
         {
@@ -993,6 +1396,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/210/12/10%20-%20people's%20movement%20generating%20raindrops.JPG",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/210/12.haspreviewThumbnailVersion/10%20-%20people's%20movement%20generating%20raindrops.JPG"
         },
         {
@@ -1000,7 +1404,24 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/210/13/11%20-%20accumulating%20traces.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/210/13.haspreviewThumbnailVersion/11%20-%20accumulating%20traces.jpg"
+        },
+        {
+          "filename": "leaving a trace.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/210/14/leaving%20a%20trace.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/210/14.haspreviewThumbnailVersion/leaving%20a%20trace.mov"
+        },
+        {
+          "filename": "people's movement generating raindrops.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/210/15/people's%20movement%20generating%20raindrops.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/210/15.haspreviewThumbnailVersion/people's%20movement%20generating%20raindrops.mov"
         }
       ]
     },
@@ -1017,7 +1438,42 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/229/1/capture_296.png",
           "mimeType": "image/png",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/229/1.haspreviewThumbnailVersion/capture_296.png"
+        }
+      ]
+    },
+    {
+      "id": 207,
+      "title": "Responsive Aesthetics for Yogic Meditation: An Innovative Design Theory for Holistic Health that supports Autonomy and Effective Training",
+      "year": 2013,
+      "creatorNames": [
+        "Harjot Bal"
+      ],
+      "images": [
+        {
+          "filename": "VIDEO 1- Prototype Version 2 Demo.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/207/2/VIDEO%201-%20Prototype%20Version%202%20Demo.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/207/2.haspreviewThumbnailVersion/VIDEO%201-%20Prototype%20Version%202%20Demo.mov"
+        },
+        {
+          "filename": "VIDEO 2- Exhibition.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/207/3/VIDEO%202-%20Exhibition.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/207/3.haspreviewThumbnailVersion/VIDEO%202-%20Exhibition.mov"
+        },
+        {
+          "filename": "VIDEO 3- ORGONA Prana.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/207/4/VIDEO%203-%20ORGONA%20Prana.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/207/4.haspreviewThumbnailVersion/VIDEO%203-%20ORGONA%20Prana.mov"
         }
       ]
     },
@@ -1030,10 +1486,43 @@
       ],
       "images": [
         {
+          "filename": "001 Sleeping beauty.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/36/2/001%20Sleeping%20beauty.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/2.haspreviewThumbnailVersion/001%20Sleeping%20beauty.mov"
+        },
+        {
+          "filename": "002 peephole testing.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/36/3/002%20peephole%20testing.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/3.haspreviewThumbnailVersion/002%20peephole%20testing.mov"
+        },
+        {
+          "filename": "003 eyes.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/36/4/003%20eyes.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/4.haspreviewThumbnailVersion/003%20eyes.mov"
+        },
+        {
+          "filename": "004 suitcase and sound sensors .mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/36/5/004%20suitcase%20and%20sound%20sensors%20.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/5.haspreviewThumbnailVersion/004%20suitcase%20and%20sound%20sensors%20.mov"
+        },
+        {
           "filename": "robot01.jpg",
           "url": "https://openresearch.ocadu.ca/id/eprint/36/6/robot01.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/6.haspreviewThumbnailVersion/robot01.jpg"
         },
         {
@@ -1041,6 +1530,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/7/robot02.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/7.haspreviewThumbnailVersion/robot02.jpg"
         },
         {
@@ -1048,6 +1538,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/8/robot03.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/8.haspreviewThumbnailVersion/robot03.jpg"
         },
         {
@@ -1055,6 +1546,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/9/wisdom%20sweater-doc-01.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/9.haspreviewThumbnailVersion/wisdom%20sweater-doc-01.jpg"
         },
         {
@@ -1062,6 +1554,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/10/wisdom%20sweater-doc-02.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/10.haspreviewThumbnailVersion/wisdom%20sweater-doc-02.jpg"
         },
         {
@@ -1069,6 +1562,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/11/wisdom%20sweater-doc-03.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/11.haspreviewThumbnailVersion/wisdom%20sweater-doc-03.jpg"
         },
         {
@@ -1076,6 +1570,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/12/Vietnam001.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/12.haspreviewThumbnailVersion/Vietnam001.jpg"
         },
         {
@@ -1083,6 +1578,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/13/Vietnam002.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/13.haspreviewThumbnailVersion/Vietnam002.jpg"
         },
         {
@@ -1090,6 +1586,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/14/Vietnam003.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/14.haspreviewThumbnailVersion/Vietnam003.jpg"
         },
         {
@@ -1097,6 +1594,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/15/Vietnam004.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/15.haspreviewThumbnailVersion/Vietnam004.jpg"
         },
         {
@@ -1104,6 +1602,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/16/Vietnam005.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/16.haspreviewThumbnailVersion/Vietnam005.jpg"
         },
         {
@@ -1111,6 +1610,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/17/Vietnam006.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/17.haspreviewThumbnailVersion/Vietnam006.jpg"
         },
         {
@@ -1118,6 +1618,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/18/Vietnam007.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/18.haspreviewThumbnailVersion/Vietnam007.jpg"
         },
         {
@@ -1125,6 +1626,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/19/Vietnam008.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/19.haspreviewThumbnailVersion/Vietnam008.jpg"
         },
         {
@@ -1132,6 +1634,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/20/Vietnam010.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/20.haspreviewThumbnailVersion/Vietnam010.jpg"
         },
         {
@@ -1139,6 +1642,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/21/Vietnam008.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/21.haspreviewThumbnailVersion/Vietnam008.jpg"
         },
         {
@@ -1146,6 +1650,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/22/Vietnam009.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/22.haspreviewThumbnailVersion/Vietnam009.jpg"
         },
         {
@@ -1153,6 +1658,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/23/Vietnam011.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/23.haspreviewThumbnailVersion/Vietnam011.jpg"
         },
         {
@@ -1160,6 +1666,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/24/Vietnam012.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/24.haspreviewThumbnailVersion/Vietnam012.jpg"
         },
         {
@@ -1167,6 +1674,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/25/Vietnam013.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/25.haspreviewThumbnailVersion/Vietnam013.jpg"
         },
         {
@@ -1174,6 +1682,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/26/Vietnam014.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/26.haspreviewThumbnailVersion/Vietnam014.jpg"
         },
         {
@@ -1181,13 +1690,63 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/27/Vietnam015.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/27.haspreviewThumbnailVersion/Vietnam015.jpg"
+        },
+        {
+          "filename": "001.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/36/29/001.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/29.haspreviewThumbnailVersion/001.mov"
+        },
+        {
+          "filename": "002.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/36/30/002.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/30.haspreviewThumbnailVersion/002.mov"
+        },
+        {
+          "filename": "003.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/36/31/003.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/31.haspreviewThumbnailVersion/003.mov"
+        },
+        {
+          "filename": "004.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/36/32/004.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/32.haspreviewThumbnailVersion/004.mov"
+        },
+        {
+          "filename": "001.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/36/35/001.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/35.haspreviewThumbnailVersion/001.mov"
+        },
+        {
+          "filename": "002.mov",
+          "url": "https://openresearch.ocadu.ca/id/eprint/36/36/002.mov",
+          "mimeType": "video/quicktime",
+          "source": "document",
+          "kind": "video",
+          "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/36.haspreviewThumbnailVersion/002.mov"
         },
         {
           "filename": "001.jpg",
           "url": "https://openresearch.ocadu.ca/id/eprint/36/37/001.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/37.haspreviewThumbnailVersion/001.jpg"
         },
         {
@@ -1195,6 +1754,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/38/002.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/38.haspreviewThumbnailVersion/002.jpg"
         },
         {
@@ -1202,6 +1762,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/39/003.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/39.haspreviewThumbnailVersion/003.jpg"
         },
         {
@@ -1209,6 +1770,7 @@
           "url": "https://openresearch.ocadu.ca/id/eprint/36/40/004.jpg",
           "mimeType": "image/jpeg",
           "source": "document",
+          "kind": "image",
           "thumbnailUrl": "https://openresearch.ocadu.ca/id/eprint/36/40.haspreviewThumbnailVersion/004.jpg"
         }
       ]

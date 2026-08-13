@@ -1,0 +1,27 @@
+{
+  "description": "Thumbnails that carry no image — video title cards and text-only frames. Open Research grabs its poster from the opening frame, which for these is a title slide or a page of writing. Keyed by eprint id, listing the deposited filename. Dropped during normalize.",
+  "reviewing": "Pixel statistics cannot tell these apart from legitimate minimal work: eprint 5121's 'AWORM' title card and eprint 214's point-cloud form have near-identical histograms, as do eprint 746's title card and eprint 221's photograph on a white background. So this list is curated by eye — after a data refresh, scan the Media page for tiles that are only text and add them here.",
+  "projects": {
+    "5121": {
+      "note": "Iterative Creatures (2026) — opening title card 'AWORM / Iterative Creature'",
+      "files": ["Iterative_Creature_Video_1.mp4"]
+    },
+    "4797": {
+      "note": "Like mother, like burr (2025) — all four videos open on a page of narrative text, so this project has no usable poster frame",
+      "files": [
+        "1. The piano.mp4",
+        "2. I (have) memorized these streets.mp4",
+        "3. My conversation with my mum over the phone in which I try to tell her about Rent the musical.mp4",
+        "4. Anthems for an eighteen year old girl who'd much rather die.mp4"
+      ]
+    },
+    "746": {
+      "note": "Sitting under a highway (2016) — title card naming the work and author",
+      "files": ["CentenoGarcia_Hector_2016_MFA_DF_VIDEO.mp4"]
+    },
+    "229": {
+      "note": "Assimilation, Dissimilation (2013) — opening quotation card on black",
+      "files": ["Assimilation, Dissimilation.mov"]
+    }
+  }
+}

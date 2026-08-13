@@ -8,6 +8,7 @@ import { Advisors } from './pages/Advisors'
 import { AdvisorDetail } from './pages/AdvisorDetail'
 import { Years } from './pages/Years'
 import { YearDetail } from './pages/YearDetail'
+import { Media } from './pages/Media'
 import { Topics } from './pages/Topics'
 import { TopicDetail } from './pages/TopicDetail'
 import { Bibliography } from './pages/Bibliography'
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="advisors/:id" element={<AdvisorDetail />} />
           <Route path="years" element={<Years />} />
           <Route path="years/:year" element={<YearDetail />} />
+          <Route path="media" element={<Media />} />
           <Route path="topics" element={<Topics />} />
           <Route path="topics/:slug" element={<TopicDetail />} />
           <Route path="bibliographies" element={<Bibliography />} />

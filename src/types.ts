@@ -109,6 +109,7 @@ export interface ProjectImage {
   mimeType?: string
   thumbnailUrl?: string
   source: 'document' | 'related'
+  kind?: 'image' | 'video'
   description?: string
 }
 
@@ -125,5 +126,6 @@ export interface ProjectImagesData {
   sourceLabel: string
   projectCount: number
   imageCount: number
+  videoCount?: number
   projects: ProjectImageGroup[]
 }

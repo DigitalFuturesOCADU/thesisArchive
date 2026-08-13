@@ -33,6 +33,8 @@ export function Layout() {
               <NavLink to="/authors">Authors</NavLink>
               <NavLink to="/advisors">Advisors</NavLink>
               <NavLink to="/years">Years</NavLink>
+              {/* Media is unlinked while the grid is still being worked out.
+                  The route stays live at /media — restore this link to ship it. */}
               <NavLink to="/topics">Topics</NavLink>
               <NavLink to="/bibliographies">Bibliographies</NavLink>
             </nav>

@@ -8,6 +8,7 @@ Live site (GitHub Pages): `https://digitalfuturesocadu.github.io/thesisArchive/`
 
 - Browse by project, year, topic, student, faculty advisor, and bibliographies
 - Advisor pages include every project where they appear as primary or secondary
+- Media page: every deposited image and video poster in one continuous grid, by year and project
 - Bibliographies search with most-cited sources and links back to projects
 - Live links to Open Research records and PDF downloads
 
@@ -108,6 +109,22 @@ Exclude by eprint id rather than by department: the department field has typo va
 ### Advisor page groupings
 
 [`data/df-faculty.json`](data/df-faculty.json) lists Current / Previous Digital Futures faculty and OCADU Administration. Remaining advisors are grouped by OCAD faculty from [`data/faculty-directory.json`](data/faculty-directory.json), with manual placements in [`data/faculty-overrides.json`](data/faculty-overrides.json).
+
+### Project media
+
+`public/data/project-images.json` backs the Media page. It collects deposited images, poster frames for deposited videos, and YouTube posters from related links (Vimeo has no static poster without an API call).
+
+Open Research generates thumbnails for only about half the deposited videos, and a few image thumbnails 404, with nothing in the record to say which. So **normalize probes every Open Research thumbnail URL and keeps only the ones that resolve** — that is the one step in normalize that needs network access. If the server is unreachable it keeps all candidates unverified and warns; the site hides anything that still fails to load.
+
+This means `npm run normalize` takes a few seconds longer than it used to, and the item counts on the Media page are true counts rather than claims.
+
+#### Title cards and text-only frames
+
+Open Research takes a video's poster from its opening frame, which is often a title card or a page of writing — a tile with no image in it. Those are listed in [`data/excluded-media.json`](data/excluded-media.json) by eprint id and filename.
+
+This list is curated by eye rather than detected, because pixel statistics cannot tell a title card from minimal work: eprint 5121's `AWORM` card and eprint 214's point-cloud form differ by less than 1% on every histogram measure, as do eprint 746's title card and eprint 221's photograph on a white background. Anything automatic deletes real work.
+
+After a data refresh, scan the Media page and add any tile that is only text. Normalize warns about entries whose file is no longer deposited.
 
 ### Field policy
 

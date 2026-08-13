@@ -11,6 +11,7 @@ const projectImagesPath = path.join(root, 'public', 'data', 'project-images.json
 const aliasesPath = path.join(root, 'data', 'advisor-aliases.json')
 const committeesPath = path.join(root, 'data', 'advisor-committees.json')
 const excludedThesesPath = path.join(root, 'data', 'excluded-theses.json')
+const excludedMediaPath = path.join(root, 'data', 'excluded-media.json')
 const fieldPolicyPath = path.join(root, 'data', 'field-policy.json')
 const sourcesPath = path.join(root, 'data', 'sources.json')
 const facultyDirectoryPath = path.join(root, 'data', 'faculty-directory.json')
@@ -520,6 +521,30 @@ function isRasterImageUrl(url) {
   return /\.(jpe?g|png|gif|webp|avif)(\?|#|$)/i.test(String(url || ''))
 }
 
+function isVideoDocument(doc) {
+  if (!isPublicDoc(doc)) return false
+  const mime = String(doc.mimeType || '').toLowerCase()
+  if (mime.startsWith('video/')) return true
+  return /\.(mp4|mov|m4v|webm|avi|mkv)$/i.test(String(doc.filename || ''))
+}
+
+/** YouTube poster frame — Vimeo has no static equivalent without an API call. */
+function youtubePosterUrl(raw) {
+  let url
+  try {
+    url = new URL(raw)
+  } catch {
+    return undefined
+  }
+  const host = url.hostname.replace(/^www\./, '').toLowerCase()
+  let id = null
+  if (host === 'youtu.be') id = url.pathname.split('/').filter(Boolean)[0] ?? null
+  else if (host.includes('youtube')) {
+    id = url.searchParams.get('v') ?? url.pathname.match(/^\/(?:embed|shorts)\/([^/]+)/)?.[1] ?? null
+  }
+  return id ? `https://i.ytimg.com/vi/${id}/mqdefault.jpg` : undefined
+}
+
 function eprintsThumbnailUrl(downloadUrl, size = 'medium') {
   try {
     const url = new URL(downloadUrl)
@@ -532,32 +557,111 @@ function eprintsThumbnailUrl(downloadUrl, size = 'medium') {
   }
 }
 
-function buildProjectImages(theses) {
+/**
+ * EPrints generates poster frames for only about half the deposited videos, and a
+ * few image thumbnails 404 too, with no way to tell which from the record alone.
+ * Probe so the media grid only ever gets URLs that resolve and the item counts are
+ * true. Offline, every candidate is kept and the client hides what fails to load.
+ */
+async function probeThumbnails(candidates, concurrency = 12) {
+  const good = new Set()
+  let reachable = false
+  let index = 0
+
+  async function worker() {
+    while (index < candidates.length) {
+      const url = candidates[index++]
+      try {
+        const res = await fetch(url, { headers: { Range: 'bytes=0-0' } })
+        reachable = true
+        if (res.ok && (res.headers.get('content-type') ?? '').startsWith('image')) {
+          good.add(url)
+        }
+      } catch {
+        // Network failure — leave it out of `good` and fall back below.
+      }
+    }
+  }
+
+  await Promise.all(Array.from({ length: concurrency }, worker))
+
+  if (!reachable && candidates.length > 0) {
+    console.warn(
+      `Could not reach the thumbnail server — keeping all ${candidates.length} thumbnails unverified.`,
+    )
+    return new Set(candidates)
+  }
+  return good
+}
+
+async function buildProjectImages(theses, excludedMedia) {
   const projects = []
+  const unusedExclusions = new Set()
+  for (const [id, entry] of Object.entries(excludedMedia)) {
+    for (const file of entry.files ?? []) unusedExclusions.add(`${id} ${file}`)
+  }
+
   for (const thesis of theses) {
+    const excludedFiles = new Set(excludedMedia[String(thesis.id)]?.files ?? [])
+    const isExcluded = (filename) => {
+      if (!excludedFiles.has(filename)) return false
+      unusedExclusions.delete(`${thesis.id} ${filename}`)
+      return true
+    }
     const images = []
     for (const doc of thesis.documents ?? []) {
-      if (!isRasterImageDocument(doc)) continue
-      const entry = {
-        filename: doc.filename,
-        url: doc.downloadUrl,
-        mimeType: doc.mimeType,
-        source: 'document',
+      if (isExcluded(doc.filename)) continue
+      if (isRasterImageDocument(doc)) {
+        const entry = {
+          filename: doc.filename,
+          url: doc.downloadUrl,
+          mimeType: doc.mimeType,
+          source: 'document',
+          kind: 'image',
+        }
+        // Preview thumbs keep source aspect ratio and stay small (~400px).
+        // Avoid "medium" — those are padded to a fixed 200×150 box.
+        const thumb = eprintsThumbnailUrl(doc.downloadUrl, 'preview')
+        if (thumb) entry.thumbnailUrl = thumb
+        images.push(entry)
+        continue
       }
-      // Preview thumbs keep source aspect ratio and stay small (~400px).
-      // Avoid "medium" — those are padded to a fixed 200×150 box.
-      const thumb = eprintsThumbnailUrl(doc.downloadUrl, 'preview')
-      if (thumb) entry.thumbnailUrl = thumb
-      images.push(entry)
+      if (isVideoDocument(doc)) {
+        const thumb = eprintsThumbnailUrl(doc.downloadUrl, 'preview')
+        if (!thumb) continue
+        images.push({
+          filename: doc.filename,
+          url: doc.downloadUrl,
+          mimeType: doc.mimeType,
+          source: 'document',
+          kind: 'video',
+          thumbnailUrl: thumb,
+        })
+      }
     }
     for (const related of thesis.relatedUrls ?? []) {
-      if (!related?.url || !isRasterImageUrl(related.url)) continue
-      images.push({
-        filename: related.url.split('/').pop()?.split('?')[0] || related.url,
-        url: related.url,
-        source: 'related',
-        description: related.description,
-      })
+      if (!related?.url) continue
+      if (isRasterImageUrl(related.url)) {
+        images.push({
+          filename: related.url.split('/').pop()?.split('?')[0] || related.url,
+          url: related.url,
+          source: 'related',
+          kind: 'image',
+          description: related.description,
+        })
+        continue
+      }
+      const poster = youtubePosterUrl(related.url)
+      if (poster) {
+        images.push({
+          filename: related.url,
+          url: related.url,
+          source: 'related',
+          kind: 'video',
+          thumbnailUrl: poster,
+          description: related.description,
+        })
+      }
     }
     if (images.length === 0) continue
     projects.push({
@@ -568,10 +672,42 @@ function buildProjectImages(theses) {
       images,
     })
   }
+
+  // EPrints-derived thumbnails need checking; YouTube posters always resolve.
+  const needsProbe = (i) => i.source === 'document' && i.thumbnailUrl
+  const candidates = projects.flatMap((p) =>
+    p.images.filter(needsProbe).map((i) => i.thumbnailUrl),
+  )
+  const good = await probeThumbnails(candidates)
+  let droppedImages = 0
+  let droppedVideos = 0
+  for (const project of projects) {
+    project.images = project.images.filter((i) => {
+      if (!needsProbe(i) || good.has(i.thumbnailUrl)) return true
+      if (i.kind === 'video') droppedVideos += 1
+      else droppedImages += 1
+      return false
+    })
+  }
+
+  for (const stale of unusedExclusions) {
+    console.warn(`Excluded media "${stale}" is no longer deposited — stale entry?`)
+  }
+
+  const kept = projects.filter((p) => p.images.length > 0)
+  const videoCount = kept.reduce(
+    (n, p) => n + p.images.filter((i) => i.kind === 'video').length,
+    0,
+  )
+  console.log(
+    `Media thumbnails: ${videoCount} video posters kept; dropped ${droppedVideos} videos with no poster frame and ${droppedImages} missing image thumbnails`,
+  )
+
   return {
-    projectCount: projects.length,
-    imageCount: projects.reduce((n, p) => n + p.images.length, 0),
-    projects,
+    projectCount: kept.length,
+    imageCount: kept.reduce((n, p) => n + p.images.length, 0),
+    videoCount,
+    projects: kept,
   }
 }
 
@@ -599,6 +735,7 @@ async function main() {
   const { canonical } = aliasesFile
   const ignoreIds = new Set(aliasesFile.ignoreIds ?? [])
   const externalIndex = buildExternalExaminerIndex(aliasesFile.externalExaminers ?? [])
+  const excludedMediaFile = JSON.parse(await readFile(excludedMediaPath, 'utf8'))
   const excludedFile = JSON.parse(await readFile(excludedThesesPath, 'utf8'))
   const excludedTheses = new Set(Object.keys(excludedFile.theses ?? {}))
   const excludedSeen = new Set()
@@ -745,7 +882,7 @@ async function main() {
   const projectImages = {
     generatedAt,
     sourceLabel: archive.sourceLabel,
-    ...buildProjectImages(theses),
+    ...(await buildProjectImages(theses, excludedMediaFile.projects ?? {})),
   }
 
   await mkdir(path.dirname(outPath), { recursive: true })
